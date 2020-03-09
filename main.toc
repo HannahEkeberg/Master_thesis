@@ -1,0 +1,45 @@
+\contentsline {chapter}{\numberline {1}Introduction}{5}
+\contentsline {chapter}{\numberline {2}The use of medical isotopes in imaging and therapy}{7}
+\contentsline {section}{\numberline {2.1}History + Where we are today}{7}
+\contentsline {subsection}{\numberline {2.1.1}External and internal radiotherapy }{7}
+\contentsline {section}{\numberline {2.2}Medical isotopes}{8}
+\contentsline {subsection}{\numberline {2.2.1}General characteristics}{8}
+\contentsline {section}{\numberline {2.3}Platinum isotopes used in medicine}{8}
+\contentsline {subsection}{\numberline {2.3.1}Pt-193m}{8}
+\contentsline {section}{\numberline {2.4}Nuclear production cross sections}{8}
+\contentsline {subsection}{\numberline {2.4.1}Irradiation on target}{8}
+\contentsline {subsection}{\numberline {2.4.2}Production and reaction channels}{8}
+\contentsline {subsection}{\numberline {2.4.3}Expected products from deuterions on iridium, iron, cupper and nc}{8}
+\contentsline {chapter}{\numberline {3}Experimental setup}{9}
+\contentsline {section}{\numberline {3.1}Lawrence Berkeley National Laboratory's 88" Cyclotron}{9}
+\contentsline {subsection}{\numberline {3.1.1}General functionality of a Cyclotron}{9}
+\contentsline {section}{\numberline {3.2}The experiment}{10}
+\contentsline {subsection}{\numberline {3.2.1}Target design}{10}
+\contentsline {subsection}{\numberline {3.2.2}Detector calibration}{11}
+\contentsline {subsubsection}{Detector efficiency}{13}
+\contentsline {subsubsection}{Energy and peakshape calibration}{14}
+\contentsline {subsection}{\numberline {3.2.3}Irradiaton of target stack}{15}
+\contentsline {subsection}{\numberline {3.2.4}Tuning of the beam}{15}
+\contentsline {subsection}{\numberline {3.2.5}The irradiation of the target stack}{15}
+\contentsline {subsection}{\numberline {3.2.6}Beam profile}{16}
+\contentsline {subsubsection}{Counting on detectors}{16}
+\contentsline {chapter}{\numberline {4}Analysis}{17}
+\contentsline {subsection}{\numberline {4.0.1}Theory on radioactivity and production}{17}
+\contentsline {subsection}{\numberline {4.0.2}Statistics}{17}
+\contentsline {subsection}{\numberline {4.0.3}Efficiency curves}{17}
+\contentsline {section}{\numberline {4.1}Gamma-ray spectroscopy}{17}
+\contentsline {subsection}{\numberline {4.1.1}Background subtraction}{17}
+\contentsline {subsection}{\numberline {4.1.2}Cross section}{18}
+\contentsline {subsection}{\numberline {4.1.3}Activities}{18}
+\contentsline {subsubsection}{End of beam activities}{19}
+\contentsline {subsection}{\numberline {4.1.4}Beam Current}{20}
+\contentsline {subsection}{\numberline {4.1.5}Variance minimization}{21}
+\contentsline {subsubsection}{The weighted averaged beam current, along with uncertainties}{25}
+\contentsline {subsection}{\numberline {4.1.6}Production Cross sections}{25}
+\contentsline {chapter}{\numberline {5}Results}{27}
+\contentsline {section}{\numberline {5.1}Iridium cross sections}{27}
+\contentsline {section}{\numberline {5.2}Nickel cross sections}{27}
+\contentsline {section}{\numberline {5.3}Cupper cross sections}{27}
+\contentsline {section}{\numberline {5.4}Iron cross sections}{27}
+\contentsline {chapter}{\numberline {6}Discussion}{33}
+\contentsline {chapter}{\numberline {7}Conclusion and future aspects}{35}
