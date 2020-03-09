@@ -1,0 +1,93 @@
+\documentclass[a4paper,11pt,twoside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{subfiles} %allows for other chapters in other files
+
+\usepackage{makecell} %centering tables
+
+%\usepackage[demo]{graphicx} %figures
+\usepackage{graphicx} %figures
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{amsmath} %write in math mode
+\usepackage{xcolor} %add colored text
+
+\usepackage{comment}  % easy to comment things out
+
+\usepackage{fancyhdr}
+%\pagestyle{headings}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\leftmark}
+%\\fancyhead[LE,RO]{Overleaf}
+\fancyhead[OR]{\rightmark}%Hannah L. O. Ekeberg}
+%\rhead{Hannah L. O. Ekeberg}
+%\lhead{FYS-STK4155 | Section \thesection}
+\fancyfoot[C]{Page \thepage}
+
+\usepackage{listings} %make pseudocoding
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+
+%\lstset{escapechar=@,style=customc}
+
+
+
+\title{Nuclear Excitation Functions for Medical Isotope Production: Targeted Radionuclide Therapy via $^{\text{nat}}$Ir(d,2n)$^{\text{193m}}$Pt}
+\author{Hannah Lovise Okstad Ekeberg }
+\date{May 2020}
+
+\begin{document}
+
+
+
+
+\maketitle
+
+%\subfile{Abstract}
+%\subfile{Acknowledgements}
+\tableofcontents
+\newpage
+
+\subfile{Introduction.tex}
+\subfile{Theory.tex}
+\subfile{Experiment.tex}
+\subfile{Analysis.tex}
+\subfile{Results.tex}
+\subfile{Discussion.tex}
+\subfile{Conclusion.tex}
+
+
+
+%\subfile{Radioactivity}
+%\subfile{Theory}
+%\subfile{Experimental_setup}
+%\subfile{Data_analysis}
+%\subfile{Results_discussion}
+%\subfile{Summary}
+
+%\bibliography{Master_thesis}
+%\bibliographystyle{plain}
+
+%\begin{thebibliography}{}
+%\bibitem{figure_internal_external}
+%National Research Council (US) and Institute of Medicine (US) Committee on State of the Science of Nuclear Medicine. Advancing Nuclear Medicine Through Innovation. Washington (DC): National Academies Press (US); 2007. 4, Targeted Radionuclide Therapy. Available from: https://www.ncbi.nlm.nih.gov/books/NBK11464/
+
+%\end{thebibliography}
+
+%\appendix
+%\subfile{Char_Ir_foils}
+%\subfile{Char_Cu_foils}
+%\subfile{Char_Ni_foils}
+%\subfile{Char_Fe_foils}
+
+%\input{chapters/appendix}
+
+\end{document}
