@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Target design}{10}
 \contentsline {subsection}{\numberline {3.2.2}Detector calibration}{11}
 \contentsline {subsubsection}{Detector efficiency}{13}
-\contentsline {subsubsection}{Energy and peakshape calibration}{14}
+\contentsline {subsubsection}{Energy and peakshape calibration}{15}
 \contentsline {subsection}{\numberline {3.2.3}Irradiaton of target stack}{15}
 \contentsline {subsection}{\numberline {3.2.4}Tuning of the beam}{15}
 \contentsline {subsection}{\numberline {3.2.5}The irradiation of the target stack}{15}
@@ -34,12 +34,14 @@
 \contentsline {subsubsection}{End of beam activities}{19}
 \contentsline {subsection}{\numberline {4.1.4}Beam Current}{20}
 \contentsline {subsection}{\numberline {4.1.5}Variance minimization}{21}
-\contentsline {subsubsection}{The weighted averaged beam current, along with uncertainties}{25}
-\contentsline {subsection}{\numberline {4.1.6}Production Cross sections}{25}
-\contentsline {chapter}{\numberline {5}Results}{27}
-\contentsline {section}{\numberline {5.1}Iridium cross sections}{27}
-\contentsline {section}{\numberline {5.2}Nickel cross sections}{27}
-\contentsline {section}{\numberline {5.3}Cupper cross sections}{27}
-\contentsline {section}{\numberline {5.4}Iron cross sections}{27}
-\contentsline {chapter}{\numberline {6}Discussion}{33}
-\contentsline {chapter}{\numberline {7}Conclusion and future aspects}{35}
+\contentsline {subsubsection}{The weighted averaged beam current, along with uncertainties}{21}
+\contentsline {subsection}{\numberline {4.1.6}Production Cross sections}{23}
+\contentsline {subsubsection}{Reaction modeling}{23}
+\contentsline {chapter}{\numberline {5}Results}{25}
+\contentsline {section}{\numberline {5.1}Iridium cross sections}{25}
+\contentsline {section}{\numberline {5.2}Nickel cross sections}{25}
+\contentsline {section}{\numberline {5.3}Cupper cross sections}{25}
+\contentsline {section}{\numberline {5.4}Iron cross sections}{25}
+\contentsline {chapter}{\numberline {6}Discussion}{31}
+\contentsline {chapter}{\numberline {7}Conclusion and future aspects}{33}
+\contentsline {chapter}{\numberline {A}Statistics}{35}
