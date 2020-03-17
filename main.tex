@@ -5,8 +5,8 @@
 
 \usepackage{makecell} %centering tables
 
-\usepackage[demo]{graphicx} %figures
-%\usepackage{graphicx} %figures
+%\usepackage[demo]{graphicx} %figures
+\usepackage{graphicx} %figures
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{appendix}
@@ -122,13 +122,180 @@ Decay types
 \subsection{Pt-193m}
 potential, decay, how it is thought to be used. 
 
-\section{Nuclear production cross sections}
+\section{History + Where we are today}
+
+\subsection{External and internal radiotherapy }
+General about external, internal, how they differ. Write most about internal, and the use of tracers, the different possibilities. 
+
+
+Today, several treatments are used to cure cancer, among the most commonly used methods; chemotherapy, surgery, external beam therapy and immunotherapy.  External beam therapy utilizes the stopping power of particles like photons (X-rays), electrons, protons and heavier ions, to deposit most of the energy at the site of the tumor. Depending on the tissue, depth and shape of tumor and the energy of the particles, a dose plan can be made which will maximize the effect over the tumor and spare as much as the healthy tissue as possible. However, it has its limitations. Firstly it can only give dose to one single tumor, so the the specific use of external beam is not enough if the cancer has spread. The exposure of healthy tissue will be present, although methods using heavy ions can give a more specific dose, due to the Bragg-peak from Bethe-Block. \newline
+
+\noindent
+The idea behind targeted radionuclide therapy is to use radiopharmaceuticals which consist of a radionuclides which emit short-range ionizing particles, and a cell-targeting vector which can target specific cancer cells. Figure \ref{fig:interna_external} shows an illustration of how internal and external therapy differs. Using this type of treatment, it is possible to give a more localized dose, and even treat metastasis. But it does require knowledge of the biology, and how the biological update and half life is. Characteristics which are typical for all radionuclides used in therapy is that it should have sufficient long half life, so that it can be targeted in cancer cells but washed out of the body before too much dose is deposited. For imaging  where you would like to have short half life, so that the patient will not remain radioactive after the imaging. The size of the radiopharmaceutical should not be too large, especially if brain is targeted, because of the blood brain barrier. 
+
+A limitation of targeted radionuclide therapy is that we can not see where the dose is actually deposited. This is why looking for theranostic pairs; one radionuclide which emit gammas or positrons for imaging (PET or SPECT) and one radionuclide used for treatment, emitting short range particles. The pair should have similar physical and chemical properties so they are taken up in equal quanta in the body, the imaging agent should have a short half life and treatment agent should have a longer half life. \textcolor{red}{look up what the actual half lives should be.} 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{Theory/internal_vs_external.png}
+    \caption{Figure shows how external beam therapy works in comparison to targeted radionuclide therapy. Picture is accessed from \cite{figure_internal_external}}
+    \label{fig:interna_external}
+\end{figure}
+
+
+\section{Medical isotopes}
+
+\subsection{General characteristics}
+Biological and physical properties. 
+LET
+Decay types 
+
+
+
+
+
+\section{Platinum isotopes used in medicine} 
+
+\subsection{Pt-193m}
+potential, decay, how it is thought to be used. 
+
+\section{General nuclear reaction theory}
+
+\subsection{Nuclear reactions and reaction cross sections}
+
+A nuclear reaction in the energy ranges of isotope production via the Compound nucleus conserves quantities such as mass-energy, linear momentum, the total number of nucleons, angular momentum and parity. A nuclear reaction is denoted as
+\begin{equation}
+    X(a,b)Y
+\end{equation}
+
+
+\noindent where X is the target, a is the incoming projectile, b is the outgoing decay channel and Y is the product of the nuclear reaction (Krane, chapter 11.1). There are multiple processes which can occur, radiative capture is the process where a particle is captured and a $\gamma$-ray is emitted in a (x,$\gamma$) process. If the incoming and outgoing particle is the same, it is a scattering process, where elastic scattering leaves the target nucleus in the energy same state, and inelastic if the target nucleus is in an excited state. In these type of experiments however, we are interested in emission of particles to create products in which we can measure the reaction cross section. \\
+
+\noindent 
+The cross section for a reaction can be divided into the cross section of the formation of the compound nucleus via interaction with the incoming projectile a, and the probability that the compound nucleus decay by decay channel b. The total reaction cross section is thus the sum of all the different reaction channels, 
+\begin{equation}
+    \sigma = \sum_b \sigma(a,b)
+\end{equation}
+where b can be multiple particles. The general equation which is used to calculate cross sections in this experiment is the following equation
+
+\begin{equation}
+    \sigma(E) = \frac{A_0 \cdot t_\text{irr}}{N_T \cdot \Phi(E)(1-e^{-\lambda t_\text{irr}})}
+\end{equation}
+\noindent where $A_0$ is the end of beam activity of the resulting product nucleus (Y), $t_\text{irr}$ is the irradiation time, $N_T$ is the number of target nuclei (X), $\Phi(E)$ is the projectile flux (a), and $\lambda$ is the decay constant of the product nucleus. \\ 
+
+\noindent The compound nucleus model (Bohr, 1936) is a model which describes the formation of a compound nucleus by absorption of an incoming projectile by a nucleus close enough to interact with the strong nuclear force, and the decay of the compound nucleus. The kinetic energy shared between the incoming projectile and the nucleon which was struck leads to multiple collisions with other nucleons and rapid exchange of energy. The energy is distributed throughout the nucleus, leaving the original nucleus in an highly excited state. The average energy per nucleon is not sufficient to overcome the binding energy of the nucleus, but due to the statistical distribution in energies there is a probability that one or more nucleons may get sufficient energy to escape the nuclear potential (Krane, chapter 11.10, p. 416). This is decay of the compound nucleus, and this will lower the excitation energy. We can include the formation of the compound nucleus in the nuclear reaction as \begin{equation}
+    X + a \rightarrow C^* \rightarrow Y + b
+\end{equation} where $C^*$ is the excited compound nucleus (Krane, chapter 11.10, p. 416)  \\
+
+\noindent For each possible decay channel of the compound nucleus, there is an associated probability or cross section, which is dependent on the energy of the incoming projectile. A function which evaluates the various cross sections at different energies is called an excitation function. In figure \ref{fig:pt_reactionchannels}, the excitation function of the reactions channels for the platinum isotopes $^{188, 189, 191,193m}$Pt resulting from deutrons on natural iridium is plotted. The nuclear chart for these reaction channels can be seen in figure \ref{fig:chart_irpt}. Natural iridium consists of two stable isotopes, $^{191}$Ir (37.3\% abundance) and $^{193}$Ir (62.7\% abundance). $^{193m}$Pt can only be produced from $^{193}$Ir, ejecting 2 neutrons in the process, which can be denoted as $^{193}$Ir(d,2n)$^{193m}$Pt ($^{193}$Pt is the compound nucleus formation of deutron on $^{191}$Ir, which has a low production cross section). The other platinum isotopes can be produced as $^{191}$Ir(d,2n)$^{191}$Pt or $^{193}$Ir(d,4n)$^{191}$Pt, $^{191}$Ir(d,4n)$^{189}$Pt or $^{193}$Ir(d,6n)$^{189}$Pt and $^{191}$Ir(d,5n)$^{188}$Pt or $^{193}$Ir(d,7n)$^{188}$Pt. For each reaction route possible, there is a local maxima for the specific route \textcolor{red}{what is the edges on 188, 189 and 191Pt?}. Hence, $^{193m}$Pt has only one maxima, and the other platinum isotopes has two. The desired particle emission is energy dependent, and the higher energy given to the compound nucleus, the probability that more particles will be emitted is higher (Krane, chapter 11.10, p. 419). When a specific isotope is desired, the excitation function can tell us which energy window that maximizes the production and most importantly minimizes particularly other isotopes of the same element, due to the difficulty of separating same chemical elements. \\
+
+
+\begin{figure}
+    \centering
+    \includegraphics{Theory/reactionchannels_pt.png}
+    \caption{Reaction cross sections provided by Tendl for the reactions $^\text{nat}$Ir(d,x)$^{188,189,191,193m}$Pt}
+    \label{fig:pt_reactionchannels}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm]{Theory/Ir(d)Pt.png}
+    \caption{Nuclear chart for the platinum isotopes which can be produced from natural iridium }
+    \label{fig:chart_irpt}
+\end{figure}
+
+
+
+%\noindent A nuclear reaction
+%The nucleus is built up on protons and neutrons, and these are bound through the strong nuclear force. 
+\subsection{Energetic factors in nuclear reactions}
+
+
+
+%\noindent The binding energy depends on multiple parameters, which are based upon two models, the shell model and the liquid drop model (Krane, chapter 3.3, p. 68). The binding energy thus depends on the volume, which is constant throughout the nucleus, hence a volumeterm $a_V\cdot A$, a the surface of the nucleus which needs to be taken into account, since the nucleons on the surface is less tightly bound, $a_s\cdot A^{2/3}$. 
+The nucleus is bound together by the strong nuclear force in the nuclear potential well, with a radius up to a few femtometer. The nuclear potential can be illustrated in figure \ref{fig:sumOfPotentials}, denoted as \textit{nuclear potential}. The Coulomb barrier is a repulsive barrier for charged particles. For a charged particle induced nuclear reaction, the energy should exceed to potential, or there will be an elastic scatter. However, there is a chance of tunneling, which drops with a factor 1/r where r is the distance from the center of the nucleus (Handbook of Nuclear Chemistry, chapter 3 - Nuclear Reactions, section, 3.2.3). The barrier also constraints the emission of particles for a decay channel of the compound nucleus, as the energy for an outgoing decay channel of positive particles must exceed the barrier. There is also a centrifugal barrier, which is dependent on the orbital angular momentum of the the nucleus. The orbital angular momentum is dependent on the mass and energy of the particle, but also the impact parameter of the reaction, which is the "distance" between the projectile and the nucleus
+
+\begin{equation}
+    \ell\hbar = (mv)b, \quad b\leq r_a + r_X
+\end{equation}
+
+\noindent where $r_a$ and $r_X$ are the radii of projectile and target nucleus. If $\ell=0$, the impact parameter is zero. If $\ell\neq 0$, then some of the energy of the projectile will go to rotational energy of the nucleus (Handbook of Nuclear Chemistry, chapter 3 - Nuclear Reactions, section, 3.2.4). The probability of this drops with $1/r^2$, and if the impact parameter is large, this will constraint some of the energy that would have gone to the nuclear reaction. Figure \ref{fig:sumOfPotentials} shows an overview of the various potentials; centrifugal barrier, Coulomb barrier and nuclear potential. The figure is for $^{58}$Zn, but the figure is only an example. \textcolor{red}{maybe make figure self?}. 
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=8cm]{Theory/sum_of_potentials.png}
+    \caption{The figure shows the nuclear potential well for the strong nuclear force, along with the Coulomb repulsion barrier and the centrifugal barrier for $^{58}$Zn. The figure is only meant as an illustration. %\url{https://www.researchgate.net/figure/The-RMF-potential-energy-sum-of-the-scalar-and-vector-potentials-for-the-nucleus-58-30_fig6_257811951} }
+    }
+    \label{fig:sumOfPotentials}
+\end{figure}
+
+
+
+\begin{comment}
+\noindent The separation energy is the energy required to remove a particle from the nucleus. That is the difference in the binding energy for the two nuclei. The neutron separation energy is 
+\begin{equation}
+    S_n = B(^A_z X_n)-B(^{A-1}_z X_{n-1}) = c^2(m(X^{A-1}_zX_n)-()
+\end{equation}\\ 
+\end{comment}
+
+\noindent In a nuclear reaction, the mass-energy is conserved, which is denoted as the Q-value. The reaction Q-value is the difference is masses between before and after the nuclear reaction occurred (Krane, chapter 11.2). It is defined as 
+
+\begin{equation}
+    Q = (m_i - m_f)c^2 = (m_X + m_a - m_Y - m_b)c^2
+\end{equation}
+
+\noindent where $m_i$ is the initial mass, $m_f$ is the final mass and c is the speed of light. If $Q>0$, then the reaction is exoergic, which means that energy is released in the reaction. There is no threshold energy of the projectile required for the reaction to occur, if only the projectile is present the reaction can occur. If $Q<0$, then the reaction is endoergic, which means that the kinetic energy of the incoming projectile is converted into nuclear mass or binding energy. For endoergic reactions to occur, there is a minimum threshold energy of the projectile in order for the reaction to happen, which is defined as (Krane, 11.2, p. 382)
+
+\begin{equation} \label{eq:reaction_threshold}
+    E_\text{threshold} = (-Q) \cdot \frac{m_Y +m_b}{m_Y + m_b -m_a}
+\end{equation}
+
+
+\noindent The energy threshold thus depend on the Q-value, the Coulomb barrier for charged particles, and the centrifugal barrier if angular momentum $\ell\neq 0$. The parity though depend, even numbers of $\ell$ mix with even, and odd with odd (Handbook of Nuclear Chemistry, chapter 3Nuclear Reactions, section, 3.2.3). This gives an indication on when a reaction can energetically occur, but does not tell us how probable the reaction is. Equation \ref{eq:reaction_threshold} indicates that a higher mass for the particle in the outgoing channel $m_b$, will lower the energy threshold.\\ 
+
+The nuclear binding energy is a number which tells us how tightly bound the nucleus is, and much energy is required to separate nucleons from the nucleus. The nuclear binding energy is related to the mass of the nucleus, through the famous equation 
+\begin{equation}
+    E = mc^2
+\end{equation}
+
+\noindent 
+The binding energy is the mass-difference between the nucleus as a whole, and the number of protons and neutrons added
+\begin{equation} \label{eq:Binding_energy1}
+    B = c^2(z\cdot m_p + n \cdot m_n - m_N)
+\end{equation}
+\noindent where z is the number of protons, n is the number of neutrons, $m_p$ is the proton mass, $m_n$ is the neutron mass, $M_N$ is the mass of of the nuclide, which is the number of nucleons A minus the number of electrons, $M_P = m_A - z\cdot m_e$ (the electronic binding energy per electron is excluded). From Krane's derivation of the nuclear binding energy (Krane, chapter 3.3, p. 65), the equal number of protons and neutrons make up $z\cdot^1H$, thus we can rewrite equation \ref{eq:Binding_energy1} to 
+
+\begin{equation}
+    B = z\cdot m_{^{1}H} + n\cdot m_n - m_{A}
+\end{equation}
+
+\noindent 
+Separation energy of a particle is the energy required to be removed from the nucleus. This is defined as the difference in binding energy between the nucleus with the particle and the nucleus without the emitted particle. Since heaavier particles such as tritrium has a lower binding energy, more energetically easy to separate. n and p require more. 
+
+\textcolor{red}{Write about the semi-empirical mass formula, and what terms that affects the decay of compound. Especially the parity term? Odd A or even A. If A odd, decay by proton, since then A is even. If A is even, then decay by alpha for A to remain even. But why is n,p favoured over for instance t?? }
+
+\subsection{Nuclear cross sections}
+
+The cross section for a reaction can be divided into the cross section of the formation of the compound nucleus via interaction with the incoming projectile a, and the probability that the compound nucleus decay by decay channel b. The total reaction cross section is thus the sum of all the different reaction channels, 
+\begin{equation}
+    \sigma = \sum_b \sigma(a,b)
+\end{equation}
+where b can be multiple particles. The general equation which is used to calculate cross sections in this experiment is the following equation
+
+\begin{equation}
+    \sigma(E) = \frac{A_0 \cdot t_\text{irr}}{N_T \cdot \Phi(E)(1-e^{-\lambda t_\text{irr}})}
+\end{equation}
+\noindent where $A_0$ is the end of beam activity of the resulting product nucleus (Y), $t_\text{irr}$ is the irradiation time, $N_T$ is the number of target nuclei (X), $\Phi(E)$ is the projectile flux (a), and $\lambda$ is the decay constant of the product nucleus. 
+
+\newpage
+
 Why we are interested, why is there a need for nuclear production cross sections. 
 
-\subsection{Irradiation on target}
-Maybe not?
 
-\subsection{Production and reaction channels}
+
+The Q-value for nuclear reactions 
+
 Compound nucleus, what happens. 
 Q value, binding energy, particle emission, probabilities (why does n, p/alpha emission require higher energy, but is more favoured than T emission if both possible.)
 
@@ -136,6 +303,7 @@ Q value, binding energy, particle emission, probabilities (why does n, p/alpha e
 \subsection{Expected products from deuterions on iridium, iron, cupper and nc}
 
 Include figure of different nuclear charts, and write about Q values, and reaction channels, which makes it more probable that we observe it (eg. when neutron, proton/alpha channels opens).
+
 
 
 
@@ -376,13 +544,13 @@ which gives us an efficiency as a function of $E_\gamma$
 \end{equation}
 
 \noindent
-Equation \ref{eq:efficiency} gives the efficiency value at one specific $E_\gamma$. In order to find a general efficiency curve for the detector, a model based upon  Gallagher, W.J., & Cipolla, S.J. (1974) was applied, which takes the probability of penetration through the deadlayer of the detector and the probability of interaction in detector volume into account: 
+Equation \ref{eq:efficiency} gives the efficiency value at one specific $E_\gamma$. In order to find a general efficiency curve for the detector, a model based upon  Gallagher, W.J., \& Cipolla, S.J. (1974) was applied, which takes the probability of penetration through the deadlayer of the detector and the probability of interaction in detector volume into account: 
 
 \begin{equation} \label{eq:efficiency_estimated}
 \epsilon(E_\gamma) =  B_0 + \underbrace{(e^{-B_1 E_\gamma^{B_2}})}_\text{dead layer}  \underbrace{(1-e^{-B_3 E_\gamma^{B_4}}))}_\text{interacting with volume} 
 \end{equation}
 \noindent
-where $B_0$, $B_1$, $B_2$, $B_3$ and $B_4$ are guessing parameters which were found through the scipy curve fit function\footnote{\url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html}}. An example of an efficiency curve can be seen in figure \ref{fig:efficiency_curve}.  %Figure \ref{fig:ex_eff_curve} shows an example for such a fitted efficiency curve. When guessing parameters are found, we have efficiency for the detector at any gamma energy.
+%where $B_0, B_1, B_2, B_3, B_4$ are guessing parameters which were found through the scipy curve fit function\footnote{\url{$https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html$}}. An example of an efficiency curve can be seen in figure \ref{fig:efficiency_curve}.  %Figure \ref{fig:ex_eff_curve} shows an example for such a fitted efficiency curve. When guessing parameters are found, we have efficiency for the detector at any gamma energy.
 
 \begin{figure}
     \centering
@@ -391,7 +559,7 @@ where $B_0$, $B_1$, $B_2$, $B_3$ and $B_4$ are guessing parameters which were fo
     \label{fig:efficiency_curve}
 \end{figure}
 
-
+\begin{comment}
 \begin{table}[]
     \centering
     \caption{The calibration point sources along with gamma lines used. * indicates that the value has been averaged over two peaks with similar energy. For the intensity its just added together. }
@@ -444,7 +612,7 @@ where $B_0$, $B_1$, $B_2$, $B_3$ and $B_4$ are guessing parameters which were fo
     \end{tabular}
     \label{tab:detector_characteristics}
 \end{table}
-
+\end{comment}
 
 \noindent 
 \subsubsection{Energy and peakshape calibration}
@@ -547,7 +715,7 @@ The number of observed counts is the sum of the true gammas and the background.
 \end{equation}
 
 \begin{equation}
-    C_\text{observed} = \Big(\frac{N_\text{true}}{\Delta t_\text{live}} \Big)_\text{current spectrum} + \underbrace{\Big( \frac{N_\text{background}}{\Delta t_\text{live}} \Big)}_\text{=constant} _\text{background spectrum}
+C_\text{observed} = \Big(\frac{N_\text{true} }{\Delta t_\text{live}} \Big)_\text{current spectrum} + \underbrace{\Big( \frac{N_\text{background}}{\Delta t_\text{live}} \Big)}_\text{=constant} _\text{background spectrum}
 \end{equation}
 
 
@@ -790,9 +958,9 @@ In addition to measurements and experimental data, different reaction modeling p
 \chapter{Results}\label{Chapter:Results}
 \noindent
 
-Make table of cross sections, one for each. 
-
 \section{Iridium cross sections}
+
+
 
 
 \begin{figure}%
@@ -900,10 +1068,28 @@ Make table of cross sections, one for each.
 Discussion on the different products, eg. iridium we expected more but it did not seem to be working the way we planned.. 
 
 
+\section{Beamcurrent} 
+
+
+\section{Iridium products}
+
+\noindent \textcolor{blue}{The cross sections for the iridium products are listed in table \textcolor{red}{...}. Give a brief discussion on the varios products. And also, give a discussion of what we expected and what we did not see. THIS IS NOT A FINAL VERSION } In this experiment, $^{188}$Pt, $^{189}$Pt, $^{191}$Pt, $^{193m}$Pt, $^{188}$Ir, $^{189}$Ir, $^{190}$Ir, $^{192}$Ir, $^{194}$Ir, $^{194m2}$Ir, $^{188}$Re, $^{189}$Re and $^{190}$Re was observed. The products we did not observe was $^{183}$Ta (t$_{1/2}$=5.1 d), $^{186}$Re (t$_{1/2}$=3.7186 d), $^{186}$Ta (t$_{1/2}$=10.5 m), $^{18}$W (t$_{1/2}$=24.0 h). \\
+
+\noindent $^{183}$Ta has a Q-value equal to 0.0 MeV for $^{191}$Ir(d,d$\alpha$)$^{183}$Ta and 4.020 MeV for $^{193}$Ir(d,nt2$\alpha$)$^{183}$Ta. The strongest gamma-line ($E_\gamma=59.318$ keV, $I_\gamma=42.1\%$) was not observed in any spectrum, and the second strongest gamma-line ($E_\gamma=246.059$ keV, $I_\gamma=27.2\%$) is within 1 keV from a gamma-line belonging to $^{189}$Ir ($E_\gamma=245.1$ keV, $I_\gamma=6.0\%$). Hence, we conclude that $^{183}$Ta was not observed. \\
+
+\noindent $^{186}$Re has a Q-value equal to 0.0 MeV for $^{191}$Ir(d,t$\alpha$)$^{186}$Re and 13.1264 MeV for $^{193}$Ir(d,2nt$\alpha$)$^{183}$Ta. There is no data in the EXFOR database, and the reaction modelled cross sections provided by TALYS predicts that the cross section is \textcolor{red}{very low or zero} in this energy range. The two strongest gamma-lines were observed, ($E_\gamma=122.64$ keV, $I_\gamma=0.603\%$, $E_\gamma=137.157$ keV, $I_\gamma=9.47\%$). However, the activity which was estimated was not looking natural, hence the cross section curve is difficult to interpret \textcolor{red}{Might need some more work.} \\ 
+
+\noindent $^{186}$Ta \\
+
+\noindent $^{187}$W  \\
+
+\noindent $^{188}$Pt has a Q-value equal to 19.593 MeV for $^{191}$Ir(d,4n)^$^{188}$Pt and 33.707 MeV $^{193}$Ir(d,6n). This decay is single step decay.  From experimental cross section data, the cross section is low up to about 37 MeV, and along with values provided from talys, the cross section measurements were expected to be low. However, we are confident that we have a measurement at .... 
+
+\noindent 
+
 
 \chapter{Conclusion and future aspects}\label{Chapter:Conclusion}
 \noindent
-
 
 
 
@@ -976,6 +1162,9 @@ A function $f$ with input $x$ and a set of variables $\vec{\beta}= \beta_1, \bet
     \frac{\partial f}{\partial \beta_i} \simeq\frac{f(x, \beta_i + \frac{\Delta \beta_i}{2}) - f(x, \beta_i-\frac{\Delta \beta_i}{2})}{\Delta \beta_i}
 \end{equation}
 
+\noindent where $\Delta\beta_i$ is a small number, like $10^{-8}\beta_i$. \\
+
+
 \noindent 
 For a function $f=xy $, the variance can be expressed from equation \ref{eq:variance_full}, where  $$\mathbf{J}=\begin{bmatrix}y & x \end{bmatrix}$$ and $$\mathbf{V}=\begin{bmatrix} \sigma_x^2 & \sigma_{x,y}\\\sigma_{y,x} & \sigma_{y^2} \end{bmatrix}$$ 
 
@@ -996,6 +1185,7 @@ For a function $f=xy $, the variance can be expressed from equation \ref{eq:vari
 
 
 
+\chapter{...}
 
 
 %\subfile{Radioactivity}

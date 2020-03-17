@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.6)  10 MAR 2020 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.6)  17 MAR 2020 09:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -468,6 +468,9 @@ Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
 (./main.aux
 
+LaTeX Warning: Label `fig:interna_external' multiply defined.
+
+
 LaTeX Warning: Label `eq:Lorentz' multiply defined.
 
 )
@@ -611,6 +614,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
+<Theory/internal_vs_external.png, id=26, 415.5525pt x 283.0575pt>
+File: Theory/internal_vs_external.png Graphic file (type png)
+
+<use Theory/internal_vs_external.png>
+Package pdftex.def Info: Theory/internal_vs_external.png used on input line 103
+.
+(pdftex.def)             Requested size: 240.93773pt x 164.11731pt.
+
 
 LaTeX Warning: Citation `figure_internal_external' on page 7 undefined on input
  line 104.
@@ -623,431 +634,233 @@ LaTeX Warning: Citation `figure_internal_external' on page 7 undefined on input
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-[8]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+[8 <./Theory/internal_vs_external.png>]
+File: Theory/internal_vs_external.png Graphic file (type png)
+ <use Theory/internal_vs_external.png>
+Package pdftex.def Info: Theory/internal_vs_external.png used on input line 140
+.
+(pdftex.def)             Requested size: 240.93773pt x 164.11731pt.
+
+
+LaTeX Warning: Citation `figure_internal_external' on page 9 undefined on input
+ line 141.
+
+
+LaTeX Warning: Citation `figure_internal_external' on page 9 undefined on input
+ line 141.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+<Theory/reactionchannels_pt.png, id=40, 462.528pt x 346.896pt>
+File: Theory/reactionchannels_pt.png Graphic file (type png)
+
+<use Theory/reactionchannels_pt.png>
+Package pdftex.def Info: Theory/reactionchannels_pt.png used on input line 195.
+
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+<Theory/Ir(d)Pt.png, id=41, 635.37375pt x 160.6pt>
+File: Theory/Ir(d)Pt.png Graphic file (type png)
+ <use Theory/Ir(d)Pt.png>
+Package pdftex.def Info: Theory/Ir(d)Pt.png used on input line 202.
+(pdftex.def)             Requested size: 341.43306pt x 86.30365pt.
+
+[10] [11 <./Theory/reactionchannels_pt.png> <./Theory/Ir(d)Pt.png>]
+<Theory/sum_of_potentials.png, id=57, 818.05624pt x 502.87875pt>
+File: Theory/sum_of_potentials.png Graphic file (type png)
+
+<use Theory/sum_of_potentials.png>
+Package pdftex.def Info: Theory/sum_of_potentials.png used on input line 227.
+(pdftex.def)             Requested size: 227.62204pt x 139.92265pt.
+ Excluding 'comment' comment.
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+
+ []
+
+[12 <./Theory/sum_of_potentials.png>] [13] [14]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
+Underfull \hbox (badness 10000) in paragraph at lines 323--325
+
+ []
+
+<Experiment/LBL_88.png, id=69, 790.955pt x 417.56pt>
+File: Experiment/LBL_88.png Graphic file (type png)
+
+<use Experiment/LBL_88.png>
+Package pdftex.def Info: Experiment/LBL_88.png used on input line 333.
+(pdftex.def)             Requested size: 240.93773pt x 127.19313pt.
+
+
+LaTeX Warning: Citation `KireeffCovo2018' on page 15 undefined on input line 33
+4.
+
+
+LaTeX Warning: Citation `KireeffCovo2018' on page 15 undefined on input line 33
+4.
+
+[15
+
+ <./Experiment/LBL_88.png>]
+
+LaTeX Warning: Citation `KireeffCovo2018' on page 16 undefined on input line 35
+0.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
 
  []
 
 
-LaTeX Warning: Citation `KireeffCovo2018' on page 9 undefined on input line 166
-.
-
-
-LaTeX Warning: Citation `KireeffCovo2018' on page 9 undefined on input line 166
-.
-
-[9
-
-]
-
-LaTeX Warning: Citation `KireeffCovo2018' on page 10 undefined on input line 18
-2.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 383--385
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
-
- []
-
-[10]
-Overfull \hbox (29.69136pt too wide) in paragraph at lines 251--308
+[16]
+Overfull \hbox (29.69136pt too wide) in paragraph at lines 419--476
 [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<Experiment/targetframe.JPG, id=77, 2976.11874pt x 2789.42125pt>
+File: Experiment/targetframe.JPG Graphic file (type jpg)
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
+<use Experiment/targetframe.JPG>
+Package pdftex.def Info: Experiment/targetframe.JPG used on input line 480.
+(pdftex.def)             Requested size: 227.62204pt x 213.32619pt.
 
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 333--335
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
 
  []
 
-! Misplaced alignment tab character &.
-l.379 ...r, a model based upon  Gallagher, W.J., &
-                                                   Cipolla, S.J. (1974) was ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+[17 <./Experiment/targetframe.JPG>]
+Underfull \vbox (badness 1975) has occurred while \output is active []
 
-[13]
-! Undefined control sequence.
-<argument> ...\z@ \footnotesep \ignorespaces \url 
-                                                  {https://docs.scipy.org/do...
-l.385 ...generated/scipy.optimize.curve_fit.html}}
-                                                  . An example of an efficie...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ [18]
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.385 ...generated/scipy.optimize.curve_fit.html}}
-                                                  . An example of an efficie...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<argument> ...rated/scipy.optimize.curve_fit.html}
-                                                  \@finalstrut \strutbox 
-l.385 ...generated/scipy.optimize.curve_fit.html}}
-                                                  . An example of an efficie...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.385 ...generated/scipy.optimize.curve_fit.html}}
-                                                  . An example of an efficie...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.385 ...generated/scipy.optimize.curve_fit.html}}
-                                                  . An example of an efficie...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+LaTeX Warning: Reference `tab:detector_characteristics' on page 19 undefined on
+ input line 492.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 395.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.401 ... \multicolumn{2}{|c}{\makecell{^{137}Cs}}
-                                                   & \multicolumn{2}{c}{\mak...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.401 ... \multicolumn{2}{|c}{\makecell{^{137}Cs}}
-                                                   & \multicolumn{2}{c}{\mak...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.401 ...& \multicolumn{2}{c}{\makecell{^{133}Ba}}
-                                                   & \multicolumn{2}{c|}{\ma...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.401 ...& \multicolumn{2}{c}{\makecell{^{133}Ba}}
-                                                   & \multicolumn{2}{c|}{\ma...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.401 ... \multicolumn{2}{c|}{\makecell{^{152}Eu}}
-                                                  \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.401 ... \multicolumn{2}{c|}{\makecell{^{152}Eu}}
-                                                  \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404          \makecell{E_\gamma}
-                                  & \makecell{I_\gamma}&\makecell{E_\gamma}&...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404          \makecell{E_\gamma}
-                                  & \makecell{I_\gamma}&\makecell{E_\gamma}&...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404 ... \makecell{E_\gamma}& \makecell{I_\gamma}
-                                                  &\makecell{E_\gamma}& \mak...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404 ... \makecell{E_\gamma}& \makecell{I_\gamma}
-                                                  &\makecell{E_\gamma}& \mak...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404 ...& \makecell{I_\gamma}&\makecell{E_\gamma}
-                                                  & \makecell{I_\gamma}& \ma...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404 ...& \makecell{I_\gamma}&\makecell{E_\gamma}
-                                                  & \makecell{I_\gamma}& \ma...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404 ...&\makecell{E_\gamma}& \makecell{I_\gamma}
-                                                  & \makecell{E_\gamma}& \ma...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404 ...&\makecell{E_\gamma}& \makecell{I_\gamma}
-                                                  & \makecell{E_\gamma}& \ma...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404 ... \makecell{I_\gamma}& \makecell{E_\gamma}
-                                                  & \makecell{I_\gamma}\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404 ... \makecell{I_\gamma}& \makecell{E_\gamma}
-                                                  & \makecell{I_\gamma}\\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404 ... \makecell{E_\gamma}& \makecell{I_\gamma}
-                                                  \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.404 ... \makecell{E_\gamma}& \makecell{I_\gamma}
-                                                  \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.406          \makecell{32.005^*}
-                                   & \makecell{5.63\%^*} & \makecell{53.1622...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.406          \makecell{32.005^*}
-                                   & \makecell{5.63\%^*} & \makecell{53.1622...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.406 ...\makecell{32.005^*} & \makecell{5.63\%^*}
-                                                   & \makecell{53.1622} & \m...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.406 ...\makecell{32.005^*} & \makecell{5.63\%^*}
-                                                   & \makecell{53.1622} & \m...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.408          \makecell{36.3405^*}
-                                    & \makecell{1.02\%^*} & \makecell{80.997...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.408          \makecell{36.3405^*}
-                                    & \makecell{1.02\%^*} & \makecell{80.997...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.408 ...makecell{36.3405^*} & \makecell{1.02\%^*}
-                                                   & \makecell{80.9979} & \m...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.408 ...makecell{36.3405^*} & \makecell{1.02\%^*}
-                                                   & \makecell{80.9979} & \m...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 429.
-
-
-Underfull \vbox (badness 1527) has occurred while \output is active []
-
- [14]
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
-Excluding 'comment' comment. [15] [16]
+
+LaTeX Warning: Reference `table:calibration_gammas' on page 19 undefined on inp
+ut line 502.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--503
+
+ []
+
+<Experiment/cal_sources.png, id=86, 2347.77126pt x 2174.1225pt>
+File: Experiment/cal_sources.png Graphic file (type png)
+
+<use Experiment/cal_sources.png>
+Package pdftex.def Info: Experiment/cal_sources.png used on input line 511.
+(pdftex.def)             Requested size: 227.62204pt x 210.75693pt.
+ [19 <./Experiment/cal_sources.png>]
+<Experiment/room131_15.png, id=92, 462.528pt x 346.896pt>
+File: Experiment/room131_15.png Graphic file (type png)
+
+<use Experiment/room131_15.png>
+Package pdftex.def Info: Experiment/room131_15.png used on input line 557.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+ Excluding 'comment' comment.
+Underfull \hbox (badness 10000) in paragraph at lines 627--628
+
+ []
+
+[20 <./Experiment/room131_15.png>] Excluding 'comment' comment.
+<Experiment/stack.JPG, id=98, 2234.3475pt x 2970.09625pt>
+File: Experiment/stack.JPG Graphic file (type jpg)
+
+<use Experiment/stack.JPG>
+Package pdftex.def Info: Experiment/stack.JPG used on input line 650.
+(pdftex.def)             Requested size: 144.5641pt x 192.15663pt.
+ <Experiment/tube.JPG, id=99, 4047.12pt x 3035.34pt>
+File: Experiment/tube.JPG Graphic file (type jpg)
+
+<use Experiment/tube.JPG>
+Package pdftex.def Info: Experiment/tube.JPG used on input line 657.
+(pdftex.def)             Requested size: 144.5641pt x 108.37827pt.
+ [21 <./Experiment/stack.JPG> <./Experiment/tube.JPG>] [22]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
+Underfull \hbox (badness 10000) in paragraph at lines 698--699
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--539
+Underfull \hbox (badness 10000) in paragraph at lines 705--707
 
  []
 
 ! Double subscript.
-l.550 ... t_\text{live}} \Big)}_\text{=constant} _
+l.718 ... t_\text{live}} \Big)}_\text{=constant} _
                                                   \text{background spectrum}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-[17
+[23
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 578--579
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--609
+Underfull \hbox (badness 10000) in paragraph at lines 776--777
 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 626--629
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 794--797
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--642
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
 
  []
 
-[19]
+[25] <Analysis/_activity_193mPt_677.png, id=116, 462.528pt x 346.896pt>
+File: Analysis/_activity_193mPt_677.png Graphic file (type png)
+
+<use Analysis/_activity_193mPt_677.png>
+Package pdftex.def Info: Analysis/_activity_193mPt_677.png used on input line 8
+47.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.687 ...to add citation for each datapoint used.}
+l.855 ...to add citation for each datapoint used.}
                                                   ; $^{\text{nat}}$Fe(d,x)$^...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1055,23 +868,39 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.687 ...to add citation for each datapoint used.}
+l.855 ...to add citation for each datapoint used.}
                                                   ; $^{\text{nat}}$Fe(d,x)$^...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--688
+Underfull \hbox (badness 10000) in paragraph at lines 855--856
 
  []
 
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 723--725
+[26 <./Analysis/_activity_193mPt_677.png>]
+<Analysis/Ir_flux_distribution_B_+1_D_-2.png, id=122, 462.528pt x 346.896pt>
+File: Analysis/Ir_flux_distribution_B_+1_D_-2.png Graphic file (type png)
+
+<use Analysis/Ir_flux_distribution_B_+1_D_-2.png>
+Package pdftex.def Info: Analysis/Ir_flux_distribution_B_+1_D_-2.png used on in
+put line 884.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 891--893
 
  []
+
+<Analysis/minimization_6_B_+2_D_+4,25.png, id=123, 462.528pt x 346.896pt>
+File: Analysis/minimization_6_B_+2_D_+4,25.png Graphic file (type png)
+
+<use Analysis/minimization_6_B_+2_D_+4,25.png>
+Package pdftex.def Info: Analysis/minimization_6_B_+2_D_+4,25.png used on input
+ line 904.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
 ! Undefined control sequence.
-l.745     \subfloat
+l.913     \subfloat
                    [Before variance minimization]{{\includegraphics[width=8c...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1079,8 +908,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Analysis/B_0_D_0.png, id=124, 462.528pt x 346.896pt>
+File: Analysis/B_0_D_0.png Graphic file (type png)
+
+<use Analysis/B_0_D_0.png>
+Package pdftex.def Info: Analysis/B_0_D_0.png used on input line 913.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+
 ! Undefined control sequence.
-l.747     \subfloat
+l.915     \subfloat
                    [After variance minimization]{{\includegraphics[width=8cm...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1088,8 +924,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Analysis/comp_compared_B_+2,25_D_+5.png, id=125, 462.528pt x 346.896pt>
+File: Analysis/comp_compared_B_+2,25_D_+5.png Graphic file (type png)
+
+<use Analysis/comp_compared_B_+2,25_D_+5.png>
+Package pdftex.def Info: Analysis/comp_compared_B_+2,25_D_+5.png used on input 
+line 915.
+(pdftex.def)             Requested size: 227.62204pt x 170.71628pt.
+ [27] [28 <./Analysis/Ir_flux_distribution_B_+1_D_-2.png>] [29 <./Analysis/mini
+mization_6_B_+2_D_+4,25.png>]
+[30 <./Analysis/B_0_D_0.png> <./Analysis/comp_compared_B_+2,25_D_+5.png>]
 ! Undefined control sequence.
-l.762     \subfloat
+l.930     \subfloat
                    []{{\includegraphics[width=5cm]{Analysis/Fe_56Co.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1097,8 +943,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Analysis/Fe_56Co.png, id=144, 462.528pt x 346.896pt>
+File: Analysis/Fe_56Co.png Graphic file (type png)
+
+<use Analysis/Fe_56Co.png>
+Package pdftex.def Info: Analysis/Fe_56Co.png used on input line 930.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.764     \subfloat
+l.932     \subfloat
                    []{{\includegraphics[width=5cm]{Analysis/Ni_61Cu.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1106,8 +959,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Analysis/Ni_61Cu.png, id=145, 462.528pt x 346.896pt>
+File: Analysis/Ni_61Cu.png Graphic file (type png)
+
+<use Analysis/Ni_61Cu.png>
+Package pdftex.def Info: Analysis/Ni_61Cu.png used on input line 932.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.765     \subfloat
+l.933     \subfloat
                    []{{\includegraphics[width=5cm]{Analysis/Ni_56Co.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1115,8 +975,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Analysis/Ni_56Co.png, id=146, 462.528pt x 346.896pt>
+File: Analysis/Ni_56Co.png Graphic file (type png)
+
+<use Analysis/Ni_56Co.png>
+Package pdftex.def Info: Analysis/Ni_56Co.png used on input line 933.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.767     \subfloat
+l.935     \subfloat
                    []{{\includegraphics[width=5cm]{Analysis/Ni_58Co.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1124,8 +991,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Analysis/Ni_58Co.png, id=147, 462.528pt x 346.896pt>
+File: Analysis/Ni_58Co.png Graphic file (type png)
+
+<use Analysis/Ni_58Co.png>
+Package pdftex.def Info: Analysis/Ni_58Co.png used on input line 935.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.769     \subfloat
+l.937     \subfloat
                    [caption]{{\includegraphics[width=5cm]{Analysis/Cu_62Zn.p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1133,8 +1007,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Analysis/Cu_62Zn.png, id=148, 462.528pt x 346.896pt>
+File: Analysis/Cu_62Zn.png Graphic file (type png)
+
+<use Analysis/Cu_62Zn.png>
+Package pdftex.def Info: Analysis/Cu_62Zn.png used on input line 937.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.771     \subfloat
+l.939     \subfloat
                    []{{\includegraphics[width=5cm]{Analysis/Cu_63Zn.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1142,8 +1023,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Analysis/Cu_63Zn.png, id=149, 462.528pt x 346.896pt>
+File: Analysis/Cu_63Zn.png Graphic file (type png)
+
+<use Analysis/Cu_63Zn.png>
+Package pdftex.def Info: Analysis/Cu_63Zn.png used on input line 939.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.773     \subfloat
+l.941     \subfloat
                    []{{\includegraphics[width=5cm]{Analysis/Cu_65Zn.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1151,17 +1039,25 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Analysis/Cu_65Zn.png, id=150, 462.528pt x 346.896pt>
+File: Analysis/Cu_65Zn.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 783--784
+<use Analysis/Cu_65Zn.png>
+Package pdftex.def Info: Analysis/Cu_65Zn.png used on input line 941.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 951--952
 
  []
 
-[21] [22] [23] [24
+[31 <./Analysis/Fe_56Co.png> <./Analysis/Ni_61Cu.png> <./Analysis/Ni_56Co.png> 
+<./Analysis/Ni_58Co.png> <./Analysis/Cu_62Zn.png> <./Analysis/Cu_63Zn.png> <./A
+nalysis/Cu_65Zn.png>] [32
 
 ]
 Chapter 5.
 ! Undefined control sequence.
-l.800     \subfloat
+l.968     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ir_188Pt.png}}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1169,8 +1065,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ir_188Pt.png, id=165, 462.528pt x 346.896pt>
+File: Results/Ir_188Pt.png Graphic file (type png)
+
+<use Results/Ir_188Pt.png>
+Package pdftex.def Info: Results/Ir_188Pt.png used on input line 968.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.802     \subfloat
+l.970     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ir_188Ir.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1178,8 +1081,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ir_188Ir.png, id=166, 462.528pt x 346.896pt>
+File: Results/Ir_188Ir.png Graphic file (type png)
+
+<use Results/Ir_188Ir.png>
+Package pdftex.def Info: Results/Ir_188Ir.png used on input line 970.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.803     \subfloat
+l.971     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ir_189Pt.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1187,8 +1097,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ir_189Pt.png, id=167, 462.528pt x 346.896pt>
+File: Results/Ir_189Pt.png Graphic file (type png)
+
+<use Results/Ir_189Pt.png>
+Package pdftex.def Info: Results/Ir_189Pt.png used on input line 971.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.805     \subfloat
+l.973     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ir_189Ir.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1196,8 +1113,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ir_189Ir.png, id=168, 462.528pt x 346.896pt>
+File: Results/Ir_189Ir.png Graphic file (type png)
+
+<use Results/Ir_189Ir.png>
+Package pdftex.def Info: Results/Ir_189Ir.png used on input line 973.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.807     \subfloat
+l.975     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ir_190Ir.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1205,8 +1129,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ir_190Ir.png, id=169, 462.528pt x 346.896pt>
+File: Results/Ir_190Ir.png Graphic file (type png)
+
+<use Results/Ir_190Ir.png>
+Package pdftex.def Info: Results/Ir_190Ir.png used on input line 975.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.809     \subfloat
+l.977     \subfloat
                    [caption]{{\includegraphics[width=5cm]{Results/Ir_191Pt.p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1214,8 +1145,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ir_191Pt.png, id=170, 462.528pt x 346.896pt>
+File: Results/Ir_191Pt.png Graphic file (type png)
+
+<use Results/Ir_191Pt.png>
+Package pdftex.def Info: Results/Ir_191Pt.png used on input line 977.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.811     \subfloat
+l.979     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ir_192Ir.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1223,8 +1161,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ir_192Ir.png, id=171, 462.528pt x 346.896pt>
+File: Results/Ir_192Ir.png Graphic file (type png)
+
+<use Results/Ir_192Ir.png>
+Package pdftex.def Info: Results/Ir_192Ir.png used on input line 979.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.813     \subfloat
+l.981     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ir_193mPt.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1232,8 +1177,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ir_193mPt.png, id=172, 462.528pt x 346.896pt>
+File: Results/Ir_193mPt.png Graphic file (type png)
+
+<use Results/Ir_193mPt.png>
+Package pdftex.def Info: Results/Ir_193mPt.png used on input line 981.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.815     \subfloat
+l.983     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ir_194Ir.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1241,8 +1193,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ir_194Ir.png, id=173, 462.528pt x 346.896pt>
+File: Results/Ir_194Ir.png Graphic file (type png)
+
+<use Results/Ir_194Ir.png>
+Package pdftex.def Info: Results/Ir_194Ir.png used on input line 983.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.817     \subfloat
+l.985     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ir_194m2Ir.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1250,10 +1209,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ir_194m2Ir.png, id=174, 462.528pt x 346.896pt>
+File: Results/Ir_194m2Ir.png Graphic file (type png)
+
+<use Results/Ir_194m2Ir.png>
+Package pdftex.def Info: Results/Ir_194m2Ir.png used on input line 985.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Missing } inserted.
 <inserted text> 
                 }
-l.821 \end{figure}
+l.989 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1262,7 +1228,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Undefined control sequence.
-l.827     \subfloat
+l.995     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ni_52Mn.png}}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1270,8 +1236,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ni_52Mn.png, id=175, 462.528pt x 346.896pt>
+File: Results/Ni_52Mn.png Graphic file (type png)
+ <use Results/Ni_52Mn.png>
+Package pdftex.def Info: Results/Ni_52Mn.png used on input line 995.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.829     \subfloat
+l.997     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ni_54Mn.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1279,8 +1251,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ni_54Mn.png, id=176, 462.528pt x 346.896pt>
+File: Results/Ni_54Mn.png Graphic file (type png)
+ <use Results/Ni_54Mn.png>
+Package pdftex.def Info: Results/Ni_54Mn.png used on input line 997.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.830     \subfloat
+l.998     \subfloat
                    []{{\includegraphics[width=5cm]{Results/Ni_59Fe.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1288,83 +1266,137 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ni_59Fe.png, id=177, 462.528pt x 346.896pt>
+File: Results/Ni_59Fe.png Graphic file (type png)
+ <use Results/Ni_59Fe.png>
+Package pdftex.def Info: Results/Ni_59Fe.png used on input line 998.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.832     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Ni_60Cu.png} }}%
+l.1000     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Ni_60Cu.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ni_60Cu.png, id=178, 462.528pt x 346.896pt>
+File: Results/Ni_60Cu.png Graphic file (type png)
+ <use Results/Ni_60Cu.png>
+Package pdftex.def Info: Results/Ni_60Cu.png used on input line 1000.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.834     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Ni_64Cu.png} }}%
+l.1002     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Ni_64Cu.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ni_64Cu.png, id=179, 462.528pt x 346.896pt>
+File: Results/Ni_64Cu.png Graphic file (type png)
+ <use Results/Ni_64Cu.png>
+Package pdftex.def Info: Results/Ni_64Cu.png used on input line 1002.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.836     \subfloat
-                   [caption]{{\includegraphics[width=5cm]{Results/Ni_60Co.pn...
+l.1004     \subfloat
+                    [caption]{{\includegraphics[width=5cm]{Results/Ni_60Co.p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ni_60Co.png, id=180, 462.528pt x 346.896pt>
+File: Results/Ni_60Co.png Graphic file (type png)
+ <use Results/Ni_60Co.png>
+Package pdftex.def Info: Results/Ni_60Co.png used on input line 1004.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.838     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Ni_65Ni.png} }}%
+l.1006     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Ni_65Ni.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ni_65Ni.png, id=181, 462.528pt x 346.896pt>
+File: Results/Ni_65Ni.png Graphic file (type png)
+ <use Results/Ni_65Ni.png>
+Package pdftex.def Info: Results/Ni_65Ni.png used on input line 1006.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.840     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Ni_56Ni.png} }}%
+l.1008     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Ni_56Ni.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ni_56Ni.png, id=182, 462.528pt x 346.896pt>
+File: Results/Ni_56Ni.png Graphic file (type png)
+ <use Results/Ni_56Ni.png>
+Package pdftex.def Info: Results/Ni_56Ni.png used on input line 1008.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.842     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Ni_55Co.png} }}%
+l.1010     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Ni_55Co.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ni_55Co.png, id=183, 462.528pt x 346.896pt>
+File: Results/Ni_55Co.png Graphic file (type png)
+ <use Results/Ni_55Co.png>
+Package pdftex.def Info: Results/Ni_55Co.png used on input line 1010.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.844     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Ni_56Mn.png} }}%
+l.1012     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Ni_56Mn.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Ni_56Mn.png, id=184, 462.528pt x 346.896pt>
+File: Results/Ni_56Mn.png Graphic file (type png)
+ <use Results/Ni_56Mn.png>
+Package pdftex.def Info: Results/Ni_56Mn.png used on input line 1012.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.846     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Ni_57Ni.png} }}%
+l.1014     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Ni_57Ni.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+<Results/Ni_57Ni.png, id=185, 462.528pt x 346.896pt>
+File: Results/Ni_57Ni.png Graphic file (type png)
+ <use Results/Ni_57Ni.png>
+Package pdftex.def Info: Results/Ni_57Ni.png used on input line 1014.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.850 \end{figure}
-                  
+l.1018 \end{figure}
+                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1372,64 +1404,100 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Undefined control sequence.
-l.856     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Cu_59Fe.png}}%
+l.1024     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Cu_59Fe.png}}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Cu_59Fe.png, id=186, 462.528pt x 346.896pt>
+File: Results/Cu_59Fe.png Graphic file (type png)
+ <use Results/Cu_59Fe.png>
+Package pdftex.def Info: Results/Cu_59Fe.png used on input line 1024.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.858     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Cu_60Co.png} }}%
+l.1026     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Cu_60Co.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Cu_60Co.png, id=187, 462.528pt x 346.896pt>
+File: Results/Cu_60Co.png Graphic file (type png)
+ <use Results/Cu_60Co.png>
+Package pdftex.def Info: Results/Cu_60Co.png used on input line 1026.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.859     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Cu_61Co.png} }}%
+l.1027     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Cu_61Co.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Cu_61Co.png, id=188, 462.528pt x 346.896pt>
+File: Results/Cu_61Co.png Graphic file (type png)
+ <use Results/Cu_61Co.png>
+Package pdftex.def Info: Results/Cu_61Co.png used on input line 1027.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.861     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Cu_61Cu.png} }}%
+l.1029     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Cu_61Cu.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Cu_61Cu.png, id=189, 462.528pt x 346.896pt>
+File: Results/Cu_61Cu.png Graphic file (type png)
+ <use Results/Cu_61Cu.png>
+Package pdftex.def Info: Results/Cu_61Cu.png used on input line 1029.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.863     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Cu_64Cu.png} }}%
+l.1031     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Cu_64Cu.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Cu_64Cu.png, id=190, 462.528pt x 346.896pt>
+File: Results/Cu_64Cu.png Graphic file (type png)
+ <use Results/Cu_64Cu.png>
+Package pdftex.def Info: Results/Cu_64Cu.png used on input line 1031.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.865     \subfloat
-                   [caption]{{\includegraphics[width=5cm]{Results/Cu_65Ni.pn...
+l.1033     \subfloat
+                    [caption]{{\includegraphics[width=5cm]{Results/Cu_65Ni.p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+<Results/Cu_65Ni.png, id=191, 462.528pt x 346.896pt>
+File: Results/Cu_65Ni.png Graphic file (type png)
+ <use Results/Cu_65Ni.png>
+Package pdftex.def Info: Results/Cu_65Ni.png used on input line 1033.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.869 \end{figure}
-                  
+l.1037 \end{figure}
+                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1437,115 +1505,251 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Undefined control sequence.
-l.875     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Fe_48V.png}}%
+l.1043     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Fe_48V.png}}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Fe_48V.png, id=192, 462.528pt x 346.896pt>
+File: Results/Fe_48V.png Graphic file (type png)
+ <use Results/Fe_48V.png>
+Package pdftex.def Info: Results/Fe_48V.png used on input line 1043.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.877     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Fe_51Cr.png} }}%
+l.1045     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Fe_51Cr.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Fe_51Cr.png, id=193, 462.528pt x 346.896pt>
+File: Results/Fe_51Cr.png Graphic file (type png)
+ <use Results/Fe_51Cr.png>
+Package pdftex.def Info: Results/Fe_51Cr.png used on input line 1045.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.878     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Fe_52Mn.png} }}%
+l.1046     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Fe_52Mn.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Fe_52Mn.png, id=194, 462.528pt x 346.896pt>
+File: Results/Fe_52Mn.png Graphic file (type png)
+ <use Results/Fe_52Mn.png>
+Package pdftex.def Info: Results/Fe_52Mn.png used on input line 1046.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.880     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Fe_53Fe.png} }}%
+l.1048     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Fe_53Fe.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Fe_53Fe.png, id=195, 462.528pt x 346.896pt>
+File: Results/Fe_53Fe.png Graphic file (type png)
+ <use Results/Fe_53Fe.png>
+Package pdftex.def Info: Results/Fe_53Fe.png used on input line 1048.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.882     \subfloat
-                   []{{\includegraphics[width=5cm]{Results/Fe_54Mn.png} }}%
+l.1050     \subfloat
+                    []{{\includegraphics[width=5cm]{Results/Fe_54Mn.png} }}%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Fe_54Mn.png, id=196, 462.528pt x 346.896pt>
+File: Results/Fe_54Mn.png Graphic file (type png)
+ <use Results/Fe_54Mn.png>
+Package pdftex.def Info: Results/Fe_54Mn.png used on input line 1050.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.884     \subfloat
-                   [caption]{{\includegraphics[width=5cm]{Results/Fe_55Co.pn...
+l.1052     \subfloat
+                    [caption]{{\includegraphics[width=5cm]{Results/Fe_55Co.p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Fe_55Co.png, id=197, 462.528pt x 346.896pt>
+File: Results/Fe_55Co.png Graphic file (type png)
+ <use Results/Fe_55Co.png>
+Package pdftex.def Info: Results/Fe_55Co.png used on input line 1052.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.886     \subfloat
-                   [caption]{{\includegraphics[width=5cm]{Results/Fe_57Co.pn...
+l.1054     \subfloat
+                    [caption]{{\includegraphics[width=5cm]{Results/Fe_57Co.p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Fe_57Co.png, id=198, 462.528pt x 346.896pt>
+File: Results/Fe_57Co.png Graphic file (type png)
+ <use Results/Fe_57Co.png>
+Package pdftex.def Info: Results/Fe_57Co.png used on input line 1054.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.888     \subfloat
-                   [caption]{{\includegraphics[width=5cm]{Results/Fe_58Co.pn...
+l.1056     \subfloat
+                    [caption]{{\includegraphics[width=5cm]{Results/Fe_58Co.p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+<Results/Fe_58Co.png, id=199, 462.528pt x 346.896pt>
+File: Results/Fe_58Co.png Graphic file (type png)
+ <use Results/Fe_58Co.png>
+Package pdftex.def Info: Results/Fe_58Co.png used on input line 1056.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
+
 ! Undefined control sequence.
-l.890     \subfloat
-                   [caption]{{\includegraphics[width=5cm]{Results/Fe_59Fe.pn...
+l.1058     \subfloat
+                    [caption]{{\includegraphics[width=5cm]{Results/Fe_59Fe.p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+<Results/Fe_59Fe.png, id=200, 462.528pt x 346.896pt>
+File: Results/Fe_59Fe.png Graphic file (type png)
+ <use Results/Fe_59Fe.png>
+Package pdftex.def Info: Results/Fe_59Fe.png used on input line 1058.
+(pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.894 \end{figure}
-                  
+l.1062 \end{figure}
+                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[25] [26] [27] [28] [29] [30
+[33] [34 <./Results/Ir_188Pt.png> <./Results/Ir_188Ir.png> <./Results/Ir_189Pt.
+png> <./Results/Ir_189Ir.png> <./Results/Ir_190Ir.png> <./Results/Ir_191Pt.png>
+ <./Results/Ir_192Ir.png> <./Results/Ir_193mPt.png> <./Results/Ir_194Ir.png> <.
+/Results/Ir_194m2Ir.png>] [35 <./Results/Ni_52Mn.png> <./Results/Ni_54Mn.png> <
+./Results/Ni_59Fe.png> <./Results/Ni_60Cu.png> <./Results/Ni_64Cu.png> <./Resul
+ts/Ni_60Co.png> <./Results/Ni_65Ni.png> <./Results/Ni_56Ni.png> <./Results/Ni_5
+5Co.png> <./Results/Ni_56Mn.png> <./Results/Ni_57Ni.png>] [36 <./Results/Cu_59F
+e.png> <./Results/Cu_60Co.png> <./Results/Cu_61Co.png> <./Results/Cu_61Cu.png> 
+<./Results/Cu_64Cu.png> <./Results/Cu_65Ni.png>] [37 <./Results/Fe_48V.png> <./
+Results/Fe_51Cr.png> <./Results/Fe_52Mn.png> <./Results/Fe_53Fe.png> <./Results
+/Fe_54Mn.png> <./Results/Fe_55Co.png> <./Results/Fe_57Co.png> <./Results/Fe_58C
+o.png> <./Results/Fe_59Fe.png>] [38
 
 ]
 Chapter 6.
-[31] [32
+
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1077
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1078--1079
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1081
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1082--1083
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1084--1085
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1086 ...qual to 19.593 MeV for $^{191}$Ir(d,4n)^
+                                                  $^{188}$Pt and 33.707 MeV ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.1086 ...ual to 19.593 MeV for $^{191}$Ir(d,4n)^$
+                                                  ^{188}$Pt and 33.707 MeV $...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1086 ...ual to 19.593 MeV for $^{191}$Ir(d,4n)^$
+                                                  ^{188}$Pt and 33.707 MeV $...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1086 ...al to 19.593 MeV for $^{191}$Ir(d,4n)^$^
+                                                  {188}$Pt and 33.707 MeV $^...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[39] [40
 
 ]
 Chapter 7.
-[33] [34
+[41] [42
 
 ]
 Appendix A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 971--972
+Underfull \hbox (badness 10000) in paragraph at lines 1157--1158
 
  []
 
-[35] [36] (./main.aux)
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 1165--1166
+
+ []
+
+[44]
+Appendix B.
+[45
+
+] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1554,13 +1758,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6243 strings out of 493089
- 88978 string characters out of 6134843
- 206893 words of memory out of 5000000
- 9637 multiletter control sequences out of 15000+600000
+ 6543 strings out of 493089
+ 96010 string characters out of 6134843
+ 207047 words of memory out of 5000000
+ 9873 multiletter control sequences out of 15000+600000
  14626 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,17n,43p,1982b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,16n,43p,1982b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -1580,10 +1784,10 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (36 pages, 303130 bytes).
+Output written on main.pdf (45 pages, 16142136 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
+ 341 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 
