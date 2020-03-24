@@ -4,9 +4,11 @@
 \usepackage{subfiles} %allows for other chapters in other files
 
 \usepackage{makecell} %centering tables
+\usepackage{longtable}
+\usepackage{tabu, booktabs}
 
-%\usepackage[demo]{graphicx} %figures
-\usepackage{graphicx} %figures
+\usepackage[demo]{graphicx} %figures
+%\usepackage{graphicx} %figures
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{appendix}
@@ -486,6 +488,7 @@ Table \ref{table:foil_characterization} shows the target stack with average valu
 \subsection{Detector calibration}
 In this experiment, seven different high purity Germanium detectors (HPGe) were used to measure the activity in each foil at multiple timepoints after end of beam. The HPGe-detector is a type of semiconductor, which is a material where the energy required to remove an electron from the valence band (in the outer atomic shell) to the conduction band is small. A Germanium atom has atomic number 32, and 4 valence electrons in the outer p4 shell. The atoms are bound through covalent bonds in a crystal structure. The main mechanism of a semiconductor detector is creation of electron-hole pairs after energy deposition of an ionizing particle in the crystal. If an electron is excited to the conduction band, a hole is left. The hole can move as a neighbooring electron fills this spot, and it can cause a chain reaction, and the hole will move in the crystal. Both the electron in the conduction band and the hole in  the valence band contributes to an electric current. Under influence of an electric field, the electron-hole pairs will be collected, and we can measure the incidence as a count. The major advantage with semiconductor detector is that the average energy to create an electron-hole pair is very low, which results in a superior energy resolution in comparison to other detectors like gas and scintillation detectors. \textcolor{red}{High energy resolution advantageous in gamma-ray spectroscopy which makes it possible to separate to gamma-ray peaks within less than a keV.} At room temperature,  thermal energy can excite the electron from the valence to the conduction band and cause noise in spectra. Therefor, Germanium detectors are operated at 0 Kelvin. \textcolor{red}{Write about recombination and trapping, noise, np semiconductor junction, depletion depth??}. (Techniques for Nuclear and Particle Physics Experiments. William R. Leo. Second Revised Edition. Springer.Verlag Berkling Heidelberg GmbH, New York (1994). p. 215-216 )\\
 
+\textcolor{red}{Write about detector statistics, uncertainty and how the spectra is made. }
 
 \noindent
 \textcolor{red}{
@@ -1073,6 +1076,8 @@ Discussion on the different products, eg. iridium we expected more but it did no
 
 \section{Iridium products}
 
+To summarize, expected products from platinum and iridium were observed. However, there was no evidence of products from W, Ta, Re or Os. It is not said that we did not produce any isotopes of either, but there is not any reliable observation of the products. It seems like other reactions channels are favoured instead of alpha, or multiple proton emissions. For multiple cases, like $^{183}$Ta
+
 \noindent \textcolor{blue}{The cross sections for the iridium products are listed in table \textcolor{red}{...}. Give a brief discussion on the varios products. And also, give a discussion of what we expected and what we did not see. THIS IS NOT A FINAL VERSION } In this experiment, $^{188}$Pt, $^{189}$Pt, $^{191}$Pt, $^{193m}$Pt, $^{188}$Ir, $^{189}$Ir, $^{190}$Ir, $^{192}$Ir, $^{194}$Ir, $^{194m2}$Ir, $^{188}$Re, $^{189}$Re and $^{190}$Re was observed. The products we did not observe was $^{183}$Ta (t$_{1/2}$=5.1 d), $^{186}$Re (t$_{1/2}$=3.7186 d), $^{186}$Ta (t$_{1/2}$=10.5 m), $^{18}$W (t$_{1/2}$=24.0 h). \\
 
 \noindent $^{183}$Ta has a Q-value equal to 0.0 MeV for $^{191}$Ir(d,d$\alpha$)$^{183}$Ta and 4.020 MeV for $^{193}$Ir(d,nt2$\alpha$)$^{183}$Ta. The strongest gamma-line ($E_\gamma=59.318$ keV, $I_\gamma=42.1\%$) was not observed in any spectrum, and the second strongest gamma-line ($E_\gamma=246.059$ keV, $I_\gamma=27.2\%$) is within 1 keV from a gamma-line belonging to $^{189}$Ir ($E_\gamma=245.1$ keV, $I_\gamma=6.0\%$). Hence, we conclude that $^{183}$Ta was not observed. \\
@@ -1185,7 +1190,63 @@ For a function $f=xy $, the variance can be expressed from equation \ref{eq:vari
 
 
 
-\chapter{...}
+\chapter{Gamma-ray energies and Q values}
+
+%\begin{table}
+    \centering
+    \begin{longtable}{|c|c|c|cc|cc|}
+    \caption{Products observed on Nickel foils. Nickel has five stable isotopes: $^{58}$Ni (68.077\%), $^{60}$Ni (26.223 \%), $^{61}$Ni (1.1399\%), $^{62}$Ni (3.6346\%) and $^{64}$Ni (0.9255\%). If the nucleus has provided energy level, the nucleus is an isomer, if nothing then ground state. \textcolor{red}{The table is inspired by Tarkanyi et al 2019 (ir paper))} } 
+    %\begin{tabular}{|c|c|c|cc|cc|}
+        \hline
+        \thead{\textbf{Nucleus}} & \thead{\textbf{Half life}} & \thead{\textbf{Decay mode}} & \thead{\textbf{Reaction route}} & \thead{\textbf{Q value (keV)}} & \thead{$\mathbf{E_\gamma}$ \textbf{(keV)}} & \thead{$\mathbf{I_\gamma}$ \textbf{(\%)}}  \\
+        \hline
+        \makecell[t]{$^{52}$Mn\\ $\quad$(0.0) } &\makecell[t]{5.591 d \\ 21.1 m} & \makecell[t]{$\epsilon: 100\% $} & \makecell[t]{$^{58}$Ni(d,2$\alpha$) \\ $^{60}$Ni(d,2n2$\alpha$ \\ $^{61}$Ni(d,3n2$\alpha$)}   & \makecell[t]{-1235.6 \\ -21622.6 \\ -29442.7} & \makecell[t]{744.233 \\ 935.544 \\ 1246.278 \\ 1434.092} & \makecell[t]{90.0 \\ 94.5\\4.21 \\100.0} \\
+        %\makecell{$^{52m}$Mn \\ $\quad$(377.7495)} & 21.1 m & \makecell{\epsilon: 98.22\% \\ IT: 1.78\% } & & & & \\ 
+        \hline
+
+        \makecell[t]{$^{54}$Mn \\ $\quad$(0.0) } & \makecell[t]{312.20 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{58}$Ni(d,2p$\alpha$) \\ $^{60}$Ni(d,2$\alpha$) \\  $^{61}$Ni(d,n2$\alpha$) \\ $^{62}$Ni(d,2n2$\alpha$)} & \makecell[t]{ -8538.3 \\ -629.6 \\ -8449.7 \\ -19045.4 }& 834.848 & 99.9760 \\
+        \hline 
+        
+        \makecell[t]{$^{59}$Fe\\ $\quad$(0.0)} & \makecell[t]{44.490 d} & \makecell[t]{\beta^-: 100\%} & \makecell[t]{$^{60}$Ni(d,3p) \\ $^{61}$Ni(d,p$^3$He) \\ $^{62}$Ni(d,p$\alpha$) \\ $^{64}$Ni(d,t$\alpha$) } & \makecell[t]{-12539.5 \\ -12641.6 \\ -2659.7 \\ -10673.1}   & 1291.590 & 43.2 \\
+        \hline
+        
+        \makecell[t]{$^{55}$Co\\ $\quad$(0.0)} & \makecell[t]{17.53 h} & \makecell[t]{\epsilon: 100\% } & \makecell[t]{$^{58}$Ni(d,n$\alpha$) \\ $^{60}$Ni(d,3n$\alpha$) \\ $^{61}$Ni(d,4n$\alpha$) } & \makecell[t]{-3559.4 \\ -23946.4 \\ -31766.5} & \makecell[t]{91.9 \\ 385.4 \\ 477.2 \\ 520.0 \\ 803.7 \\ 827.0 \\ 931.1 \\ 984.6 \\1212.8 \\ 1316.6 \\ 1370.0 \\ 1408.5 \\ 1792.1 \\ 2177.6 \\ 2872.4 } & \makecell[t]{1.16\\0.54 \\ 20.2 \\ 0.83 \\ 1.87 \\ 0.21 \\ 75 \\ 0.52 \\ 0.26 \\ 7.1 \\ 2.9 \\ 16.9 \\ 0.082 \\ 0.29 \\ 0.118} \\
+        \hline
+        
+        \makecell[t]{$^{56}$Co \\ $\quad$(0.0)} & \makecell[t]{77.236 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{58}$Ni(d,$\alpha$) \\ $^{61}$Ni(d,2n$\alpha$) \\ $^{61}$Ni(d,3n$\alpha$) \\$^{62}$Ni(d,4n$\alpha$)} & \makecell[t]{6522.5 \\ -13864.5 \\ -21684.6 \\ -32280.4} & \makecell[t]{787.743 \\846.770\\ 977.372 \\ 1175.101 \\ 1963.741 \\ 2015.215 \\ 2034.791} & \makecell[t]{0.3111 \\ 99.9399 \\ 1.421 \\ 2.252 \\ 0.707 \\ 3.016 \\ 7.77}\\ 
+        \hline
+        
+       \makecell[t]{$^{58}$Co \\ $\quad$(0.0) } & \makecell[t]{70.86 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{58}$Ni(d,2n) \\ $^{60}$Ni(d,$\alpha$) \\ $^{61}$Ni(d,n$\alpha$) \\ $^{62}$Ni(d,2n$\alpha$) \\ $^{64}$Ni(d,4n$\alpha$)}  & \makecell[t]{-1823.8 \\ 6084.9 \\-1735.3 \\-12331.0\\ -28826.2}   & \makecell[t]{810.7593\\ 863.951 \\1674.725 } & \makecell[t]{99.450 \\ 0.686 \\ 0.517}\\
+        %\makecell{$^{58m}$Co \\ $\quad$(24.88921) } & \makecell{70.86 d} & \makecell{IT:100\%} & & & & \\ 
+        \hline
+        
+        \makecell[t]{$^{60}$Co \\ $\quad$(0.0)} & \makecell[t]{1925.28 d} & \makecell[t]{$\beta^-$: 100\%} & \makecell[t]{$^{60}$Ni(d,2p)  \\ $^{61}$Ni(d,$^3$He) \\ $^{62}$Ni(d,$\alpha$) \\ $^{64}$Ni(d,2n$\alpha$)}  & \makecell[t]{-4265.0 \\ -4367.09 \\ 5614.8 \\ -10880.4 } &\makecell[t]{1173.228 \\ 1332.492} & \makecell[t]{99.85 \\ 99.9826} \\
+        \hline
+        
+        \makecell[t]{$^{56}$Ni\\$\quad$(0.0)} & \makecell[t]{6.075 d} & \makecell[t]{\epsilon: 100\%} & \makecell[t]{$^{58}$Ni(d,nt)} & \makecell[t]{-16206.6} & \makecell[t]{158.38 \\ 480.44 \\ 749.95 \\ 811.85 \\ 1561.80} & \makecell[t]{98.8 \\ 36.5 \\ 49.5 \\ 86.0 \\ 14.0 } \\ 
+        \hline 
+        
+        
+        
+        \makecell[t]{$^{57}$Ni\\ $\quad$(0.0)} & \makecell[t]{35.60 h} & \makecell[t]{\beta^+: 100\%} & \makecell[t]{$^{58}$Ni(d,t) \\ $^{60}$Ni(d,2nt)} & \makecell[t]{-5959.0 \\ -26346.0} & \makecell[t]{ 379.94 \\ 673.44 \\ 906.98 \\ 1046.68 \\ 1224.00 \\ 1377.63 \\ 1730.44 \\ 1757.55 \\ 1897.42 \\ 1919.52 \\ 2133.04 \\ 2804.20 \\ } & \makecell[t]{0.0670 \\ 0.0491 \\ 0.0613 \\ 0.134 \\ 0.063 \\ 81.7 \\ 0.052 \\ 5.75 \\ 0.028 \\ 12.3 \\ 0.0286 \\ 0.098 } \\
+        \hline
+         
+         \makecell[t]{$^{65}$Ni \\ $\quad$(0.0)} & \makecell[t]{2.51719 h} & \makecell[t]{\beta^-: 100\% } & \makecell[t]{$^{64}$Ni(d,p)} & \makecell[t]{3873.51} &  \makecell[t]{366.27 \\ 1481.84 \\ 1623.42 \\ 1724.92} & \makecell[t]{4.81 \\ 23.59 \\ 0.498 \\ 0.399 } \\
+         \hline
+         
+         \makecell[t]{$^{60}$Cu\\ $\quad$(0.0)} & \makecell[t]{23.7 m } & \makecell[t]{\epsilon: 100\%} & \makecell[t]{$^{60}$Ni(d,2n) \\ $^{61}$Ni(2,3n) \\ $^{62}$Ni(d,4n) } & \makecell[t]{-9134.9 \\ -16955.0 \\ -27550.7 } & \makecell[t]{467.3 \\ 497.9 \\ 643.2 \\ 952.4 \\ 1035.2 \\ 1110.5 \\ 1293.7 \\ 1791.6 \\ 1861.6 \\ 1936.9 \\ 2061.0 \\ 2158.9 \\ 2403.3 \\ 2687.9 \\ 2746.1} & \makecell[t]{3.52 \\ 1.67 \\ 0.97 \\ 2.73 \\3.70 \\ 1.06\\ 1.85 \\ 45.4 \\ 4.8 \\ 2.20 \\ 0.79 \\ 3.34 \\ 0.77 \\ 0.44 \\ 1.06}\\
+         \hline
+
+         \makecell[t]{$^{61}$Cu} & \makecell[t]{3.339 h} & \makecell{\epsilon:100\%} & \makecell[t]{$^{60}$Ni(d,n) \\ $^{61}$Ni(d,2n) \\ $^{62}$Ni(d,3n) \\ $^{64}$Ni(d,5n)} & \makecell[t]{2575.3 \\ -5244.8 \\ -15840.5 \\ -32335.7 } & \makecell[t]{282.956 \\ 373.050 \\ 529.169\\ 588.605 \\ 625.605 \\ 656.008 \\ 816.692 \\ 841.211 \\ 902.294 \\ 1032.162 \\ 1073.465 \\ 1132.351 \\ 1185.234 \\ 1446.492} & \makecell[t]{12.2 \\ 2.1 \\ 0.38 \\ 1.17 \\ 0.040 \\ 10.8 \\ 0.31 \\ 0.21 \\ 0.083 \\ 0.043 \\ 0.033 \\ 0.090 \\ 3.7 \\ 0.045} \\ 
+         \hline
+        
+         
+         \makecell[t]{$^{64}$Cu} & \makecell[t]{12.701 h} & \makecell[t]{\epsilon:100\% \\ \beta^-:38.5\%} & \makecell[t]{$^{64}$Ni(d,2n)} & \makecell[t]{-4681.3} & \makecell[t]{1345.77} & \makecell[t]{0.475}  \\  \hline
+         %\thead{$^{52m}$Mn \\ (377.7495)} &\makecell{5.591 d} & \makecell{$\epsilon: 100\% $} & $^{58}$Ni(d,2$\alpha$)$^{52}$Mn & -1235.6 & 1278.5 &         
+    %\end{tabular}
+    \label{tab:Products_information}
+    \end{longtable}
+%\end{table}
 
 
 %\subfile{Radioactivity}

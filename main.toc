@@ -15,8 +15,8 @@
 \contentsline {section}{\numberline {2.7}General nuclear reaction theory}{9}
 \contentsline {subsection}{\numberline {2.7.1}Nuclear reactions and reaction cross sections}{9}
 \contentsline {subsection}{\numberline {2.7.2}Energetic factors in nuclear reactions}{10}
-\contentsline {subsection}{\numberline {2.7.3}Nuclear cross sections}{13}
-\contentsline {subsection}{\numberline {2.7.4}Expected products from deuterions on iridium, iron, cupper and nc}{14}
+\contentsline {subsection}{\numberline {2.7.3}Nuclear cross sections}{12}
+\contentsline {subsection}{\numberline {2.7.4}Expected products from deuterions on iridium, iron, cupper and nc}{13}
 \contentsline {chapter}{\numberline {3}Experimental setup}{15}
 \contentsline {section}{\numberline {3.1}Lawrence Berkeley National Laboratory's 88" Cyclotron}{15}
 \contentsline {subsection}{\numberline {3.1.1}General functionality of a Cyclotron}{15}
@@ -26,10 +26,10 @@
 \contentsline {subsubsection}{Detector efficiency}{19}
 \contentsline {subsubsection}{Energy and peakshape calibration}{20}
 \contentsline {subsection}{\numberline {3.2.3}Irradiaton of target stack}{20}
-\contentsline {subsection}{\numberline {3.2.4}Tuning of the beam}{21}
+\contentsline {subsection}{\numberline {3.2.4}Tuning of the beam}{20}
 \contentsline {subsection}{\numberline {3.2.5}The irradiation of the target stack}{21}
 \contentsline {subsection}{\numberline {3.2.6}Beam profile}{21}
-\contentsline {subsubsection}{Counting on detectors}{22}
+\contentsline {subsubsection}{Counting on detectors}{21}
 \contentsline {chapter}{\numberline {4}Analysis}{23}
 \contentsline {subsection}{\numberline {4.0.1}Theory on radioactivity and production}{23}
 \contentsline {subsection}{\numberline {4.0.2}Statistics}{23}
@@ -41,17 +41,17 @@
 \contentsline {subsubsection}{End of beam activities}{25}
 \contentsline {subsection}{\numberline {4.1.4}Beam Current}{26}
 \contentsline {subsection}{\numberline {4.1.5}Variance minimization}{27}
-\contentsline {subsubsection}{The weighted averaged beam current, along with uncertainties}{31}
-\contentsline {subsection}{\numberline {4.1.6}Production Cross sections}{31}
-\contentsline {subsubsection}{Reaction modeling}{31}
-\contentsline {chapter}{\numberline {5}Results}{33}
-\contentsline {section}{\numberline {5.1}Iridium cross sections}{33}
-\contentsline {section}{\numberline {5.2}Nickel cross sections}{33}
-\contentsline {section}{\numberline {5.3}Cupper cross sections}{33}
-\contentsline {section}{\numberline {5.4}Iron cross sections}{33}
-\contentsline {chapter}{\numberline {6}Discussion}{39}
-\contentsline {section}{\numberline {6.1}Beamcurrent}{39}
-\contentsline {section}{\numberline {6.2}Iridium products}{39}
-\contentsline {chapter}{\numberline {7}Conclusion and future aspects}{41}
-\contentsline {chapter}{\numberline {A}Statistics}{43}
-\contentsline {chapter}{\numberline {B}...}{45}
+\contentsline {subsubsection}{The weighted averaged beam current, along with uncertainties}{27}
+\contentsline {subsection}{\numberline {4.1.6}Production Cross sections}{29}
+\contentsline {subsubsection}{Reaction modeling}{29}
+\contentsline {chapter}{\numberline {5}Results}{31}
+\contentsline {section}{\numberline {5.1}Iridium cross sections}{31}
+\contentsline {section}{\numberline {5.2}Nickel cross sections}{31}
+\contentsline {section}{\numberline {5.3}Cupper cross sections}{31}
+\contentsline {section}{\numberline {5.4}Iron cross sections}{31}
+\contentsline {chapter}{\numberline {6}Discussion}{37}
+\contentsline {section}{\numberline {6.1}Beamcurrent}{37}
+\contentsline {section}{\numberline {6.2}Iridium products}{37}
+\contentsline {chapter}{\numberline {7}Conclusion and future aspects}{39}
+\contentsline {chapter}{\numberline {A}Statistics}{41}
+\contentsline {chapter}{\numberline {B}Gamma-ray energies and Q values}{43}
