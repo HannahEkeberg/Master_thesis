@@ -7,8 +7,9 @@
 \usepackage{longtable}
 \usepackage{tabu, booktabs}
 
-\usepackage[demo]{graphicx} %figures
-%\usepackage{graphicx} %figures
+%\usepackage[demo]{graphicx} %figures
+\usepackage{graphicx} %figures
+%\usepackage{subfig}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{appendix}
@@ -718,8 +719,11 @@ The number of observed counts is the sum of the true gammas and the background.
 \end{equation}
 
 \begin{equation}
-C_\text{observed} = \Big(\frac{N_\text{true} }{\Delta t_\text{live}} \Big)_\text{current spectrum} + \underbrace{\Big( \frac{N_\text{background}}{\Delta t_\text{live}} \Big)}_\text{=constant} _\text{background spectrum}
-\end{equation}
+ C_\text{observed}= \Big(\frac{N_\text{true} }{\Delta t_\text{live}} \Big)_\text{current spectrum}  + \underbrace{\Big( \frac{N_\text{background}}{\Delta t_\text{live}} \Big)_\text{background spectrum}}_\text{=constant}
+ \end{equation} %_\text{background spectrum}
+
+
+%\end{equation}
 
 
 From above we have that 
@@ -855,7 +859,7 @@ If the parent activity is known, the activity and cross section will be reported
 
 \subsection{Beam Current}
 
-The beam integrator gave a current of tube hitting the stack with 128.5 nA. However, due to the large energy degradation in the energy stack, there will be a certain spread in the beam, following scattering. This is also the first experiment which have used deuterium on a stack of targets, so beforehand, we did not know how much deuteron break-up would affect the current throughout the stack. Reactions from the copper, nickel and iron foils were used as monitor reactions to estimate the weighted average beam current which was used in the cross section calculation in equation \ref{eq:CS_ch3}. Well-known cross sections from IAEA were used\footnote{https://www-nds.iaea.org/medical/monitor_reactions.html. Need to add citation for each datapoint used.}; $^{\text{nat}}$Fe(d,x)$^{56}$Co, $^{\text{nat}}$Ni(d,x)$^{56,58}$Co and $^{\text{nat}}$Cu(d,x)$^{62,63,64}$Zn. \textcolor{red}{This method provides a more sensitive beam current calculation}. \\ 
+The beam integrator gave a current of tube hitting the stack with $128.5$ nA. However, due to the large energy degradation in the energy stack, there will be a certain spread in the beam, following scattering. This is also the first experiment which have used deuterium on a stack of targets, so beforehand, we did not know how much deuteron break-up would affect the current throughout the stack. Reactions from the copper, nickel and iron foils were used as monitor reactions to estimate the weighted average beam current which was used in the cross section calculation in equation \ref{eq:CS_ch3}. Well-known cross sections from IAEA were used\footnote{$https://www-nds.iaea.org/medical/monitor_reactions.html$. Need to add citation for each datapoint used.}; $^{\text{nat}}$Fe(d,x)$^{56}$Co, $^{\text{nat}}$Ni(d,x)$^{56,58}$Co and $^{\text{nat}}$Cu(d,x)$^{62,63,64}$Zn. \textcolor{red}{This method provides a more sensitive beam current calculation}. \\ 
 
 \noindent 
 In order to calculate the cross sections, we need an accurate measure of the beam current. Thus, with well-known cross sections from the monitor reactions, we can estimate the beam current: 
@@ -911,14 +915,40 @@ The idea was to get an estimation of the values of $\chi^2$ over the different c
 
 Assuming constant beam current in one compartment. Hence we can have a linear fit between the beam current measurements. With no current degradation, $y=mx+b$, m=0, b is initial guess of 128.5 nA. 
 
-\begin{figure}%
-    \centering
-    \subfloat[Before variance minimization]{{\includegraphics[width=8cm]{Analysis/B_0_D_0.png} }}%
-    \quad
-    \subfloat[After variance minimization]{{\includegraphics[width=8cm]{Analysis/comp_compared_B_+2,25_D_+5.png} }}%
+\begin{figure*}[t!]
+  \centering
+   \begin{subfigure}[t]{2\textwidth}
+        \centering
+        \includegraphics[height=1.2in]{Analysis/B_0_D_0.png}
+        \caption{Before variance minimization}
+    \end{subfigure}%
+    \begin{subfigure}[t]{2\textwidth}
+        \centering
+        \includegraphics[height=1.2in]{Analysis/B_0_D_0.png}
+        \caption{After variance minimization}
+    \end{subfigure}
     \caption{Before, the current in the back of the stack is tending to be lower. The $\chi^2$ in the different compartments also tend to be higher. After variance minimization, the values for $\chi^2$ are smaller and the estimated current in each compartment agrees more with each other. We do not expect much of current degradation.}%
-    \label{fig:varmin_beamcurrent}%
-\end{figure}
+    \label{fig:varmin_beamcurrent}%}
+\end{figure*}
+
+
+%\begin{figure}%
+%    \centering
+%    \begin{subfigure}{.5\textwidth}
+%    \includegraphics[width=8cm]{Analysis/B_0_D_0.png}
+    %\subfloat[Before variance minimization]{{\includegraphics[width=8cm]{Analysis/B_0_D_0.png} }}%
+%    \label{Before variance minimization}
+%    \end{subfigure}
+%    \begin{subfigure}{.5\textwidth}
+%    \includegraphics[width=8cm]{Analysis/B_0_D_0.png}
+    %\subfloat[Before variance minimization]{{\includegraphics[width=8cm]{Analysis/B_0_D_0.png} }}%
+%    \label{After variance minimization}
+%    \end{subfigure}    
+    %\subfloat[After variance minimization]{{\includegraphics[width=8cm]{Analysis/comp_compared_B_+2,25_D_+5.png} }}%
+    
+%    \caption{Before, the current in the back of the stack is tending to be lower. The $\chi^2$ in the different compartments also tend to be higher. After variance minimization, the values for $\chi^2$ are smaller and the estimated current in each compartment agrees more with each other. We do not expect much of current degradation.}%
+ %   \label{fig:varmin_beamcurrent}%
+%\end{figure}
 
 
 \subsubsection{The weighted averaged beam current, along with uncertainties}
@@ -929,19 +959,19 @@ Need to write statistical part first, about covariance matrix.
 Testing: the weighted average beam current for each target foil was used, to estimate the cross section. 
 
 \begin{figure}%
-    \centering
-    \subfloat[]{{\includegraphics[width=5cm]{Analysis/Fe_56Co.png} }}%
+    \centerin    \subfloat{{\includegraphics[width=8cm]{Results/Fe_56Co.png} }}%
+    %\subcaption{....}
     \quad
-    \subfloat[]{{\includegraphics[width=5cm]{Analysis/Ni_61Cu.png} }}%
-    \subfloat[]{{\includegraphics[width=5cm]{Analysis/Ni_56Co.png} }}%
+    \subfloat{{\includegraphics[width=8cm]{Results/Ni_61Cu.png} }}%
+    \subfloat{{\includegraphics[width=8cm]{Results/Ni_56Co.png} }}%
     \quad
-    \subfloat[]{{\includegraphics[width=5cm]{Analysis/Ni_58Co.png} }}%
+    \subfloat{{\includegraphics[width=8cm]{Results/Ni_58Co.png} }}%
     \quad
-    \subfloat[caption]{{\includegraphics[width=5cm]{Analysis/Cu_62Zn.png} }}%
+    \subfloat{{\includegraphics[width=8cm]{Results/Cu_62Zn.png} }}%
     \quad
-    \subfloat[]{{\includegraphics[width=5cm]{Analysis/Cu_63Zn.png} }}%
+    \subfloat{{\includegraphics[width=8cm]{Results/Cu_63Zn.png} }}%
     \quad
-    \subfloat[]{{\includegraphics[width=5cm]{Analysis/Cu_65Zn.png} }}%
+    \subfloat{{\includegraphics[width=8cm]{Results/Cu_65Zn.png} }}%
     \quad
     \caption{Figure shows the estimation of monitor cross section using the calculated beam current. It is compared along with the monitor data.  }%
     \label{fig:monitor_BC}%
@@ -956,19 +986,37 @@ Once the weighted average beam current was estimated, the cross sections were es
 \subsubsection{Reaction modeling}
 In addition to measurements and experimental data, different reaction modeling packages such as ALICE, TALYS, TENDL, COH and EMPIRE will be plotted. 
 
-
+}
 
 \chapter{Results}\label{Chapter:Results}
 \noindent
 
 \section{Iridium cross sections}
 
-
+\begin{figure}%
+    \centering
+    \subfloat{{\includegraphics[width=7.5cm]{Results/Ir_188Pt.png}}%
+    \subcaption{...}
+    \label{subfig:188Pt_plot}
+    \quad
+    \subfloat{{\includegraphics[width=7.5cm]{Results/Ir_189Pt.png} }}%
+    \subcaption{...}
+    \label{subfig:189Pt_plot}
+    \subfloat{{\includegraphics[width=7.5cm]{Results/Ir_191Pt.png} }}%
+    \subcaption{...}
+    \label{subfig:191Pt_plot}
+    \quad
+    \subfloat{{\includegraphics[width=7.5cm]{Results/Ir_193mPt.png} }}%
+    \subcaption{...}
+    \label{subfig:193mPt_plot}
+    \caption{Cross section plots for Pt-product nuclei.  }%
+    \label{fig:Pt_CrossSections}%
+\end{figure}
 
 
 \begin{figure}%
     \centering
-    \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_188Pt.png}}%
+    \subfloat{{\includegraphics[width=5cm]{Results/Ir_188Pt.png}}%
     \quad
     \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_188Ir.png} }}%
     \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_189Pt.png} }}%
@@ -1190,15 +1238,77 @@ For a function $f=xy $, the variance can be expressed from equation \ref{eq:vari
 
 
 
-\chapter{Gamma-ray energies and Q values}
+\chapter{Tabulated information for each product nuclide}
+
+\chapter{Tables} \label{ch:tables}
+
+Tables \ref{tab:Products_information_FE}, \ref{tab:Products_information_NI}, \ref{tab:Products_information_CU} and \ref{tab:Products_information_IR} containts information regarding products nuclei from iron, nickel, copper and iridium (respectively). The tables contains values such as energy level, half-life, decay mode, production route with the lowest Q value within the energy range of the deuterons. To estimate other production routes, table \ref{tab:decaychannel_particles} provides information on how much to increase the Q value to the desired decaychannel.  Along with the gamma-lines and intensities that were used in the analysis, the tables contain information which is used to describe the excitation function for each product nuclei. 
+
+\begin{table}[]
+    \centering
+    \caption{The table shows the most common decay channels for the decay routes available in this energy region. $\Delta$ is the binding energy of the alpha particle, which can be calculated using equation \ref{eq:Binding_energy1}, where the mass of the proton is $m_p = 938.28$ MeV/c$^2$ and $m_n=939.57$ MeV/c$^2$. $\Delta$ is thus the difference in in energy-mass between the particle composed of protons and or neutrons, and a equal number of protons and neutrons independent. All parities are positive due to angular momentum $\ell=0$.  }
+    \begin{tabular}{|c|c|c|c|c|}
+         \hline 
+         Particle & \Delta (MeV) &J^\pi & Charge \\
+         \hline
+         p & - & $\frac{1}{2}^+$ & +1 \\
+         n & - & $\frac{1}{2}^+$ & 0 \\
+         d & 2.2 & $1^+$ & +1 \\
+         t & 8.5 & $\frac{1}{2}^+$ & +1 \\
+         ^{3}He & 7.7 & $\frac{1}{2}^+$ & +2 \\
+        \alpha & 28.3 & 0^+ & +2 \\
+        \hline
+    \end{tabular}
+    \label{tab:decaychannel_particles}
+\end{table}
+
+%\usepackage{longtable}
+%\usepackage{tabu, booktabs}
+
+\newpage
+
+\centering
+    \begin{longtable}{ccc|cc|cc}
+    \caption{Products observed on Iron foils. Iron four five stable isotopes: $^{54}$Fe (5.845\%), $^{56}$Fe (91.754 \%), $^{57}$Fe (2.119\%) and  $^{58}$Fe (0.282\%). If the nucleus has provided energy level, the nucleus is an isomer, if nothing then ground state. \textcolor{red}{The table is inspired by Tarkanyi et al 2019 (ir paper))} } 
+    %\begin{tabular}{|c|c|c|cc|cc|}
+        \hline
+        \thead{\textbf{Nuclide}\\ \textbf{level (keV)}} & \thead{\textbf{Half life}} & \thead{\textbf{Decay mode}} & \thead{\textbf{Reaction route}} & \thead{\textbf{Q value (keV)}} & \thead{$\mathbf{E_\gamma}$ \textbf{(keV)}} & \thead{$\mathbf{I_\gamma}$ \textbf{(\%)}}  \\
+        \hline
+        \makecell[t]{$^{48}$V \\$\quad$(0.0)} & \makecell[t]{15.9735 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{54}$Fe(d,2$\alpha$) \\ $^{56}$Fe(d,2n2$\alpha$) \\ $^{57}$Fe(d,3n2$\alpha$)} & \makecell[t]{-3490.9 \\ -23986.1} & \makecell[t]{944.130 \\ 983.525 \\ 1312.106} & \makecell[t]{7.870 \\ 99.98\\98.2} \hline
+        
+        \makecell[t]{$^{51}$Cr\\$\quad$(0.0) } & \makecell[t]{27.704 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{54}$Fe(d,d$^3$He) \\ $^{56}$Fe(d,t$\alpha$) \\ $^{57}$Fe(d,nt$\alpha$) \\ $^{58}$Fe(d,2nt$\alpha$) } & \makecell[t]{-19734.3 \\ -13394 \\ -21040.8 \\ -31085.4} & \makecell[t]{320.0824} & \makecell[t]{9.910} \\ \hline
+        
+        \makecell[t]{$^{52}$Mn\\$\quad$(0.0)} & \makecell[t]{5.591 d d} & \makecell[t]{\epsilon: 100\%} & \makecell[t]{$^{54}$Fe(d,$\alpha$) \\ $^{56}$Fe(d,2n$\alpha$) \\ $^{57}$Fe(d,3n$\alpha$)} & \makecell[t]{5163.6 \\ -15331.6 \\ -22977.7 } & \makecell[t]{346.02 \\ 744.233 \\ 848.18 \\ 935.544 \\ 1246.278 \\ 1333.649 \\ 1434.092} & \makecell[t]{0.980 \\ 90.0 \\ 3.32 \\ 94.5 \\ 4.21 \\ 5.07 \\ 100.0 } \\ \hline        
+        \makecell[t]{$^{54}$Mn\\$\quad$(0.0)} & \makecell[t]{312.20 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{54}$Fe(d,2p) \\ $^{56}$Fe(d,$\alpha$) \\ $^{57}$Fe(d,n$\alpha$) \\ $^{58}$Fe(d,2n$\alpha$)} & \makecell[t]{-2139.1 \\ 5661.4 \\ -1984.7 \\ -12029.3} & \makecell[t]{834.8480} & \makecell[t]{99.9760} \\ \hline
+        
+        \makecell[t]{$^{53}$Fe\\$\quad$(0.0)} & \makecell[t]{8.51 m ????} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{54}$Fe(d,t) \\$^{56}$Fe(d,2nt) } & \makecell[t]{-7121.1 \\  -27616.3} & \makecell[t]{377.9} & \makecell[t]{42\%} \\ \hline
+        
+        \makecell[t]{$^{59}$Fe\\$\quad$(0.0)} & \makecell[t]{44.490 d} & \makecell[t]{\beta^-: 100\%} & \makecell[t]{$^{58}$Fe(d,p)} & \makecell[t]{4356.44} & \makecell[t]{1099.245 \\ 1291.590} & \makecell[t]{56.5\\43.2} \\ \hline
+        
+        \makecell[t]{$^{55}$Co\\$\quad$(0.0)} & \makecell[t]{17.53 h} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{54}$Fe(d,n) \\ $^{56}$Fe(d,3n) \\ $^{57}$Fe(d,4n)} & \makecell[t]{2839.8 \\ -17655.4 \\ -25301.5} & \makecell[t]{91.9 \\ 477.2 \\ 803.7 \\827.0\\ 931.1 \\ 1316.6 \\ 1370.0 \\ 1408.5  \\ 2177.6 \\ 2872.4 \\ 2938.9 } & \makecell[t]{1.16 \\ 20.2 \\ 1.87 \\ 0.21 \\ 75\\ 7.1 \\ 2.9 \\ 16.9 \\ 0.29 \\ 0.118 \\ 0.057 } \\ \hline
+        
+        \makecell[t]{$^{56}$Co\\$\quad$(0.0)} & \makecell[t]{77.236 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{56}$Fe(d,2n)\\$^{57}$Fe(d,3n) \\$^{58}$Fe(d,4n) } & \makecell[t]{-7573 \\ -15219.7 \\ -25264.3 } & \makecell[t]{263.434 \\ 486.55 \\ 733.514 \\ 787.743 \\ 846.770 \\ 852.732 \\ 896.510 \\ 977.372 \\ 996.948 \\ 1037.843 \\ 1140.368 \\ 1159.944 \\ 1175.101 \\ 1198.888 \\ 1238.288 \\ 1335.40 \\ 1360.212 \\ 1771.357 \\ 1963.741 \\ 2015.215 \\ 2034.791 \\ 2212.944 \\ 2276.131 \\ 2598.500} & \makecell[t]{0.0220 \\ 0.0540 \\ 0.191 \\ 0.311 \\ 99.9399 \\ 0.049 \\ 0.073 \\ 1.421 \\ 0.111 \\ 14.05 \\ 0.132 \\ 0.094 \\2.252 \\ 0.049 \\ 66.46 \\ 0.1224 \\ 4.283 \\ 15.41 \\ 0.707 \\ 3.016\\ 7.77 \\ 0.388 \\ 0.118 \\ 16.97 } \\ \hline
+        
+        \makecell[t]{$^{57}$Co\\$\quad$(0.0)} & \makecell[t]{271.74 d} & \makecell[t]{\epsilon: 100\%} & \makecell[t]{$^{56}$Fe(d,n) \\ $^{57}$Fe(d,2n \\ $^{58}$Fe(d,3n)} & \makecell[t]{3802.9 \\ -3843.2 \\ -13887.8 } & \makecell[t]{122.06065 \\ 136.47356} & \makecell[t]{85.60 \\ 10.68 } \\ \hline
+        
+        \makecell[t]{$^{58}$Co\\$\quad$(0.0)} & \makecell[t]{70.86} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{57}$Fe(d,n) \\ $^{58}$Fe(d,2n)} & \makecell[t]{4729.7 \\ -5314.9} & \makecell[t]{810.7593} & \makecell[t]{99.450} \\ \hline 
+        
+        %\makecell[t]{\\$\quad$(0.0)} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} \\ \hline
+        
+        
+        
+    %\end{tabular}
+    \label{tab:Products_information_FE}
+    \end{longtable}
+%\end{table}
 
 %\begin{table}
     \centering
-    \begin{longtable}{|c|c|c|cc|cc|}
+    \begin{longtable}{ccc|cc|cc}
     \caption{Products observed on Nickel foils. Nickel has five stable isotopes: $^{58}$Ni (68.077\%), $^{60}$Ni (26.223 \%), $^{61}$Ni (1.1399\%), $^{62}$Ni (3.6346\%) and $^{64}$Ni (0.9255\%). If the nucleus has provided energy level, the nucleus is an isomer, if nothing then ground state. \textcolor{red}{The table is inspired by Tarkanyi et al 2019 (ir paper))} } 
     %\begin{tabular}{|c|c|c|cc|cc|}
         \hline
-        \thead{\textbf{Nucleus}} & \thead{\textbf{Half life}} & \thead{\textbf{Decay mode}} & \thead{\textbf{Reaction route}} & \thead{\textbf{Q value (keV)}} & \thead{$\mathbf{E_\gamma}$ \textbf{(keV)}} & \thead{$\mathbf{I_\gamma}$ \textbf{(\%)}}  \\
+        \thead{\textbf{Nuclide}\\ \textbf{level (keV)}} & \thead{\textbf{Half life}} & \thead{\textbf{Decay mode}} & \thead{\textbf{Reaction route}} & \thead{\textbf{Q value (keV)}} & \thead{$\mathbf{E_\gamma}$ \textbf{(keV)}} & \thead{$\mathbf{I_\gamma}$ \textbf{(\%)}}  \\
         \hline
         \makecell[t]{$^{52}$Mn\\ $\quad$(0.0) } &\makecell[t]{5.591 d \\ 21.1 m} & \makecell[t]{$\epsilon: 100\% $} & \makecell[t]{$^{58}$Ni(d,2$\alpha$) \\ $^{60}$Ni(d,2n2$\alpha$ \\ $^{61}$Ni(d,3n2$\alpha$)}   & \makecell[t]{-1235.6 \\ -21622.6 \\ -29442.7} & \makecell[t]{744.233 \\ 935.544 \\ 1246.278 \\ 1434.092} & \makecell[t]{90.0 \\ 94.5\\4.21 \\100.0} \\
         %\makecell{$^{52m}$Mn \\ $\quad$(377.7495)} & 21.1 m & \makecell{\epsilon: 98.22\% \\ IT: 1.78\% } & & & & \\ 
@@ -1234,19 +1344,99 @@ For a function $f=xy $, the variance can be expressed from equation \ref{eq:vari
          \makecell[t]{$^{65}$Ni \\ $\quad$(0.0)} & \makecell[t]{2.51719 h} & \makecell[t]{\beta^-: 100\% } & \makecell[t]{$^{64}$Ni(d,p)} & \makecell[t]{3873.51} &  \makecell[t]{366.27 \\ 1481.84 \\ 1623.42 \\ 1724.92} & \makecell[t]{4.81 \\ 23.59 \\ 0.498 \\ 0.399 } \\
          \hline
          
-         \makecell[t]{$^{60}$Cu\\ $\quad$(0.0)} & \makecell[t]{23.7 m } & \makecell[t]{\epsilon: 100\%} & \makecell[t]{$^{60}$Ni(d,2n) \\ $^{61}$Ni(2,3n) \\ $^{62}$Ni(d,4n) } & \makecell[t]{-9134.9 \\ -16955.0 \\ -27550.7 } & \makecell[t]{467.3 \\ 497.9 \\ 643.2 \\ 952.4 \\ 1035.2 \\ 1110.5 \\ 1293.7 \\ 1791.6 \\ 1861.6 \\ 1936.9 \\ 2061.0 \\ 2158.9 \\ 2403.3 \\ 2687.9 \\ 2746.1} & \makecell[t]{3.52 \\ 1.67 \\ 0.97 \\ 2.73 \\3.70 \\ 1.06\\ 1.85 \\ 45.4 \\ 4.8 \\ 2.20 \\ 0.79 \\ 3.34 \\ 0.77 \\ 0.44 \\ 1.06}\\
+         \makecell[t]{$^{60}$Cu\\ $\quad$(0.0)} & \makecell[t]{23.7 m } & \makecell[t]{\epsilon: 100\%} & \makecell[t]{$^{60}$Ni(d,2n) \\ $^{61}$Ni(2,3n) \\ $^{62}$Ni(d,4n) } & \makecell[t]{-9134.9 \\ -16955.0 \\ -27550.7 } & \makecell[t]{467.3 \\ 497.9 \\ 643.2 \\ 952.4 \\ 1035.2 \\ 1110.5 \\ 1293.7 \\ 1791.6 \\ 1861.6 \\ 1936.9 \\ 2061.0 \\ 2158.9 \\ 2403.3 \\ 2687.9 \\ 2746.1} & \makecell[t]{3.52 \\ 1.67 \\ 0.97 \\ 2.73 \\3.70 \\ 1.06\\ 1.85 \\ 45.4 \\ 4.8 \\ 2.20 \\ 0.79 \\ 3.34 \\ 0.77 \\ 0.44 \\ 1.06}    \\
          \hline
-
+         
          \makecell[t]{$^{61}$Cu} & \makecell[t]{3.339 h} & \makecell{\epsilon:100\%} & \makecell[t]{$^{60}$Ni(d,n) \\ $^{61}$Ni(d,2n) \\ $^{62}$Ni(d,3n) \\ $^{64}$Ni(d,5n)} & \makecell[t]{2575.3 \\ -5244.8 \\ -15840.5 \\ -32335.7 } & \makecell[t]{282.956 \\ 373.050 \\ 529.169\\ 588.605 \\ 625.605 \\ 656.008 \\ 816.692 \\ 841.211 \\ 902.294 \\ 1032.162 \\ 1073.465 \\ 1132.351 \\ 1185.234 \\ 1446.492} & \makecell[t]{12.2 \\ 2.1 \\ 0.38 \\ 1.17 \\ 0.040 \\ 10.8 \\ 0.31 \\ 0.21 \\ 0.083 \\ 0.043 \\ 0.033 \\ 0.090 \\ 3.7 \\ 0.045} \\ 
          \hline
         
-         
-         \makecell[t]{$^{64}$Cu} & \makecell[t]{12.701 h} & \makecell[t]{\epsilon:100\% \\ \beta^-:38.5\%} & \makecell[t]{$^{64}$Ni(d,2n)} & \makecell[t]{-4681.3} & \makecell[t]{1345.77} & \makecell[t]{0.475}  \\  \hline
+        \makecell[t]{$^{64}$Cu} & \makecell[t]{12.701 h} & \makecell[t]{\epsilon:100\% \\ \beta^-:38.5\%} & \makecell[t]{$^{64}$Ni(d,2n)} & \makecell[t]{-4681.3} & \makecell[t]{1345.77} & \makecell[t]{0.475}   \\
+        \hline
          %\thead{$^{52m}$Mn \\ (377.7495)} &\makecell{5.591 d} & \makecell{$\epsilon: 100\% $} & $^{58}$Ni(d,2$\alpha$)$^{52}$Mn & -1235.6 & 1278.5 &         
     %\end{tabular}
-    \label{tab:Products_information}
+    \label{tab:Products_information_NI}
     \end{longtable}
 %\end{table}
+
+
+
+
+
+\newpage
+\centering
+    \begin{longtable}{ccc|cc|cc}
+    \caption{Products observed on Cupper foils. Cupper has two stable isotopes: $^{63}$Cu (69.15\%) and $^{65}$Cu (30.85 \%).If the nucleus has provided energy level, the nucleus is an isomer, if nothing then ground state. \textcolor{red}{The table is inspired by Tarkanyi et al 2019 (ir paper))} } 
+    %\begin{tabular}{|c|c|c|cc|cc|}
+        \hline
+        \thead{\textbf{Nuclide}\\ \textbf{level (keV)}} & \thead{\textbf{Half life}} & \thead{\textbf{Decay mode}} & \thead{\textbf{Reaction route}} & \thead{\textbf{Q value (keV)}} & \thead{$\mathbf{E_\gamma}$ \textbf{(keV)}} & \thead{$\mathbf{I_\gamma}$ \textbf{(\%)}}  \\
+        \hline
+        
+        \makecell[t]{$^{59}$Fe\\$\quad$(0.0)} & \makecell[t]{44.490 d} & \makecell[t]{\beta^-: 100\%} & \makecell[t]{$^{63}$Cu(d,2p$\alpha$) \\ $^{65}$Cu(d,2$\alpha$)} & \makecell[t]{-8782.1 \\ 1687.0} & \makecell[t]{1099.245 \\ 1291.590} & \makecell[t]{56.5 \\43.2 } \\ \hline
+        
+        \makecell[t]{$^{60}$Co\\$\quad$(0.0)} & \makecell[t]{1925.28 d} & \makecell[t]{\beta^-:100\%} & \makecell[t]{$^{63}$Cu(d,p$\alpha$) \\ $^{65}$Cu(d,t$\alpha$)} & \makecell[t]{-507.6 \\ -9852.4} & \makecell[t]{1173.228 \\ 1332.492} & \makecell[t]{99.85 \\ 99.9826 } \\ \hline
+        
+        \makecell[t]{$^{61}$Co\\$\quad$(0.0)} & \makecell[t]{1.649 h} & \makecell[t]{\beta^-:100\%} & \makecell[t]{$^{63}$Cu(d,p$^3$He) \\ $^{65}$Cu(d,d$\alpha$)} & \makecell[t]{-11766.2 \\ -9015.1 } & \makecell[t]{67.412} & \makecell[t]{84.7} \\ \hline
+        
+        \makecell[t]{$^{65}$Ni\\$\quad$(0.0)} & \makecell[t]{2.51719 h} & \makecell[t]{\beta^-:100\%} & \makecell[t]{$^{65}$Cu(d,2p)} & \makecell[t]{-3580.2} & \makecell[t]{1481.84} & \makecell[t]{23.59} \\ \hline
+        
+        \makecell[t]{$^{61}$Cu\\$\quad$(0.0)} & \makecell[t]{3.339 h} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{63}$Cu(d,nt) \\ $^{65}$Cu(d,3nt)} & \makecell[t]{-13481.1 \\ -31307.6} & \makecell[t]{282.956 \\ 656.008 \\ 1185.234} & \makecell[t]{12.2\\10.8 \\3.7} \\ \hline
+        
+        \makecell[t]{$^{64}$Cu\\$\quad$(0.0)} & \makecell[t]{12.701 h} & \makecell[t]{\epsilon:61.5\% \\ \beta^-: 38.5} & \makecell[t]{$^{63}$Cu(d,p) \\$^{65}$Cu(d,t)} & \makecell[t]{5691.54 \\ -3653.2} & \makecell[t]{1345.77} & \makecell[t]{0.475} \\ \hline
+        
+        \makecell[t]{$^{62}$Zn\\$\quad$(0.0)} & \makecell[t]{9.193 h} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{63}$Zn(d,3n) \\ $^{65}$Cu(d,5n)} & \makecell[t]{-15490.0 \\ -33316.6 } & \makecell[t]{40.85 \\ 243.36 \\ 246.95 \\ 260.43 \\ 304.88 \\ 394.03 \\ 548.35 \\ 596.56 \\ 637.41} &  \makecell[t]{25.5 \\ 2.52 \\ 1.90 \\ 1.35 \\ 0.29 \\ 2.24 \\ 15.3 \\ 26.0 \\ 0.25} \\ \hline
+        
+        \makecell[t]{$^{63}$Zn\\$\quad$(0.0)} & \makecell[t]{38.47 m} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{63}$Cu(d,2n) \\ $^{65}$Cu(d,4n)} & \makecell[t]{-6373.3 \\ -24199.8 } & \makecell[t]{449.93 \\ 669.62 \\ 962.06} & \makecell[t]{0.236 \\ 8.2 \\6.5 } \\ \hline
+        
+        \makecell[t]{$^{65}$Zn\\$\quad$(0.0)} & \makecell[t]{243.93 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{65}$Cu(d,2n)} & \makecell[t]{-4358.6} & \makecell[t]{1115.539} & \makecell[t]{50.04} \\ \hline
+        
+        %\makecell[t]{\\$\quad$(0.0)} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} \\ \hline
+        
+        
+        
+    %\end{tabular}
+    \label{tab:Products_information_CU}
+    \end{longtable}
+
+\newpage
+\centering
+    \begin{longtable}{ccc|cc|cc}
+    \caption{Products observed in Iridium foils. Iridium has two stable isotopes: $^{191}$Ir (37.3\%) and $^{93}$Ir (62.7 \%).If the nucleus has provided energy level, the nucleus is an isomer, if nothing then ground state. \textcolor{red}{The table is inspired by Tarkanyi et al 2019 (ir paper))} } 
+    %\begin{tabular}{|c|c|c|cc|cc|}
+        \hline
+        \thead{\textbf{Nuclide}\\ \textbf{level (keV)}} & \thead{\textbf{Half life}} & \thead{\textbf{Decay mode}} & \thead{\textbf{Reaction route}} & \thead{\textbf{Q value (keV)}} & \thead{$\mathbf{E_\gamma}$ \textbf{(keV)}} & \thead{$\mathbf{I_\gamma}$ \textbf{(\%)}}  \\
+        \hline
+        
+        \makecell[t]{$^{188}$Ir\\$\quad$(0.0)} & \makecell[t]{41.5 h} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{191}$Ir(d,2nt)\\$^{193}$Ir(d,4nt) } & \makecell[t]{-16321.0\\-30291.0} & \makecell[t]{1209.80 \\ 1715.67 \\ 2059.65} & \makecell[t]{6.9 \\6.2 \\ 7.0} \\ \hline
+        
+        \makecell[t]{$^{189}$Ir\\$\quad$(0.0)} & \makecell[t]{13.2 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{191}$Ir(d,nt) \\ $^{193}$Ir(d,3nt)} & \makecell[t]{-8145.0 \\-22115.0} & \makecell[t]{95.23 \\ 216.7 \\ 233.5 \\ 245.1} & \makecell[t]{0.38 \\ 0.52 \\ 0.30\\6.0} \\ \hline
+        
+        \makecell[t]{$^{190}$Ir\\$\quad$(0.0)} & \makecell[t]{11.78 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{191}$Ir(d,t)\\ $^{193}$Ir(d,2nt)} & \makecell[t]{-1769.3\\-15739.4} & \makecell[t]{294.75\\380.03 \\1036.05} & \makecell[t]{6.6\\ 2.03 \\2.42} \\ \hline
+        
+        \makecell[t]{$^{190m2}$Ir\\$\quad$(376.4)} & \makecell[t]{3.087 h} & \makecell[t]{IT:8.6\% \\ \epsilon:91.4\%} & \makecell[t]{..} & \makecell[t]{..} & \makecell[t]{361.2 \\ 502.5 \\ 616.5} & \makecell[t]{86.72\\89.38\\90.14} \\ \hline
+        
+        \makecell[t]{$^{192}$Ir\\$\quad$(0.0)} & \makecell[t]{73.829 d} & \makecell[t]{\epsilon:4.76\% \\ \beta^-:95.24\%} & \makecell[t]{$^{191}$Ir(d,p) \\ $^{193}$Ir(d,t)} & \makecell[t]{3973.55 \\-1514.76} & \makecell[t]{201.3112 \\ 295.95650 \\ 374.4852 \\ 416.4688 \\ 468.06885 \\ 489.06 \\ 612.46215 \\ 1061.49 } & \makecell[t]{0.471 \\ 28.71 \\ 0.727 \\ 0.670 \\ 47.84\\0.438 \\ 5.34 \\ 0.0531} \\ \hline
+        
+        \makecell[t]{$^{194}$Ir\\$\quad$(0.0)} & \makecell[t]{19.28 h} & \makecell[t]{\beta^-:100\%} & \makecell[t]{$^{194}$Ir(d,p)} & \makecell[t]{3842.22} & \makecell[t]{293.541 \\ 300.741 \\ 589.179 \\ 938.69 \\ 1150.75 \\ 1468.91} & \makecell[t]{2.5\\ 0.35 \\ 0.140 \\ 0.60 \\ 0.60 \\ 0.19} \\ \hline
+        
+        \makecell[t]{$^{194m2}$Ir\\$\quad$(190+X)} & \makecell[t]{171 d} & \makecell[t]{\beta^-:100\%} & \makecell[t]{..} & \makecell[t]{..} & \makecell[t]{338.8 \\482.6 \\ 562.4\\ 687.8} & \makecell[t]{55\\97 \\ 35 \\3.6} \\ \hline
+        
+        \makecell[t]{$^{188}$Pt\\$\quad$(0.0)} & \makecell[t]{10.16 d} & \makecell[t]{\epsilon:99.999974\% \\ \alpha:2.6E-5\%} & \makecell[t]{$^{191}$Pt(d,2n) } & \makecell[t]{-26109.0 } & \makecell[t]{195.05 \\ 381.43} & \makecell[t]{18.4 \\ 7.4 } \\ \hline
+        
+        \makecell[t]{$^{189}$Pt\\$\quad$(0.0)} & \makecell[t]{10.87 h} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{191}$Ir(d,4n) } & \makecell[t]{-19389.0} & \makecell[t]{94.34 \\ 113.82 \\ 243.50 \\ 317.65 \\ 721.38} & \makecell[t]{6.5 \\ 2.5 \\ 5.9 \\ 2.8 \\ 7.9 } \\ \hline
+        
+        \makecell[t]{$^{191}$Pt\\$\quad$(0.0)} & \makecell[t]{2.802 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{191}$Ir(d,2n) \\ $^{193}$Ir(d,4n) } & \makecell[t]{-4017.0 \\ -17988.0} & \makecell[t]{178.96 \\351.17 \\ 409.44 \\ 456.47 \\ 538.87 \\ 624.06} & \makecell[t]{12.5 \\42.6 \\ 100 \\ 42 \\ 181 \\ 18.5} \\ \hline
+        
+        \makecell[t]{$^{193m}$Pt\\$\quad$(149.783)} & \makecell[t]{4.33 d} & \makecell[t]{IT:100\%} & \makecell[t]{$^{193}$Ir(d,2n)} & \makecell[t]{-3063.5}  & \makecell[t]{66.831 \\ 135.5 } & \makecell[t]{7.21 \\ 0.1145475} \\ \hline
+        
+        %\makecell[t]{\\$\quad$(0.0)} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} \\ \hline
+        
+        
+        
+    %\end{tabular}
+    \label{tab:Products_information_IR}
+    \end{longtable}
+%\end{table}
+
 
 
 %\subfile{Radioactivity}
