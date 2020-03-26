@@ -7,8 +7,8 @@
 \usepackage{longtable}
 \usepackage{tabu, booktabs}
 
-%\usepackage[demo]{graphicx} %figures
-\usepackage{graphicx} %figures
+\usepackage[demo]{graphicx} %figures
+%\usepackage{graphicx} %figures
 %\usepackage{subfig}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -82,6 +82,52 @@
 
 Targeted radionuclide therapy is an emerging alternative to external beam therapy
 %, as it allows for a accustumed dose deposition in the healthy tissue 
+
+\chapter{Theory}
+
+\section{Nuclear medicine}
+
+Today, multiple options are available for treatment of cancerous cells, where the most commonly used methods are chemotherapy, surgery, external beam therapy, brachytherapy and immunotherapy \textcolor{red}{find a citation}. Targeted radionuclide therapy is an emerging alternative to the traditional treatment options, and offers a patient-specific treatment dependent on choice of radionuclide and tracer, along with treatment of metastasis.  Targeted radionuclide therapy utilizes the biochemical pathways in the body, thus with a suited tracer, the uptake in tumor (and metastasis if the cancer has spread) will be high, and low in healthy tissue, thus sparing healthy tissue from radiation dose \textcolor{red}{find a citation}.   \\ 
+
+
+
+\subsection*{\center{Radiation used in therapy}}
+
+The use of ionizing radiation to treat malignant tissue has evidently shows to be effective \textcolor{red}{find a citation}. External beam therapy, brachytherapy and targeted radionuclide therapy utilizes radiation, where external beam therapy uses accelerated particles, brachytherapy uses a contained radioactive source, which is placed in proximity to tumor, and targeted radionuclide therapy uses the biochemical distribution in the body to deliver a radioactive payload, inside or attached to cancerous cells. \\
+
+Ionizing radiation are particles with sufficient energy to cause ionizations along the particle track, thus separating an atom and one or more electrons. The consequence is one or more free electron(s) with the possibility to ionze other atoms, and a positive ion which can cause undesired reactions \textcolor{red}{find a citation}. DNA is a large molecule with two strands, bound in a double helix structure. Each strand is composed of sugar and phosphate groups, and nitrogeneos bases which bind the two strands together. These bases are called \textit{Adenine \& Guanin} and \textit{Cytosine \& Thyamine} (the  bases are always bound to the same base). These bases are bound through weak hydrogen bonds and are easely exposed to strand breaks. The cell has an impressive repair mechanism, and unless both DNA strands are damaged, called a \textit{double stranded break}, most damages are repaired. Radiation-damages can be caused directly by the incoming particle, or indirectly via free radicals which are subject to other ionizations. Since the body contains a lot of water, ionization of water molecules giving H$^\bullet$, $e_\text{aq}^-$ or OH$^-$ are important damaging factors. Damages induced in the DNA can be lethal to the cell, and either cause apoptosis (cell death) or mutation which can cause cancer. In therapy, the goal is to cause cell death for cancerous cells, and choosing a particle which has a high linear energy transfer (LET) will induce double stranded breaks in the DNA if it passes nearby. Figure \ref{fig:DNA_damage} shows how beta-particles, alpha particles and auger electrons deposit energy on the scale of DNA.  \\
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=1]{Theory/DNA_LET.jpg} 
+	\caption{Figure shows DNA .. \textcolor{red}{Cannot find citation anymore?} }
+	\label{fig:DNA_damage}
+\end{figure}
+
+
+
+External beam therapy utilizes the stoppingpower \textcolor{blue}{(is stoppingpower for photons as well?)} of particles like photons (X-rays), electrons and hadrons \textcolor{red}{find a citation}, so that most of the energy is deposited at the site of the tumor. Particles interact differently dependent on their mass and charge. Figure \ref{fig:particles_Edeposition} shows an overview of how different particles deposit energy in a medium. Photons has a long build-up where the secondary electrons increas the dose up to a certain depth. The depth of the maximum dose is dependent on the energy, and thus by varying the energy, the tumor can be exposed to most of the radiation. 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=1]{Theory/Bragg-peak-and-Spread-Out-Bragg-Peak-SOBP-for-a-proton-beam-in-comparison-with-photon.jpg}  
+	\caption{Particles energy deposition in a medium. Lacks axis. \textcolor{red}{find citation in special curriculum} }
+	\label{fig:particles_Edeposition}
+\end{figure}
+
+
+
+
+
+
+
+
+
+here write about external beam therapy and targeted radionuclide therapy. 
+Write about the LET curve. LET stoppingpower. 
+
+
 
 
 \chapter{The use of medical isotopes in imaging and therapy}\label{Chapter:Medical_Isotopes}
@@ -959,7 +1005,7 @@ Need to write statistical part first, about covariance matrix.
 Testing: the weighted average beam current for each target foil was used, to estimate the cross section. 
 
 \begin{figure}%
-    \centerin    \subfloat{{\includegraphics[width=8cm]{Results/Fe_56Co.png} }}%
+    \centering    \subfloat{{\includegraphics[width=8cm]{Results/Fe_56Co.png} }}%
     %\subcaption{....}
     \quad
     \subfloat{{\includegraphics[width=8cm]{Results/Ni_61Cu.png} }}%
