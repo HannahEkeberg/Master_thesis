@@ -7,8 +7,8 @@
 \usepackage{longtable}
 \usepackage{tabu, booktabs}
 
-\usepackage[demo]{graphicx} %figures
-%\usepackage{graphicx} %figures
+%\usepackage[demo]{graphicx} %figures
+\usepackage{graphicx} %figures
 %\usepackage{subfig}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -93,20 +93,24 @@ Today, multiple options are available for treatment of cancerous cells, where th
 
 \subsection*{\center{Radiation used in therapy}}
 
-The use of ionizing radiation to treat malignant tissue has evidently shows to be effective \textcolor{red}{find a citation}. External beam therapy, brachytherapy and targeted radionuclide therapy utilizes radiation, where external beam therapy uses accelerated particles, brachytherapy uses a contained radioactive source, which is placed in proximity to tumor, and targeted radionuclide therapy uses the biochemical distribution in the body to deliver a radioactive payload, inside or attached to cancerous cells. \\
+The use of ionizing radiation to treat malignant tissue has evidently shown to be effective \textcolor{red}{find a citation}. External beam therapy, brachytherapy and targeted radionuclide therapy utilizes radiation, where external beam therapy uses accelerated particles, brachytherapy uses a contained radioactive source, which is placed in proximity to tumor, and targeted radionuclide therapy uses the biochemical distribution in the body to deliver a radioactive payload, inside or attached to cancerous cells. \\
 
-Ionizing radiation are particles with sufficient energy to cause ionizations along the particle track, thus separating an atom and one or more electrons. The consequence is one or more free electron(s) with the possibility to ionze other atoms, and a positive ion which can cause undesired reactions \textcolor{red}{find a citation}. DNA is a large molecule with two strands, bound in a double helix structure. Each strand is composed of sugar and phosphate groups, and nitrogeneos bases which bind the two strands together. These bases are called \textit{Adenine \& Guanin} and \textit{Cytosine \& Thyamine} (the  bases are always bound to the same base). These bases are bound through weak hydrogen bonds and are easely exposed to strand breaks. The cell has an impressive repair mechanism, and unless both DNA strands are damaged, called a \textit{double stranded break}, most damages are repaired. Radiation-damages can be caused directly by the incoming particle, or indirectly via free radicals which are subject to other ionizations. Since the body contains a lot of water, ionization of water molecules giving H$^\bullet$, $e_\text{aq}^-$ or OH$^-$ are important damaging factors. Damages induced in the DNA can be lethal to the cell, and either cause apoptosis (cell death) or mutation which can cause cancer. In therapy, the goal is to cause cell death for cancerous cells, and choosing a particle which has a high linear energy transfer (LET) will induce double stranded breaks in the DNA if it passes nearby. Figure \ref{fig:DNA_damage} shows how beta-particles, alpha particles and auger electrons deposit energy on the scale of DNA.  \\
+Ionizing radiation are particles with sufficient energy to cause ionizations along the particle track, thus separating an atom and one or more electrons. The consequence is one or more free electron(s) with the possibility to ionze other atoms, and a positive ion which can cause undesired reactions \textcolor{red}{find a citation}. DNA is a large molecule with two strands, bound in a double helix structure. Each strand is composed of sugar and phosphate groups, and nitrogeneos bases which bind the two strands together. These bases are called \textit{Adenine \& Guanin} and \textit{Cytosine \& Thyamine} (always bound pairwise). The bases are bound through weak hydrogen bonds and are easely exposed to strand breaks. The cell has an impressive repair mechanism, and unless both DNA strands are damaged, called a \textit{double stranded break}, most damages are repaired. Radiation-damages can be caused directly by the incoming particle, or indirectly via free radicals which are subject to other ionizations. Since the body contains a lot of water, ionization of water molecules giving H$^\bullet$, $e_\text{aq}^-$ or OH$^-$ are important damaging factors. Damages induced in the DNA can be lethal to the cell, and either cause apoptosis (cell death) or mutation which can cause cancer. In therapy, the goal is to cause cell death for cancerous cells, and choosing a type of particle which has a high linear energy transfer (LET) will induce double stranded breaks in the DNA if it passes nearby. Figure \ref{fig:DNA_damage} shows how beta-particles, alpha particles and auger electrons deposit energy on the scale of DNA.  \\
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=1]{Theory/DNA_LET.jpg} 
+	\includegraphics[width=0.7\textwidth]{Theory/DNA_LET.jpg} 
 	\caption{Figure shows DNA .. \textcolor{red}{Cannot find citation anymore?} }
 	\label{fig:DNA_damage}
 \end{figure}
 
 
+Particles interact differently dependent on their mass and charge. Figure \ref{fig:particles_Edeposition} shows an overview of how different particles deposit energy in a medium. The particles interact with the atomic electrons. In general, charged particles interact frequently with the atomic electrons due to the Coulomb force. For lighter particles like electrons and positrons, the energy transfer per collision can be up to half of its energy. For heavier particles such as protons and alpha-particles, the energy transfer is less, and can penetrate deeper into the tissue. The main cause of energy loss is due to Bethe-Block, which is an equation that decribes the stopping power if any particle heavier than the electron \textcolor{red}{Find a citation.}. The dose deposited in tissue is low until it has almost stopped, and deposits the majority of the energy in the Bragg peak. This makes hadrons suitable for treating small tumors with critical tissue surrounding it. Photons are neutral particles and rarely interacts. Photons has a long build-up where the secondary electrons increase the dose up to a certain depth. The depth of the maximum dose is dependent on the energy, and by using the energy which maximizes the dose over the tumor, the healthy tissue surrounding the tumor can be spared. However, the intensity of the photons decrease exponentially, so the dose behind the tumor will be exposed. 
+%By rotating the beam around the patient, the tissue surrounding will be spared to a higher degree. Charged particles interacts more frequently due to the Coulomb force. Due to the equal mass of atomic electrons and electron beam, the energy is not deposited deep into the tissue. In general, the maximum energy transfer is given by the following equation
 
-External beam therapy utilizes the stoppingpower \textcolor{blue}{(is stoppingpower for photons as well?)} of particles like photons (X-rays), electrons and hadrons \textcolor{red}{find a citation}, so that most of the energy is deposited at the site of the tumor. Particles interact differently dependent on their mass and charge. Figure \ref{fig:particles_Edeposition} shows an overview of how different particles deposit energy in a medium. Photons has a long build-up where the secondary electrons increas the dose up to a certain depth. The depth of the maximum dose is dependent on the energy, and thus by varying the energy, the tumor can be exposed to most of the radiation. 
+
+
+%where m is the atomic electron mass, M is the incoming particle mass, and E is the energy of the incoming particle. The heavier the particle and more energetic the particle, the less energy is transferred in one single collision. Electrons thus deposit up to half of its energy in one single collision, and thus have a short range. Hadrons, like protons, alpha particles loose little energy at high energies. The main cause of energy deposition is due to the Bethe-Block which is an equation that describes the stopping power of any particle heavier than the proton. The dose deposited in tissue is low until it has almost stopped, and deposits the majority of the energy in the Bragg peak. This makes hadrons suitable for treating small tumors with critical tissue surrounding it. External beam therapy has its limitations in 
 
 
 \begin{figure}
@@ -117,30 +121,8 @@ External beam therapy utilizes the stoppingpower \textcolor{blue}{(is stoppingpo
 \end{figure}
 
 
+External beam therapy utilizes the stoppingpower \textcolor{blue}{(is stoppingpower for photons as well?)} of particles like photons (X-rays), electrons and hadrons \textcolor{red}{find a citation}, and depending on the tissue, depth, shape of the tumor and energy of the particles, a dose plan can be made which maximizes the effect over the tumor and spare as much of the healthy tissue as possible. However, external beam therapy has its limitations. Firstly, it can only give dose to one single tumor, which is a limitation if metastasis are present. The exposure to healthy tissue is also present, allthough methods using hadrons can give a more specific dose distribution over the tumor, due to the Bragg peak. 
 
-
-
-
-
-
-
-here write about external beam therapy and targeted radionuclide therapy. 
-Write about the LET curve. LET stoppingpower. 
-
-
-
-
-\chapter{The use of medical isotopes in imaging and therapy}\label{Chapter:Medical_Isotopes}
-\noindent
-
-
-\section{History + Where we are today}
-
-\subsection{External and internal radiotherapy }
-General about external, internal, how they differ. Write most about internal, and the use of tracers, the different possibilities. 
-
-
-Today, several treatments are used to cure cancer, among the most commonly used methods; chemotherapy, surgery, external beam therapy and immunotherapy.  External beam therapy utilizes the stopping power of particles like photons (X-rays), electrons, protons and heavier ions, to deposit most of the energy at the site of the tumor. Depending on the tissue, depth and shape of tumor and the energy of the particles, a dose plan can be made which will maximize the effect over the tumor and spare as much as the healthy tissue as possible. However, it has its limitations. Firstly it can only give dose to one single tumor, so the the specific use of external beam is not enough if the cancer has spread. The exposure of healthy tissue will be present, although methods using heavy ions can give a more specific dose, due to the Bragg-peak from Bethe-Block. \newline
 
 \noindent
 The idea behind targeted radionuclide therapy is to use radiopharmaceuticals which consist of a radionuclides which emit short-range ionizing particles, and a cell-targeting vector which can target specific cancer cells. Figure \ref{fig:interna_external} shows an illustration of how internal and external therapy differs. Using this type of treatment, it is possible to give a more localized dose, and even treat metastasis. But it does require knowledge of the biology, and how the biological update and half life is. Characteristics which are typical for all radionuclides used in therapy is that it should have sufficient long half life, so that it can be targeted in cancer cells but washed out of the body before too much dose is deposited. For imaging  where you would like to have short half life, so that the patient will not remain radioactive after the imaging. The size of the radiopharmaceutical should not be too large, especially if brain is targeted, because of the blood brain barrier. 
@@ -155,62 +137,37 @@ A limitation of targeted radionuclide therapy is that we can not see where the d
 \end{figure}
 
 
-\section{Medical isotopes}
+\subsection{General characteristics of medical isotopes used in therapy}
 
-\subsection{General characteristics}
-Biological and physical properties. 
-LET
-Decay types 
+There are several physical and biological requirements for radiopharmaceuticals before they can be used clinically in therapy\textcolor{red}{from special curriculum. This is Yeong2014}. The physical properties do mostly concern radionuclides before they can be used clinically, like the physical half life, decay-type, radiation energy, decay products, the yield of production method and the purity of the production, which can be optimized by choosing an appropriate energy window. Important biological properties are the in-tissue range of the radiation,    concerning the cell-targeting molecule, 
 
 
 
+and there are physical and biological properties. The physical properties mostly concern the radionuclide, like the physical half life, decay-type, radiation energy, decay products, production method. Important biological properties are concerning the cell-targeting molecule, such as uptake and retention in tumor, and the range of the radiation in the tissue. 
+
+From a medical isotope production point of view, the physical 
+
+\subsubsection*{\center{LET and stoppingpower}}
+
+\subsubsection*{\center{Radioactive decay modes}}
 
 
-\section{Platinum isotopes used in medicine} 
+\subsubsection*{\center{Half life}}
 
-\subsection{Pt-193m}
-potential, decay, how it is thought to be used. 
+LET, stoppingpower, alpha vs. beta vs auger, decay, half life, decay products. Talk a little bit about tracers, and how that mainly affects the biological uptake. 
 
-\section{History + Where we are today}
-
-\subsection{External and internal radiotherapy }
-General about external, internal, how they differ. Write most about internal, and the use of tracers, the different possibilities. 
+\subsubsection*{Production cross sections}
+optimized prod, energy window. 
 
 
-Today, several treatments are used to cure cancer, among the most commonly used methods; chemotherapy, surgery, external beam therapy and immunotherapy.  External beam therapy utilizes the stopping power of particles like photons (X-rays), electrons, protons and heavier ions, to deposit most of the energy at the site of the tumor. Depending on the tissue, depth and shape of tumor and the energy of the particles, a dose plan can be made which will maximize the effect over the tumor and spare as much as the healthy tissue as possible. However, it has its limitations. Firstly it can only give dose to one single tumor, so the the specific use of external beam is not enough if the cancer has spread. The exposure of healthy tissue will be present, although methods using heavy ions can give a more specific dose, due to the Bragg-peak from Bethe-Block. \newline
+\subsection{$\mathbf{^{193m}}$Pt as a potential therapautic agent}
 
-\noindent
-The idea behind targeted radionuclide therapy is to use radiopharmaceuticals which consist of a radionuclides which emit short-range ionizing particles, and a cell-targeting vector which can target specific cancer cells. Figure \ref{fig:interna_external} shows an illustration of how internal and external therapy differs. Using this type of treatment, it is possible to give a more localized dose, and even treat metastasis. But it does require knowledge of the biology, and how the biological update and half life is. Characteristics which are typical for all radionuclides used in therapy is that it should have sufficient long half life, so that it can be targeted in cancer cells but washed out of the body before too much dose is deposited. For imaging  where you would like to have short half life, so that the patient will not remain radioactive after the imaging. The size of the radiopharmaceutical should not be too large, especially if brain is targeted, because of the blood brain barrier. 
+What is an isomer, why does it have a long half life. Parity, spin, decay. IT decay, auger electrons, dose, energy range. 
 
-A limitation of targeted radionuclide therapy is that we can not see where the dose is actually deposited. This is why looking for theranostic pairs; one radionuclide which emit gammas or positrons for imaging (PET or SPECT) and one radionuclide used for treatment, emitting short range particles. The pair should have similar physical and chemical properties so they are taken up in equal quanta in the body, the imaging agent should have a short half life and treatment agent should have a longer half life. \textcolor{red}{look up what the actual half lives should be.} 
+Platinum chemotherapy stuff. How we can use this isotope. Why do we believe that it will be effective? 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{Theory/internal_vs_external.png}
-    \caption{Figure shows how external beam therapy works in comparison to targeted radionuclide therapy. Picture is accessed from \cite{figure_internal_external}}
-    \label{fig:interna_external}
-\end{figure}
-
-
-\section{Medical isotopes}
-
-\subsection{General characteristics}
-Biological and physical properties. 
-LET
-Decay types 
-
-
-
-
-
-\section{Platinum isotopes used in medicine} 
-
-\subsection{Pt-193m}
-potential, decay, how it is thought to be used. 
 
 \section{General nuclear reaction theory}
-
-\subsection{Nuclear reactions and reaction cross sections}
 
 A nuclear reaction in the energy ranges of isotope production via the Compound nucleus conserves quantities such as mass-energy, linear momentum, the total number of nucleons, angular momentum and parity. A nuclear reaction is denoted as
 \begin{equation}
@@ -348,6 +305,106 @@ The Q-value for nuclear reactions
 Compound nucleus, what happens. 
 Q value, binding energy, particle emission, probabilities (why does n, p/alpha emission require higher energy, but is more favoured than T emission if both possible.)
 
+\section{The theory of an experimental cross section measurement}
+Purity, foilsize, degradation. Want to find the optimum energy window. 
+
+
+\subsection{Gamma-ray spectroscopy on HPGe-detectors}
+
+
+\subsection{Activity}
+
+
+\subsection{Beam current} 
+
+\subsection{Cross section}
+
+
+
+
+\chapter{The use of medical isotopes in imaging and therapy}\label{Chapter:Medical_Isotopes}
+\noindent
+
+
+\section{History + Where we are today}
+
+\subsection{External and internal radiotherapy }
+General about external, internal, how they differ. Write most about internal, and the use of tracers, the different possibilities. 
+
+
+Today, several treatments are used to cure cancer, among the most commonly used methods; chemotherapy, surgery, external beam therapy and immunotherapy.  External beam therapy utilizes the stopping power of particles like photons (X-rays), electrons, protons and heavier ions, to deposit most of the energy at the site of the tumor. Depending on the tissue, depth and shape of tumor and the energy of the particles, a dose plan can be made which will maximize the effect over the tumor and spare as much as the healthy tissue as possible. However, it has its limitations. Firstly it can only give dose to one single tumor, so the the specific use of external beam is not enough if the cancer has spread. The exposure of healthy tissue will be present, although methods using heavy ions can give a more specific dose, due to the Bragg-peak from Bethe-Block. \newline
+
+\noindent
+The idea behind targeted radionuclide therapy is to use radiopharmaceuticals which consist of a radionuclides which emit short-range ionizing particles, and a cell-targeting vector which can target specific cancer cells. Figure \ref{fig:interna_external} shows an illustration of how internal and external therapy differs. Using this type of treatment, it is possible to give a more localized dose, and even treat metastasis. But it does require knowledge of the biology, and how the biological update and half life is. Characteristics which are typical for all radionuclides used in therapy is that it should have sufficient long half life, so that it can be targeted in cancer cells but washed out of the body before too much dose is deposited. For imaging  where you would like to have short half life, so that the patient will not remain radioactive after the imaging. The size of the radiopharmaceutical should not be too large, especially if brain is targeted, because of the blood brain barrier. 
+
+A limitation of targeted radionuclide therapy is that we can not see where the dose is actually deposited. This is why looking for theranostic pairs; one radionuclide which emit gammas or positrons for imaging (PET or SPECT) and one radionuclide used for treatment, emitting short range particles. The pair should have similar physical and chemical properties so they are taken up in equal quanta in the body, the imaging agent should have a short half life and treatment agent should have a longer half life. \textcolor{red}{look up what the actual half lives should be.} 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{Theory/internal_vs_external.png}
+    \caption{Figure shows how external beam therapy works in comparison to targeted radionuclide therapy. Picture is accessed from \cite{figure_internal_external}}
+    \label{fig:interna_external}
+\end{figure}
+
+
+\section{Medical isotopes}
+
+\subsection{General characteristics}
+Biological and physical properties. 
+LET
+Decay types 
+
+
+
+
+
+\section{Platinum isotopes used in medicine} 
+
+\subsection{Pt-193m}
+potential, decay, how it is thought to be used. 
+
+\section{History + Where we are today}
+
+\subsection{External and internal radiotherapy }
+General about external, internal, how they differ. Write most about internal, and the use of tracers, the different possibilities. 
+
+
+Today, several treatments are used to cure cancer, among the most commonly used methods; chemotherapy, surgery, external beam therapy and immunotherapy.  External beam therapy utilizes the stopping power of particles like photons (X-rays), electrons, protons and heavier ions, to deposit most of the energy at the site of the tumor. Depending on the tissue, depth and shape of tumor and the energy of the particles, a dose plan can be made which will maximize the effect over the tumor and spare as much as the healthy tissue as possible. However, it has its limitations. Firstly it can only give dose to one single tumor, so the the specific use of external beam is not enough if the cancer has spread. The exposure of healthy tissue will be present, although methods using heavy ions can give a more specific dose, due to the Bragg-peak from Bethe-Block. \newline
+
+\noindent
+The idea behind targeted radionuclide therapy is to use radiopharmaceuticals which consist of a radionuclides which emit short-range ionizing particles, and a cell-targeting vector which can target specific cancer cells. Figure \ref{fig:interna_external} shows an illustration of how internal and external therapy differs. Using this type of treatment, it is possible to give a more localized dose, and even treat metastasis. But it does require knowledge of the biology, and how the biological update and half life is. Characteristics which are typical for all radionuclides used in therapy is that it should have sufficient long half life, so that it can be targeted in cancer cells but washed out of the body before too much dose is deposited. For imaging  where you would like to have short half life, so that the patient will not remain radioactive after the imaging. The size of the radiopharmaceutical should not be too large, especially if brain is targeted, because of the blood brain barrier. 
+
+A limitation of targeted radionuclide therapy is that we can not see where the dose is actually deposited. This is why looking for theranostic pairs; one radionuclide which emit gammas or positrons for imaging (PET or SPECT) and one radionuclide used for treatment, emitting short range particles. The pair should have similar physical and chemical properties so they are taken up in equal quanta in the body, the imaging agent should have a short half life and treatment agent should have a longer half life. \textcolor{red}{look up what the actual half lives should be.} 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{Theory/internal_vs_external.png}
+    \caption{Figure shows how external beam therapy works in comparison to targeted radionuclide therapy. Picture is accessed from \cite{figure_internal_external}}
+    \label{fig:interna_external}
+\end{figure}
+
+
+\section{Medical isotopes}
+
+\subsection{General characteristics}
+Biological and physical properties. 
+LET
+Decay types 
+
+
+
+
+
+\section{Platinum isotopes used in medicine} 
+
+\subsection{Pt-193m}
+potential, decay, how it is thought to be used. 
+
+\section{General nuclear reaction theory}
+
+\subsection{Nuclear reactions and reaction cross sections}
+
+
 
 \subsection{Expected products from deuterions on iridium, iron, cupper and nc}
 
@@ -383,6 +440,15 @@ Cave 0 is used mainly for neutron beam, chemistry, and isotope production, and w
     \caption{An overview of the facility.  Picture is from \cite{KireeffCovo2018}}
     \label{fig:LBNL_88}
 \end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Experiment/Illustration_beamOnTarget.png} 
+	\caption{Illustration of the beam on target }
+	\label{fig:beam_on_target}
+\end{figure}
+
+
 
 \subsection{General functionality of a Cyclotron}
 Cyclotrons consist of two D-shaped electrodes shaped as a circle with a gap between, and an electromagnet consisting of two coils in which the electrode is placed between. This creates a magnetic field perpendicular to the electrodes. 
@@ -1005,8 +1071,8 @@ Need to write statistical part first, about covariance matrix.
 Testing: the weighted average beam current for each target foil was used, to estimate the cross section. 
 
 \begin{figure}%
-    \centering    \subfloat{{\includegraphics[width=8cm]{Results/Fe_56Co.png} }}%
-    %\subcaption{....}
+    \centering \subfloat{{\includegraphics[width=8cm]{Results/Fe_56Co.png} }}%
+    \subcaption{....}
     \quad
     \subfloat{{\includegraphics[width=8cm]{Results/Ni_61Cu.png} }}%
     \subfloat{{\includegraphics[width=8cm]{Results/Ni_56Co.png} }}%
@@ -1062,20 +1128,16 @@ In addition to measurements and experimental data, different reaction modeling p
 
 \begin{figure}%
     \centering
-    \subfloat{{\includegraphics[width=5cm]{Results/Ir_188Pt.png}}%
-    \quad
-    \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_188Ir.png} }}%
-    \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_189Pt.png} }}%
+
+    \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_188Ir.png} }}
     \quad
     \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_189Ir.png} }}%
     \quad
     \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_190Ir.png} }}%
     \quad
-    \subfloat[caption]{{\includegraphics[width=5cm]{Results/Ir_191Pt.png} }}%
+    \subfloat[caption]{{\includegraphics[width=5cm]{Results/Ir_190m2Ir.png} }}%
     \quad
     \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_192Ir.png} }}%
-    \quad
-    \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_193mPt.png} }}%
     \quad
     \subfloat[]{{\includegraphics[width=5cm]{Results/Ir_194Ir.png} }}%
     \quad
@@ -1464,7 +1526,7 @@ Tables \ref{tab:Products_information_FE}, \ref{tab:Products_information_NI}, \re
         
         \makecell[t]{$^{194}$Ir\\$\quad$(0.0)} & \makecell[t]{19.28 h} & \makecell[t]{\beta^-:100\%} & \makecell[t]{$^{194}$Ir(d,p)} & \makecell[t]{3842.22} & \makecell[t]{293.541 \\ 300.741 \\ 589.179 \\ 938.69 \\ 1150.75 \\ 1468.91} & \makecell[t]{2.5\\ 0.35 \\ 0.140 \\ 0.60 \\ 0.60 \\ 0.19} \\ \hline
         
-        \makecell[t]{$^{194m2}$Ir\\$\quad$(190+X)} & \makecell[t]{171 d} & \makecell[t]{\beta^-:100\%} & \makecell[t]{..} & \makecell[t]{..} & \makecell[t]{338.8 \\482.6 \\ 562.4\\ 687.8} & \makecell[t]{55\\97 \\ 35 \\3.6} \\ \hline
+        \makecell[t]{$^{194m2}$Ir\\$\quad$(190+X)} & \makecell[t]{171 d} & \makecell[t]{\beta^-:100\%} & \makecell[t]{..} & \makecell[t]{..} & \makecell[t]{390.8} & \makecell[t]{35} \\ \hline
         
         \makecell[t]{$^{188}$Pt\\$\quad$(0.0)} & \makecell[t]{10.16 d} & \makecell[t]{\epsilon:99.999974\% \\ \alpha:2.6E-5\%} & \makecell[t]{$^{191}$Pt(d,2n) } & \makecell[t]{-26109.0 } & \makecell[t]{195.05 \\ 381.43} & \makecell[t]{18.4 \\ 7.4 } \\ \hline
         
