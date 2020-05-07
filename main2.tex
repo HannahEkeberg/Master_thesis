@@ -6,12 +6,18 @@
 \usepackage{makecell} %centering tables
 \usepackage{longtable}
 \usepackage{tabu, booktabs}
+\usepackage{multicol}
 
-%\usepackage[demo]{graphicx} %figures
-\usepackage{graphicx} %figures
+
+\usepackage{pdflscape}      % REMEMBER TO PUT INTO NEW LATEX DOC!!
+\usepackage{rotating}
+
+\usepackage[demo]{graphicx} %figures
+%\usepackage{graphicx} %figures
 \usepackage{caption}
 \usepackage{subcaption}
 
+\usepackage{cite}  % for multiple references
 \usepackage{amsmath} %write in math mode
 \usepackage{xcolor} %add colored text
 
@@ -50,60 +56,132 @@ Targeted radionuclide therapy via $\text{nat}$Ir(d,2n)$^{193\text{m}}$Pt}
 \maketitle
 \tableofcontents
 
-\chapter{Theory}
+%\begin{abstract}
+%    In this thesis work, a production route of the medically potential therapautic agent via $^\text{193}$Ir(d,2n)$^{193m}$Pt has been investigated. In a stacked-target cross section experiment with a 33 MeV deuteron incident beam, cross sections of the products produced from iridium and the monitor foils nickel, iron and copper are reported. 
+%\end{abstract}
 
-\section{Treatment of cancer through radiative sources}
-
-Today, multiple options are available for treatment of cancerous tissue, where some of the most commonly used methods are chemotherapy, surgery, immunotherapy, external beam-therapy, brachytherapy and targeted radionuclide therapy \textcolor{red}{citation}. The latter three treatment types utilizes ionizing particles to induce damage in the DNA of cancerous cells, so that they undergo apoptosis. In external beam therapy, photons, electrons or hadrons are accelerated and sent towards a tumor externally, and in bracytherapy a contained radioactive source (with for instance a $\beta^-$-emitter), is placed in proximity to tumor.  Targeted radionuclide therapy is an emerging alternative to the traditional treatment options, and offers a patient-specific treatment dependent on choice of radiopharmaceutical which targets a type of tumor or cell \textcolor{red}{correct? need citation}. A radiopharmaceutical consists of a radionuclide and a cell-targeting molecule called a tracer. Targeted radionuclide therapy utilizes the biochemical pathways in the body, thus with an appropriate tracer, targeted tissue with an high uptake of the radiopharmaceutical will receive a high dose, and healthy tissue can be spared (Yeong2014).\\ 
-
-\noindent 
-
-\subsection{Targeted radionuclide therapy}
-
-\textcolor{red}{Write more detailed about what it is..}
-
-In treatment of diseases related to the use of radionuclides, there are multiple properties that plays an important role, such as physical features like half-life, decay-mode, decay-products, radiation energy and linear energy transfer, and biochemical features like in tissue range, tissue targeting of tracer, uptake and retention in desired tissue, biological half-life and toxicity of radionuclide and decay-product (Yeong, therapautic radionuclides in nuclear medicine). In addition, the availability, cost and quality is important, and that the production routes gives high isotopic purity of the product, along with high yield (Qaim, Nuclear Data for production of medical application of radionuclides: present status and future needs). 
-
-
-Here write about the varios small things. Isotopic purity, half-life, 
+%\subfile{Theory.tex}
+%\subfile{Theory_new.tex}
+%\subfile{Experimental.tex}
+%\subfile{Analysis.tex}
+%\subfile{Results.tex}
+%\subfile{Discussion.tex}
+%\appendix
+%\subfile{Statistics.tex}
+%\subfile{Radioactivity.tex}
+%\subfile{Tables.tex}
 
 
-\subsection*{\centering{\small{Particle interaction in matter}}}
-\noindent 
 
-\textcolor{red}{equation $$Q_\text{max}=\frac{4mM E}{m+M}$$ can be from billiard physics, or inelastic collision physics. Also, bethe-block is proportional to 
+\chapter{Targeted radionuclide therapy}
+\textcolor{red}{All written in this chapter needs to be rewritten as a lot of the text is just copied from various citations.}
+
+Today, multiple options for treatment of cancerous tissue are available, such as chemotherapy, surgery, immunotherapy, external beam therapy, bracytherapy and targeted radionuclide therapy. The latter three are treatment types utilizing ionizing particles to induce damage to the DNA. In external beam therapy X-rays, high-energetic gamma-rays, or accelerated particles like protons and heavier ions are focused externally towards the tumor, and for brachytherapy, and in bracytherapy an unsealed radioactive source (usually a wire or pellet containing for instance a $\bets^-$-emitter), is placed in proximity to tumor (handbook of nuclear chemistry, p. 2180). Targeted radionuclide therapy is an emerging alternative, which can deliver a cytotoxic level of dose to the cite of disease (handbook of nuclear chemistry p. 2180). It offers a patient-specific treatment dependent on choice of radiopharmaceutical which targets a type of tumor or cell. A radiopharmaceutical consists of a radionuclide and a cell-targeting molecule called a tracer. Meanwhile brachytherapy and targeted radionuclide therapy are limited by the cancer location and the existence of metastasis, along with required knownledge of the tumor to maximise the dose over the tumor and minimizing the dose to healthy tissue (Handbook of nuclear chemistry, p. 2180), targeted radionuclide therapy utilizes radiopharmaceuticals which are typically injected intravenously and utilized the biochemical pathways in the body. thus with an appropriate tracer, targeted tissue with an high uptake of the radiopharmaceutical will receive a high dose, and healthy tissue can be spared (Yeong2014).\\ 
+
+A therapautic agent need to have the two components optimized for the radiation from the radionuclide to have a high probability of being deposited in the tumor, and ideally cytotoxic dose to all cancerous cells within a tumor and sparnig all healthy cells. The decay mode and radiation range are in coherence with the size and location, as well as the geometry of the tumor, and ranges from multicellular, cellular and subcellular ranges are typically accomplished with beta, alpha and auger electrons, respectively. However, geometrical factors of both the distribution and the tumor it self can have a degree of variations in the dose distribution due to differences in cross fire dose and the fraction of the radiation bound to the cell that is deposited in the tumor. Particularly apparent for micrometastatic disease which presents as small cluster of tumor cells, magingying the impact of these factor. In addition, it is important to achiece a homogeneous dose deposition within the tumor, so that regrowth from an untreated subpopulation will be avoided. For the radionuclide, along with range and decay mode, the half-life production method, chemistry and biological behavior are important characteristics (handbook p. 2180-2182). For the tracer, a rapid blood clearance and transport (6, p. 145) and high uptake and retention in the tumor (9. p. 2)    (special curriculum p. 4) are important characteristics. It can target the desired cells by for instance a specific receptor, enzyme, membrane, transporters or antigens (6, p. 145). Radiometals are also used, which consists of a bifunctional chelator, which is a molecule containing molecules which can donate a lone pair of electrons, like nitrogen, oxygen or sulfur. If the radiometal has an oxidation state of $3^+$, it will be tighlty bound by the chelator, and can transported to the tumor (special curriculum p. 4-5). \\
+
+Figure \ref{fig:therapy_chelator_peptide} shows an illustration of how a radionuclide is attached to a chelator, and is transported to cancer cells with a specific peptide. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm\textwidth]{Theory/therapy-peptide.jpg}
+    \caption{A radionuclide is bound to a chelating agent, and with a peptide, the radiopharmaceutical targets the cancer cells. Figure is from citation [8] in the special curriculum. }
+    \label{fig:therapy_chelator_peptide}
+\end{figure}
+
+%\section{Characteristics of therapeutic radionuclides}
+\noindent    \textcolor{blue}{Whenever something is cited like (3), it means citation 3 in special curriculum}
+Special curriculum p. 4: as mentioned above there are many requirements before a radiopharmaceutical can be used clinically, there are physical properties concerning the radionuclide, such as physical half-life, decay-mode and decay product, radiation energy and in-tissue range, and biological properties concerning the tracer such as tissue targeting, biological half-life, retention in tumor and the uptake in healthy tissue (3).  Thus, the radiopharmaceutical requires two components in which complement each other to deposit the dose in the cancerous tissue. 
+
+In nuclear medicine, the effective half-life of the radiopharmaceutical is important as it takes both the physical half-life and the time it takes for the radiopharmaceutical to be cleared or excreted from the body (3). Thus it should be long enough to permit radiosynthesis and qauality control. SHould be compatible with the pharmacokinetics of localization in tumor and clearance from normal tissue. However, as for therapy, high radiation dose is desired, which is easier to achieve with shorter half life, so that should also be compensated for. The choice of radionuclide should match the uptake rate and the retention, to avoid radioactive waste handling and dose to healthy tissue (3). Therapautic radionucldies typically have half-lives  in order of a few hours to several days (9, p. 1) (special curriculum p. 4).\\
+
+Knowledge about the decay products are also important, if unstable, how it the dose distributed, and how long range, half life, blabla, and if unstable, is the daughter contributing to a cytotoxic effect, or taking part of the natural stuff in the body. \\
+
+In addition, the chemical-biological properties are important, as it must be chemically possible to attach radionuclide to the targeting molecule. Also, the bond must be stable in the body, over a time period which is stable as long as the physical half life. (handbook p. 2185)
+
+\section{Particle interaction in tissue}
+
+Ionizing radiation are particles with sufficient energy to cause ionizations along the particle track, thus separating an atom and one or more electrons. The free electron(s) can ionize further, and the positive ion can cause undesired reactions. DNA is a large molecule with two strands bound in a double helix structure. Each strand is composed of sugar and phosphate groups, and nitrogenous bases which bind the two strands (book p. 11). These  bases are called adenine \& guanine amd cytosine \& thyamine (always bound pairwise), and are bound through weak hydrogen bonds which are exposed for strand breaks. The cell is equipped with an impressive repair mechanism, and unless both strands of the DNA is damaged, called a double stranded break (DSB), most damages are repaired. Radiation damages in the DNA can be caused directly by the ionizing particle or indirectly via free radicals, which are subject to other ionizations. Since the body contains large amounts of water, ionization of water molecules giving for instance H$^\bullet$ or OH$^\bullet$ are important damaging factors. Damages induced in the DNA can be lethal to the cell and either cause apoptosis or mutation in which can cause cancer. In therapy, the goal is to make malignant cells to undergo apoptosis, thus DNA is referred to as the target (book, p. 9). Choosing a particle with a high probability of inducing damage will induce multiple double stranded breaks if passing near by (special curriculum). 
+
+Linear energy transfer (LET) describes the energy absorbed by the medium, and is defined as the average energy (typically in keV) deposited per unit length (typically measured in $\mu$m) of the density material (book, p. 101)
+
 \begin{equation}
-    -\frac{dE}{dx}=2\pi N_a r_e^2 m_e c^2\rho \frac{Z}{A}\frac{z^2}{\beta^2}\Big[\ln \Big( \frac{2m_e \gamma^2 v^2 Q_\text{max}}{I^2} \Big)-2\beta^2 -\delta - 2 \frac{C}{Z}\Big]
-\end{equation}
-where $r_e$ is electron radius, $m_e$ electron mass, $N_a$ avogadro, I mean excitation potential, Z \& A atomic number and mass numer of absorbing material, $\rho$ density of absorbing material, z charge of incident particle, $\beta=v/c$, $\gamma=1/\sqrt{1-\beta^2}= 1/\sqrt{1-v^2/c^2}$, $\delta$ density correction, C shell correction, $W_\text{max}$ is max energy transfer per collision. In general, $$\frac{dE}{dx}\propto \rho,\frac{z^2}{\beta^2},\frac{Z}{A}$$ and logarithmic stuff which i dont know... so alpha particles are stopped quicker than protons if they have the same energy (Techniques for Nuclear and Particle physics experiments, p. 24). }
-Particles interact differently in a given medium. Figure \ref{fig:particle_interaction} shows how various particles interacts in a medium where the depth is on the x-axis and dose is on the y-axis. In a medium, there are positively charged nuclei and negatively charged electrons. We differ between neutral particles like neutrons and photons, and charged particles like electrons or protons, alpha-particles, and other heavy charged particles. Charged particles have a short range in comparison to neutral particles, as the Coloumforce forces the particle to interact continously along the path, either either by scattering inelastically with the atomic electrons, or scattering elastically via the nuclei. Inelastic collisions is the dominant process, where the atomic electrons are either excited or ionized. If the now free electron had sufficient energy transferred from the incoming particle (called a $\delta$-electron), this electron can further ionize along the particle track. Elastic scattering is the less dominant process, where the energy loss is small, as long as the nuclei in the medium are larger than the incoming particle (Techniques for Nuclear and Particle Physics Experiments, William R. Leo, p. 21). The energy loss of heavy charged particles are described by an equation called Bethe-Block, where the energy loss at high energies is small since very little energy is transferred per collision with atomic electrons (due to the large mass). However, when the particle reaches low velocity, the particle interacts at a much higher rate in a very specific peak called the Bragg peak. Can be seen on figure \ref{fig:particle_interaction}, for the proton. As we can see, the energy deposited behind the tumor is zero, along with the energy deposition in front of the tumor is low which is something which can utilized in radiation therapy. However, since the Bragg peak is so narrow, a broadening of the beam might be necessary, which is to send out a beam of multiple energies, so that it is spread out. The dose in front of the tissue gets larger, but the dose behind is still zero. The electrons/positrons interacts differently, since the mass is equal to the atomic electrons, the energy transfer can be upto half of its mass, and it scatters like crazy. Electrons can experience energy loss either from collisions like heavy charged particles, or via the electromagnetic radiation that arises when electrons are loosing energy (bremsstrahlung). However, for energies up to a few MeV, the collision energy loss dominates (Techniques for Nuclear and Particle Physics Experiments, William R. Leo, p. 37). On figure \ref{fig:particle_interaction}, we see that  the electrons and proton interacts differently, there is no clear peak, and the incoming electrons immediately interacts with the medium, lose energy fast and the secondary electrons interacts after and slowly decreasing. At 22 MeV, bremsstrahlung stopping power is also evident, so we see an exponential tale which ....? \\
-
-Photons interacts differently than charged particles. As they are neutral, they do not interact via inelastic collisions, but interacts via three different processes called photoelectric effect, compton scattering and pair production. Thus the energy is not degraded, and the beam can only be attenated as a function of thickness x (Techniques for Nuclear and Particle Physics Experiments, William R. Leo, p. 53)
-\begin{equation} \label{eq:intensity_photons}
-    I(x) = I_0 e^{-\mu x}
+    \text{LET}=\frac{dE}{dx}
 \end{equation}
 
-where $\mu$ is the attenuation coefficient. Photons can be gamma-rays or X-rays, where gamma-rays are produced in de-excitation of nuclei, and have ranges 0.1-10 MeV (Krane, p. 327), and X-rays can be either be produced in de-exciation of atomic electrons (where the energies are typically quite low), or be produced by de-accelerating fast electrons in an x-ray tube, for instance by hitting a material like tungsten, where the energy is high. As we can see on figure \ref{fig:particle_interaction}, the X-rays are produced in an x-ray tube (MV and kV is the voltage of the X-ray tube), and we can see that the 22 MV X-rays have a build-up effect, where ionized atomic electrons participates in increasing the dose, while the much lower 200 kV X-rays does only de-crease. The gamma-rays from $^{60}$Co behaves similarly to the 200 kV X-rays, but are slighlt higher in energy deposition as the energy in general are slighly higher than 200 keV. The tale is exponential as we can see in eq. \ref{eq:intensity_photons}, and is in fact a problem in radiation therapy as the dose to healthy tissue behind the tumor is quite high. 
+To maximise the chances of inducing damages in the DNA and minimizing exposure of healthy tissue, choosing a particle with a high linear energy transfer is important in targeted radionuclide therapy. Figure \ref{fig:DNA_let} illustrates how $\beta^-$-particles, alpha-particles and auger electrons deposit energy on the scale of DNA. \\
 
-Photoelectric effect dominates at lower energies, and happens when a photon (energy) is completely absorbed an atomic electron. In gamma-ray spectroscopy, this process is desired as the gamma-rays from nuclei is specific, and we can identify the nuclei on a spectrum. Probability of photoelectric effect is \begin{equation}
-    \tau \propto \frac{Z^n}{E_\gamma^{3.5}}, \quad \text{n= 4 or 5}
-\end{equation}
-where Z is the atomic number of material ((Techniques for Nuclear and Particle Physics Experiments, William R. Leo, p. 55). 
+\noindent A medium consists of positively charged nuclei and negatively charged electrons. Charged particles have a short range in a medium compared to neutral particles, as the Coulomb force forces the particle to interact continuously along the path either by scattering inelastic with the atomic electrons or scattering elastic with the nuclei. Elastic scattering is the less dominant process, where the energy loss is small, as long as the nuclei in the medium are larger than the incoming particle(Techniques for Nuclear and Particle Physics Experiments, William R. Leo, p.  21). \textcolor{red}{Inelastic collisions dominates where the atomic electrons are either excited or ionized (which citation???? Instrumentation book?)}. Under the assumption that the collision is elastic, the collision is head-on and the particle has high energy, the maximum energy transfer can be calculated using conservation of momentum and energy
 
-In compton scattering, the photon has higher energy and can transfer parts of the energy to an atomic electron, be deflected and ionize further. The deflecting angle is dependent on energy, and the angle $\theta\in (0^\circ, 180^\circ)$ (Techniques for Nuclear and Particle Physics Experiments, William R. Leo, p. 55-56). Compton scattering thus gives photons in a spectrum of different energies. This process is not desired in gamma-ray spectroscopy, and contributes to noise in a Compton region. This process is however desired in external radiation therapy, as the process gives rise to high energetic secondary electrons, and photons in which ionize further. The probability of interaction is 
 \begin{equation}
-    \sigma \propto Z
+    Q_\text{max}=\frac{4m_eM}{m+M}E
 \end{equation}
 
-Pair production demands a photon energy to be equal or higher than two electron rest  masses, as the photon is converted to an electron/positron pair (1.022 MeV=2$m_0c^2$) (Techniques for Nuclear and Particle Physics Experiments, William R. Leo, p. 57). Probability of interaction is \begin{equation}
-    \kappa\propto Z^2
+where $m_e$ is the mass of an atomic electron, M is the mass of the incoming charged particle and E is the kinetic energy of the incoming charged particle\footnote{https://ocw.mit.edu/courses/nuclear-engineering/22-55j-principles-of-radiation-interactions-fall-2004/lecture-notes/energydeposhcp.pdf}. While LET describes the energy transferred per unit length, the stopping power describes the energy loss of a charged particle per unit distance. The collision loss for heavy charged particles (protons and above) at high energies is therefor low. The stopping power for heavy charged particles (protons and up) is described by Bethe-Block.
+\begin{comment}
+\begin{equation}
+    -\frac{dE}{dx} = 2\pi N_a r_e^2 m_e c^2\rho \frac{Z}{A}\frac{z^2}{\beta^2}\Big[\ln \Big( \frac{2m_e\gamma^2v^2W_\text{max}}{I^2} \Big)-2\beta^2 -\delta -2\frac{C}{Z} \Big]
+\end{equation}
+where
+\begin{multicols}{2}
+%$2\pi N_a re^2m_e c^2=0.1535 \text{ MeVcm$^2$/g} $\\ 
+\noindent
+$r_e: $ classical electron radius\\
+$m_e: $ electron mass\\
+$N_a: $ Avogadro's number \\
+$I: $ mean excitation energy \\
+$Z: $ atomic number of absorbing material\\
+$A: $ atomic weight of absorbing material \\
+$\rho: $ density of absorbing material \\
+$z: $ charge of incident particle \\
+$\delta: $ density correction \\
+$C: $ shell correction\\ 
+$W_\text{max}: $ maximum energy transfer in each collision\\
+$\beta=v/c:$ incident velocity of the particle\\
+$\gamma=\frac{1}{\sqrt{1-\beta^2}}: $ Lorentz factor
+
+\end{multicols}
+
+(Techniques in nuclear and particle physics p. 24).
+\end{comment}
+ As the particle slows down, the more energy per unit length will be deposited, as the charged particle picks up electrons. This is known as the Bragg peak. most of the energy is deposited near the end stop. The stopping power of heavy charged particles are proportional to the charge of particle and the inverse velocity squared. Therefor, particles with a higher charge will have a higher Bragg-peak and a shorter range in tissue, if energy was the same. This behaviour of heavy charged particles is especially useful in external beam therapy and is utilized to have a very specific dose over tumor as the dose before is low and the dose after bragg peak is zero (instrumentation, p. 27-28). \\
+
+Electrons can experience energy loss either  from  collisions, or via the electromagnetic radiation that arises when electrons are loosing energy (bremsstrahlung), due to the small mass. However, for energies up to a few MeV, the collision energy loss dominates (Techniques for Nuclear and Particle Physics Experiments, WilliamR. Leo, p.  37). For electrons, the maximum energy transfer per collision is half of the initial energy, which means that electrons lose energy fast via collisions. Electrons scatters rapidly, and changes direction continuously due to the equal mass of the atomic electrons. The collision stopping power is a modification from Bethe-Block, such as changing $W_\text{max}=T_e/2$. The energy loss of electrons fluctuates much more than heavy charged particles which is due to much greater energy transfer per collision and to the emission of bremsstrahlung. To absorb major part of the electron's energy, is a few collisions, and results in greater range straggling.  (instrumentation p. 42)\\
+ 
+Beta-electrons have a continous spectrum of energies and absorption of beta decay electrons exhibit behavour which is well approximated to an exponential form (instrumentation p. 42). 
+Low energetic electrons are small in mass to large angle deflection by scattering from nuclei (p. 48). 
+
+
+\begin{comment}
+\begin{equation}
+    -\frac{dE}{dx}=2\pi N_a r_e m_e c^2\rho \frac{Z}{A}\frac{1}{\beta^2}\Big[ \ln \frac{\tau^2(\tau+2)}{2(I/m_ec^2)^2)} + F(\tau) - \delta - 2\frac{C}{Z} \Big]
 \end{equation}
 
-Finally neutrons interacts with the strong force with nuclei, and can be via absorption, or elastic or inelastic scattering. The interaction probability is dependent on energy, will not describe more. (Techniques for Nuclear and Particle Physics Experiments, William R. Leo, p. 64). 
+where $\tau$ is the kinetic energy of particle in $m_ec^2$ (instrumentation p. 37).  
+\end{comment}
 
-Whenever a charged particle like an electron or hadron enters a medium, the Coloumbforce will affect the charged particle and cause interactions with the atomic elecrtons. Neutral particles like photons and neutrons are not affected by the Coulomb force, thus interacts rarely. On figure ..., the 22 MV X-rays first has a build-up effect, where the initial photons induce ionzations and secondary electrons, which contributes to further ionization, and increases the dose. After, the dose decreases exponentially. 
-The build-up effect for high-energetic photons which are only used in external beam therapy enables an energydependent maximum dose in tissue as a function of depth. However, the exponential tale gives dose to the healthy tissue behind. The gamma-rays in nuclei are not that energetic, and the lack of specificity does not make gamma-rays a suitable decay chain for therapeutic agents. Neutral particles interacts via absorption or   \\
+Photons and neutrons however are neutral particles and are not energy-degraded. Instead neutral particles are attenuated as a function of distance traversed x and the attenuation coefficient $\mu$ of the material 
 
+\begin{equation}
+    I = I_0 e^{-\mu x}
+\end{equation}
+
+where I is the intensity as a function of distance and $I_0$ is the intensity at x=0. 
+ X-rays produced from a X-ray tube and gamma-rays degrades exponentially, thus have a high dose over a long distance. As gamma emitters are not directly used in targeted  radionuclide therapy, the gammaradiation following alpha or beta decay, or X-rays following electron capture or internal conversion needs ti be taken into account.\\
+ For high energetic X-rays, there is also a build up effect, where the photons induce ionizations, and the free electrons contribute to a higher dose. This is utilized in external beam therapy, maximizing the dose over the tumor. \\
+
+Figure \ref{fig:particle_interaction} illustrates how various particles interact in a medium. For photons, there is an exponential tale, and for high energetic X-rays it is clear that there is a build up effect. For protons, the Bragg peak is very evident. For 22 MeV electrons, it is clear that there is 
+bremsstrahlung energy loss due to the exponential tale. \\
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=10cm]{Theory/DNA_LET.jpg}
+    \caption{The figure illustrates how $\beta^-$-particles, $\alpha$-particles and auger electrons deposit their energy on the scale of DNA. 
+    
+    \footnote{Accurately determining the number of Auger electrons per nuclear decay for medical isotopes - Scientific Figure on ResearchGate. Available from: https://www.researchgate.net/figure/Biophysical-properties-of-beta-alpha-and-Auger-electron-emitting-radionuclides-uper_fig1_334879307 [accessed 2 May, 2020]}}
+    \label{fig:DNA_let}
+\end{figure}
 
 
 \begin{figure}
@@ -115,73 +193,96 @@ The build-up effect for high-energetic photons which are only used in external b
 
 
 
-
-\textcolor{red}{
-A way to work around this is to rotate the beam around the patient which relieves the healthy tissue and give maximal dose to tumor. Also a note, gamma-rays are typically in the energy region from 0-3000 keV, thus does not give sufficiently high dose for treating a tumor. 
-
-X-rays from an accelerator is produced by acceleration of electrons which hits a material like for instance wolfram or tungsten. The X-rays have energies ranging from zero to the max electron energy, and hence the X-ray energy is in MV instead of MeV. 
-Why we are not using gamma-rays in treatment; range is too long, ionization are not frequent enough, and energy is too low?}
-
-
-
-
-\subsection*{\centering{\small{The biological effect of ionizing radiation and linear energy transfer}}}
-\textcolor{red}{in general in this paragraph refer to the radiation biology book.. }
-Ionizing radiation are particles with sufficient energy to cause ionizations along the particle track, thus separating an atom and one or more electrons \textcolor{red}{citation, maybe the bio-book?}. The free electron(s) can ionize further, and the positive ion can cause undesired reactions \textcolor{red}{find a citation}. DNA is a large molecule with two strands bound in a double helix structure. Each strand is composed of sugar and phosphate groups, and nitrogenous bases which bind the two strands. These bases are called adenin \& guanin and cytosine \& thyamin (always bound pairwise), and are bound through weak hydrogen bonds which are exposed to strand breaks. The cell is equipped with an impressive repair mechanism, and  unless both DNA strands are damaged, which is called a double stranded break (DSB), most damages are repaired \textcolor{red}{cite}. Radiation damages in the DNA can be caused directly by the ionizing particle, or indirectly via free radicals which are subject to other ionizations.  Since the body contains large amounts of water, ionization of water molecules giving for instance H$^\bullet$ or OH$^\bullet$ are important damaging factors. Damages induced in the DNA can be lethal to the cell and either cause apoptosis or mutation in which can be a cause of cancer. In therapy, the goal is to make the cancerous cells to undergo apoptosis, and choosing a particle which has a high probability of inducing damage will induce multiple double stranded breaks, if passing nearby. \\
-
-\noindent 
-Linear energy transfer (LET) describes the energy absorbed by the medium, and is defined as the  average energy (typically measured in keV) deposited per unit length (typically measured in $\mu$m) of the density material (book, p. 101):
-
-\begin{equation}
-    \text{LET} = \frac{dE}{dx}
-\end{equation}
-
-\noindent 
-LET thus describes the general frequency in which a particle will deposit energy along the particle track. A particle with a high LET-value will interact more frequently over a shorter distance than a low LET-particle. In targeted radionuclide therapy, it is important that the range of the particle is short-range so that the healthy tissue is spared, and that the dose to the cancerous tumor is large. For therapy, medical isotopes which emit radiation with high LET such as $\alpha$, $\beta$ and auger-electrons are desired since the ionization rate is high and the distance traversed is low (Yeong, therapautic radionuclides in nuclear medicine). Gamma-radiation is not a desired process in therapy as photons does not degrade in energy, thus can have a long range unless attentuated. 
-Figure \textcolor{red}{...} shows how alpha, beta and auger electrons interacts on the scale of DNA. \\
-
-
-\subsection*{\centering{\small{Decay modes}}}
-
-Different decay modes have different ranges in the tissue. Dependent on the size of tumor, and critical tissue surrounding it, different emitters are used. However to reduce dose to healthy tissue, specific short range high LET particles are in general desired. Figure \ref{fig:cell_dimension} shows the ranges of auger electrons, alpha-particles and $\beta^-$- particles on a cellular scale. The binding energy holds the nucleus together, and for unstable nuclei, the binding energy is so low that particles can be emitted to gain stability, lowering the binding energy. Beta and alpha decay changes the element, and the decay product is commonly in an excited state. Therefor gamma-decay commonly occurs after, and in gamma-ray spectroscopy, it is the gamma-rays of the de-exicitation of the daughter which is detected. Knowledge about the energy and intensity of the radiation is very important. It is unrare that just one single process happens during a decay, and dependent on what the desired process is, there is a beta or alpha particle or gamma-rays, X-rays or auger electrons caused from electron capture or internal conversion. The ranges can be different. \\ 
-
-\noindent
-Beta-decay happens whenever there is an overweight in number of protons or neutrons. For an overweight of neutrons, $\beta^-$-decay occurs, by transforming a neutron into a proton, a $\beta^-$-particle and an antineutrino
-
-\begin{equation}
-    n \rightarrow p + e^- + \overline{{\nu_e}}
-\end{equation}
-
-\noindent
-For an overweight in protons, $\beta^+$ decay occurs, by transforming a proton into a neutron, a $\beta^+$-particle and a neutrino
-
-\begin{equation}
-    p \rightarrow n + e^+ + {\nu_e}
-\end{equation}
-
-$\beta^+$-particles are typically used in diagnostic imaging in PET (positron emission tomography). 
-\noindent Since neutron mass is higher than the proton mass (mass difference 1.022 MeV/$c^2$), there is ad attidional threshold energy needed to induce the reaction. If the energy is not high enough, electron capture dominates, which takes in an atomic electron (typically from K-shell), and with a proton in the nucleus, transformning to a neutron and a neutrino:
-\begin{equation}
-    p + e^- \rightarrow n + \nu_e 
-\end{equation}
-
-Since beta-rays are not monoenergetic, the energy is distruted between three particles and gives a spectrum of different possible energies. $\beta^-$-emitters used in therapy is stopped rather quickly in tissue due to negative charge and low mass (as mentioned in the above section, energy transfer can be up to half of its mass. ), 
-
-Alpha-particles are $^{4}$He-nuclei, consisting of two protons and two neutrons. It is emitted from heavy nuclei. Since the nuclear force is short range (1fm ?), and heavy nuclei tend to be in the limit between electromagnetic and nuclear force, an alpha particles (which carries large binding energy) lowers the binding energy sufficiently so that the nucleus is more stable. The binding energy of an alpha particle is very high (28.3 MeV) which is why an alpha-particle is emitted to lower binding energy. 
-
-Gamma-decay is emission of photons following de-excitation of the nucleus, as de-excitation from one state to another. It is specific for the nucleus, and is thus called the fingerprint of the nucleus, because we can observe it for instance in a gamma-ray spectrum. Gamma-decay commonly occurs after beta or alpha decay, or can happen if there is an isomer, then the decay mode is called isomer transition. However, gamma-rays are not well suited in therapy them selves (however for imaging in SPECT more relevant). But nuclei that emit electrons following gamma-decay are more relevant. Internal conversion is a process where the gamma-ray interacts electromagnetically with atomic electrons, and the electron is emitted instead of the photon. This electron is called an conversion electron and has energy in the order of the gamma ray (minus atomic binding energy). In order to fill the atomic shells, a cascade of X-rays and auger electrons are emitted (auger electrons have energies in order of X-rays). 
-
+Figure \ref{fig:cell_dimension} shows an overview of the ranges of auger electrons, 5.3 MeV alpha particles, low and high energetic $\beta^-$ particles of 0.15 MeV and 1.7 MeV. Thus $\beta^-$-particles have a relatively long range in tissue, and can be up to a few mm dependent on the energy spectrum (handbook, chapter TRNT (TARGETED RADIONUCLIDE THERAPY). Beta-particles have relatively low LET and are thus suited for treating large tumors, but the dose to healthy tissue is hard to avoid.  Alpha-particles have short range in tissue, typically a one to a few cells in diameter. Has a high LET-value, radiation with LET=100 keV/$\mu$m has the distance between ionizing events is nearly identical to that between DNA strands increasing the probability of creating highly cytotoxic double strand breaks (handbook, TRNT). For low energetic electron emitters such as auger emitters, the range is so low that in order to deposit energy in the DNA, must be incorporated into the cellular nucleus. Thus, it will only affect the cell targeted, and as we can see in figure \ref{fig:DNA_let} when incorporated into DNA, will induce many breaks and kill cell!!  (book: chapter targeted radionuclide therapy, whole paragraph) \\
 
 \begin{figure}
     \centering
     \includegraphics{Theory/cell_dimension.png}
-    \caption{The figure illustrates the ranges of different particles on the scale of cells. Auger electrons does not exceed the cellular nucleus and alpha-particles does not exceed more than ca. 1 cell dimension which allows for very specific targeting of cells. Low energetic $\beta^-$ emitters have ranges of ca. 1 mm. Picture is from (S M Qaim, R Capote, and F Tarkanyi.  Nuclear Data for the Production of Therapeutic Ra-dionuclides.Trs 473, (473):395, 20), p. 2. }
+    \caption{The figure illustrates the ranges of auger electrons, 5.3 MeV alpha particles and low and high energetic $\beta^-$ particles. }
     \label{fig:cell_dimension}
 \end{figure}
 
 
 
-\subsection{$\mathbf{^{193m}}$Pt as a potential therapautic agent}
+
+\section{Production of radionuclides}
+%The ideal radiopharmaceutical delivers a lethal dose to all cells within a tumor, while sparing normal tissue. ()
+
+%(p. 2183): Also important to keep in mind that even with a uniformly distributed radionuclide, the dose received by individual cells can vary because of the differences in cross fires dose and the fraction of the radiation bound to the cell that is deposited in the tumor. This is particularly apparent for micrometastastic desease which presents as small clusters of tumor cells magnifying the impact of these factors. (p.2183): the success of radionuclide therapy is also critically dependent upon achieving homogeneous dose deposition within the tumor so that regrowth from an untreated subpopulation will be avoided. 
+%(p.2185):Half life: should be long enough to permit radio synthesis and quality control and in some cases distribution to locations distant from the production site of the radiopharmaceutical. More importantly the half life shold be compatible with the pharmacokinetics of localization in tumor and clearance from normal tissue. Finally its generally easier to achieve higher radiation dose with shorter half-life radionucldies. 
+%Cell culture expermiments have showsn that increasing the dose rate for low linear energy transfer radiation can lead to a greater degree of tumor control. 
+The radionuclide availability is an important factor, and must obviously be high. Reactors, cyclotrons and natural decay chains have traditionally been used as radionuclide sources (Handbook of ... , p. 2185). Proton rich nuclei are typically produced in accelerators/cyclotrons using positively charged particles, and neutron rich nuclei are typically been products of fission or produced in the neutron flux resulting from fission in a reactor. Thus therapautic radionuclides producing $\beta^-$-emitters needs neutrons, which are the main source of reactors. With research reactors today agin ([3], in special curriculum p. 10), alternative production routes to produce critical medical radionuclides. \\
+
+There are many different production routes available for a single radionuclide, dependent on choice of target, particle beam and beam energy. The production route has an associated reaction cross section which is dependent on the beam energy. The nuclear cross section data is very important in optimization of production processes, achieving the maximum yield of the desired radionuclide combined with the minimum level of radionuclidic impurities ([9], in special curriculum p. 3). A high degree of radionuclidic purity is required for therapautic radiopharmaceuticals depending on the nature of the molecule that will be labelled, specific activity (GBq/mmol) may also be important consideration. It is impossible to chemically separate isotopes of the same element ([4], in special curriculum p. 10). We want to be sure that the what is injected into the patient does not have isotopic impurities which gives undesired dose to the tissue, nor will we have isotopes with no therapautic effect, both for most effective treatment, but especially in cases where the body does not excrete the element from the body, and we can have poissoning. Carrier-free production which are molecules which exclusively contain the desired radionuclides is desired because it gives the highest specific activity. The only option to minimize impurities is to choose an appropriate energy windown which minimizes the production of co-products. 
+
+There already exists large amounts of information on neutron induced reactions. However the information on charged particle induced reactions is not as strong so we need more data on this behalf ([4] in special curriculum p. 10). Production of medical radionuclides should be cheap and available for everyday medical purposes. Cyclotrons good: Accelerators can be small in size and handled easily by medical personnel. Many hospitals which performs nuclear medicine even hve a cyclotron facility on site, which is advantageous as its practical to avoid travelling logistcs and to have medical radionuclide supply in proximity og examination/treatment site.  
+
+
+%Selection of a radionuclide for targeted radionuclide radiotherapy must also take into account its chemical biological properties. 
+%Chemical methods must be devised for attaching the radionucldie to the targeting molecule of interest without compromising the tumor localizing capacity of the molecule. In addition the bond between the radionuclide and the carrier molecule must be stable in the in vivo environment over a time period consistent with the physical half life of the radionuclide in order to minimize damage to normal organs. 
+
+
+\begin{comment}
+
+%\newpage
+%Beta-emitting particles were the first ones which were used, long range (high energy) for large tumors and short range (low) energy  more than 2 mm range for long range particles
+
+%Range of alpha-particles a few cell diameters, offering the prospect of matching the cell-specific nature of targeted molecular carriers with radiation having a similar range of action. Short range alpha particles also may be ideally suited for minimal residual disease settings applications in which radionuclide therapy has the greatest chance of making a meaningful clinical impact. These include treating micrometastasis, residual tumor margin left after surgival debulking, and tumors present in the circulation such as leukemia and lymphoma. Have much higher energies than beta paricles, and along with short range, have very high LET. Radiation at 100 keV  keV/$\mu$m has this quality because at this LET, the distance between ionizing events is nearly identical to that between DNA strands, increasing the probability of creating highly cytotoxic double DNA strand breaks. 
+
+%Low energy electron emitters: deposit energy in subcellular dimensions. Can arise from two decay processes; internal conversion and electron capture. Both create inner atomic shell vacancies that are transferred by a series of rearrangments to outer atomic shells. the binding energy difference between the inner and outer subshells may then be transferred to other outer shell electrons, that are ejected from the atom. These electrons are called auger electrons, if they arise from higher shells and coster-kronig electrons if they originate from higher subshells. 
+
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=10cm]{Theory/DNA_LET.jpg}
+%    \caption{The figure illustrates how $\beta^-$-particles, $\alpha$-particles and auger electrons deposit their energy on the scale of DNA. 
+    
+%    \footnote{Accurately determining the number of Auger electrons per nuclear decay for medical isotopes - Scientific Figure on ResearchGate. Available from: https://www.researchgate.net/figure/Biophysical-properties-of-beta-alpha-and-Auger-electron-emitting-radionuclides-uper_fig1_334879307 [accessed 2 May, 2020]}}
+%    \label{fig:DNA_let}
+%\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{Theory/Bragg-peak-and-Spread-Out-Bragg-Peak-SOBP-for-a-proton-beam-in-comparison-with-photon.jpg}
+    \caption{Medium depth along x-axis, energy deposition in tissue (or dose?) on y-axis. Find citation in special curriculum. }
+    \label{fig:particle_interaction}
+\end{figure}
+
+
+- What is targeted radionuclide therapy
+- Biological effect
+- Characteristics: half-life, decay mode, 
+- LET, stoppingpower
+
+
+
+\textcolor{blue}{Whenever something is cited like (3), it means citation 3 in special curriculum Special curriculum p.4:}  many requirements before a radiopharmaceutical can be used clinically, there are physical proper-ties concerning the radionuclide, such as physical half-life, decay-mode and decay product, radiationenergy and in-tissue range, and biological properties concerning the tracer such as tissue targeting,biological half-life, retention in tumor and the uptake in healthy tissue (3).  Thus, the radiopharma-ceutical requires two components in which complement each other to deposit the dose in the canceroustissue.  For the tracer, a rapid blood clearance and transport (6, p.  145) and high uptake and reten-tion in the tumor (9.  p.  2) (special curriculum p.  4) are important characteristics.  It can targetthe desired cells by for instance a specific receptor, enzyme, membrane, transporters or antigens (6,p.  145).  Radiometals are also used,  which consists of a bifunctional chelator,  which is a moleculecontaining molecules which can donate a lone pair of electrons, like nitrogen, oxygen or sulfur.  If theradiometal has an oxidation state of $3^+$, it will be tighlty bound by the chelator, and can transportedto the tumor (special curriculum p.  4-5). 
+
+Dependent on size and geometry of the tumor, along with localization, a radionuclide decay mode and radiation range in tissue are important characteristics. For instance, if tumor is small and in a critical region must be ...., also if up to brain must be smaller than BBB. Characteristics of emission, half-life, production method, chemistry and biological behaviour (handbook of nuclear chemistry, p. 2181). 
+
+The ideal radiopharmaceutical delivers a lethal dose to all cells within a tumor, while sparing normal tissue. 
+
+(p. 2183): Also important to keep in mind that even with a uniformly distributed radionuclide, the dose received by individual cells can vary because of the differences in cross fires dose and the fraction of the radiation bound to the cell that is deposited in the tumor. This is particularly apparent for micrometastastic desease which presents as small clusters of tumor cells magnifying the impact of these factors. (p.2183): the success of radionuclide therapy is also critically dependent upon achieving homogeneous dose deposition within the tumor so that regrowth from an untreated subpopulation will be avoided. 
+(p.2185):Half life: should be long enough to permit radio synthesis and quality control and in some cases distribution to locations distant from the production site of the radiopharmaceutical. More importantly the half life shold be compatible with the pharmacokinetics of localization in tumor and clearance from normal tissue. Finally its generally easier to achieve higher radiation dose with shorter half-life radionucldies. 
+Cell culture expermiments have showsn that increasing the dose rate for low linear energy transfer radiation can lead to a greater degree of tumor control. 
+Radionuclide availability: reactors, cyclotrons, natural decay chains have all been utilized as sources of radionuclides for targetred radionuclide therapy. A high degree of radionuclidic purity is required for therapautic radiopharmaceuticals depending on the nature of the molecule that will be labelled, specific activity (GBq/mmol) may also be important consideration 
+Selection of a radionuclide for targeted radionuclide radiotherapy must also take into account its chemical biological properties. CHemical methods must be devised for attaching the radionucldie to the targeting molecule of interest without compromising the tumor localizing capacity of the molecule. In addition the bond between the radionuclide and the carrier molecule must be stable in the in vivo environment over a time period consistent with the physical half life of the radionuclide in order to minimize damage to normal organs. 
+\end{comment}
+
+
+%\subsection{Cyclotron production using deuterons}
+%The deuteron is  losely bound particle, with a break up energy blablabla. 
+%In order simulate the detueron beam, anderson and ziegler stopping power was used. blablabla just writted down from head. 
+
+%Deuteron stopping power: 
+%Anderson\&Ziegler stopping power formalism.
+%Is just the addition of the two corrections density effect ad shell correction??
+
+
+
+
+
+
+\section{$\mathbf{^{193m}}$Pt as a potential therapautic agent}
 $^{193m}$Pt ($t_{1/2}$=4.33 days) is an auger-emitting isomer which decays by isomeric transition (100\%) to the long-lived $^{193g}$Pt groundstate ($t_{1/2}$=50 years). Radionuclides produced from deuterons on natural iridium such as $^{191}$Pt, $^{193m}$Pt, $^{192}$Ir and $^{194}$Ir are believed to have potential in medicine, like chemotherapy, brachytherapy, radioimmunotherapy and imaging (Tarkanyi et.al 2006). Platinum radionuclides are of special interest, as platinum is the main element in chemotherapautic agents such as cisplatin, which is a drug which is used clinically in treatment of testicular and ovarian cancer mainly, but also to treat esophagus, head and neck and bladder cancer\footnote{https://www.sciencedirect.com/science/article/pii/S0969804399000822?casa_token=ZLJ8YPQzGZMAAAAA:264QzKWpH8Kv6iHotiGMeoHTk8jKqmnoDgf709SrAD8BUWVwbRXriZbHgkYO_tHg-2qyX3Hvt9E}. Cisplatin  (cis-dichlorodiammine platinum(II)) is an inorganic molecule which contains one stable platinum atom surrounded by two clorine atoms and two ammonia molecules (NH$_3$). The cisplatin-molecule enters the cell nucleus, and binds to the DNA, example-wise shown in figure \ref{fig:cisplatin_DNA}, where the clorine-atoms are de-attached and the platinum-atom binds through covalent bonds to the DNA base guanine (and in some cases adenine, \textcolor{red}{is that correct?}), and breaks the bonds between the DNA nitrogeneous bases. Cisplatin thus targets the DNA. One of the major challenges with cisplatin is the chemical toxicity, but when auger-emitters such as $^{193m}$Pt or $^{195m}$Pt replace the stable platinum atom, the local auger-damage effect increases the chemical damage of cisplatin, suggesting that a smaller amount of the drug is required, and chemical toxicity can be avoided \footnote{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.987.2577&rep=rep1&type=pdf#page=506, p. 493}. 
 
 By replacing either of the stable nitrogen atoms with the PET-radionuclide $^{13}$N ($t_{1/2}$=9.965 minutes), or by a radionuclide platinum, where $^{191}$Pt ($t_{1/2}$=2.83 days, decay by electron capture (100\%) to $^{191}$Ir (stable)) , $^{193m}$Pt and $^{195m}$Pt ($t_{1/2}$=4.010 days, decay by isomer transition (100\%) to $^{195g}$Pt (stable)) is of special interest, cisplatin can be used for imaging or therapy\footnote{https://www.sciencedirect.com/science/article/pii/S0969804399000822?casa_token=ZLJ8YPQzGZMAAAAA:264QzKWpH8Kv6iHotiGMeoHTk8jKqmnoDgf709SrAD8BUWVwbRXriZbHgkYO_tHg-2qyX3Hvt9E}, but therapy is most common. \\ 
@@ -216,7 +317,7 @@ Half life: the decay rate constant is the sum of the decay rates of all the popu
 
 
 
-\subsubsection{Gamma-decay and isomeric transition}
+\subsection{Gamma-decay and isomeric transition}
 Gamma-decay is the lowering of the excitation energy by the release of a photon, with an energy $\Delta$E equal to the energydifference in the two states. The typical half lives of gamma-emission are less than $10^{-9}$ seconds, however, longer lived states of a nucleus which is not the ground state is called an isomer, and the gamma-decay of an isomer state is called isomeric transition (Krane, p. 175). Whenever gamma-decay is possible, another process called internal conversion is competing. It is an electromagnetic process, where the nucleus interacts electromagnetically with the atomic electrons, and an electron is emitted instead of the photon (Krane, chapter 10, p. 341). The kinetic energy of the emitted electron is the transition energy minus the electron binding energy
 
 \begin{equation}
@@ -273,7 +374,338 @@ By itself, not useful for imaging. 191Pt and 195mPt can. Can replace stable N wi
 Pt-poisoning 
 
 
-\section{Radioactive decay law and Gamma-ray spectroscopy}
+
+
+%\section{General nuclear reaction theory}
+\chapter{General nuclear reaction theory}
+
+\textcolor{red}{paragraph based on special curriculum}
+Medical radionuclides can be produced directly using charge particle (cyclotron) or neutron beams (reactors), or indirectly using radionuclide generators or fission (reactor). Medical radionuclides are typically produced in reactors, cyclotrons or by a longer lived-parent decaying into a short-lived daughter in a radionuclide generator system. In general, the production should be cheap, available. Today many radionuclides are only produced in reactors, which is the main source of neutrons, and with reactors aging (Chai Hong Yeong, Mu hua Cheng, and Kwan Hoong Ng. Therapeutic radionuclides in nuclear medicine: Current and future prospects. Journal of Zhejiang University: Science B,
+15(10):845–863, 2014.), we need alternative routes to produce critical radionuclides. Cyclotrons have many benefits, like size so that it can be produced directly at the site of usage. One of the major disadvantages is that there is a need to enriched targets to get the desired reaction, and those can be very expensive. Along with high beam intensity the melting of the target can give challenges, so target cooling technqueis need to be there.    
+
+In order to create isotopes, nuclear reactions need to occur. There are many different production routes available for a single radionuclide, which is dependent on multiple factors such as choice of target, incident particle-beam and beam energy. To each reaction route, there is an corresponding excitation function which tells us how probable the reaction channel is at various energies. The nuclear reaction data is very important for the optimization of the product, achieving minimal level of isotopic impurities and maximum yield (S M Qaim, R Capote, and F Tarkanyi. Nuclear Data for the Production of Therapeutic Radionuclides.
+Trs 473, (473):395, 2011., p. 3). \\
+
+Isotopic purity is important as it is impossible to separate isotopes of the same element (Syed M. Qaim. Nuclear data for production and medical application of radionuclides:
+Present status and future needs. Nuclear Medicine and Biology, 44:31–49, jan 2017.). An undesired radionuclided can lead to undesired dose to healthy tissue, and a non-radioactive nuclide may lead to  poisoning (if large amounts injected), but it will not have any therapautic effect. This is especially important when working with poisoneos elements such as platinum. The only option to minimize isotopic impurities is to choose an appropritate energy window. 
+
+
+Using charged particles instead of neutrons allows for measurement at multiple energies as the particle energy degrades in the foils. The neutron energy is not degraded in the same way, due to electric neutrality, thus can only give cross section at one single energy. 
+
+
+
+
+
+\section{Nuclear reactions and reaction cross sections}
+
+A nuclear reaction occurs when a collision between two nuclei or a nucleus and a subatomic particle takes place. Collision between an accelerated subatomic particle or small nucleus and target nuclei is common in isotope production. A nuclear reaction is denoted as
+\begin{equation}
+    X(a,b)Y
+\end{equation}
+
+\noindent where X is the target, a is the incoming projectile, b is the outgoing decay channel and Y is the product of the nuclear reaction (Krane, chapter 11.1). There are multiple processes which can occur, radiative capture is the process where a particle is captured and a $\gamma$-ray is emitted in a (x,$\gamma$) process. If the incoming and outgoing particle is the same, it is a scattering process, where elastic scattering leaves the target nucleus in the energy same state, and inelastic if the target nucleus is in an excited state. In these type of experiments however, we are interested in emission of particles to create products in which we can measure the reaction cross section. \\
+
+In a nuclear reaction, the total energy and linear momentum, proton and neutron number, angular momentum and parity are conserved quantities (assuming no meson formation) (Krane, p.380). In the low energy-region in which isotope production typically takes place (\textcolor{red}{<80 MeV}?), compound nucleus reactions take place, where an incoming particle and target nucleus merges by sharing the kinetic energy on all nucleons, and particle emission takes place to reduce the excess energy. \textcolor{blue}{\footnote{blue text:https://web-docs.gsi.de/~wolle/TELEKOLLEG/KERN/LECTURE/Fraser/L24.pdf }Involves nucleon nucleon interactions, lead to a complete therman equlibrium inside the CN. Releases energy by emission of neutrons, protons, alpha particles and gamma rays. A consequence of equilibrium is that the decay of CN should not depend on the way it was formed. "forgets" in all the collisions. Consequently, the decay of the compound nucleus depends only on the mass and atomic numbers, excitation energy and angular momentum.} The contrary are direct reactions, where an incoming particle interacts (over such a short time period) so that the incoming particle only interacts with one single nucleon, typically on the surface of the target nucleus. \textcolor{blue}{Angular distributions of direct reaction products are sensitive to the momentum transfer and parity change during the reactions. Thus based on the selection rules from angular momentum and parity conversion the angular distribution measurements in direct reactions yield spin and parities of states populated in the exit channel}. \textcolor{red}{Write abot feeding to the compound peak???. So in general; emission of protons and neutrons are more fed, because the probability of emitting one single nucleons is easier for the system. Since the reaction forgets the incoming projectile, and interacts with the whole nucleus, the prob of emission of t, 3He and d is lower, and the binding energy does not do that the channel is more fed, its only a lower Energy threshold. For alpha particles however, the binding energy which is about 28 MeV lowers the energy quite a lot, therefor favourable if Coulomb barrier is low enough?} \\
+
+%A nuclear reaction in the energy ranges of isotope production via the Compound nucleus conserves quantities such as mass-energy, linear momentum, the total number of nucleons, angular momentum and parity \textcolor{red}{cite, Krane?}. 
+
+\noindent 
+The cross section for a reaction can be divided into the cross section of the formation of the compound nucleus via interaction with the incoming projectile a, and the probability that the compound nucleus decay by decay channel b. The total reaction cross section is thus the sum of all the different reaction channels (Handbook of nuclear chemistry, p. 157 (nuclear reactions)), 
+\begin{equation}
+    \sigma = \sum_b \sigma(a,b)
+\end{equation}
+where b can be multiple particles. The general equation which is used to calculate cross sections in this experiment (solving equation \ref{eq:Final_Expression_A0}) is the following equation 
+
+\begin{equation}
+    \sigma(E) = \frac{A_0 \cdot t_\text{irr}}{N_T \cdot \Phi(E)(1-e^{-\lambda t_\text{irr}})}
+\end{equation}
+\noindent where $A_0$ is the end of beam activity of the resulting product nucleus (Y), $t_\text{irr}$ is the irradiation time, $N_T$ is the number of target nuclei (X), $\Phi(E)$ is the projectile flux or current (a), and $\lambda$ is the decay constant of the product nucleus. \\ 
+
+
+\noindent The compound nucleus model (Bohr, 1936) is a model which describes the formation of a compound nucleus by absorption of an incoming projectile by a nucleus close enough to interact with the strong nuclear force, and the decay of the compound nucleus. The kinetic energy shared between the incoming projectile and the nucleon which was struck leads to multiple collisions with other nucleons and rapid exchange of energy. The energy is distributed throughout the nucleus, leaving the original nucleus in an highly excited state. The average energy per nucleon is not sufficient to overcome the binding energy of the nucleus, but due to the statistical distribution in energies there is a probability that one or more nucleons may get sufficient energy to escape the nuclear potential (Krane, chapter 11.10, p. 416). This is decay of the compound nucleus, and this will lower the excitation energy. We can include the formation of the compound nucleus in the nuclear reaction as \begin{equation}
+    X + a \rightarrow C^* \rightarrow Y + b
+\end{equation} where $C^*$ is the excited compound nucleus (Krane, chapter 11.10, p. 416)  \\
+
+\noindent For each possible decay channel of the compound nucleus, there is an associated probability or cross section, which is dependent on the energy of the incoming projectile. A function which evaluates the various cross sections at different energies is called an excitation function. In figure \ref{fig:pt_reactionchannels}, the excitation function of the reactions channels for the platinum isotopes $^{188, 189, 191,193m}$Pt resulting from deuterons on natural iridium is plotted (using TENDL nuclear reaction code \textcolor{red}{cite}). Natural iridium consists of two stable isotopes, $^{191}$Ir (37.3\% abundance) and $^{193}$Ir (62.7\% abundance). $^{193m}$Pt can only be produced from $^{193}$Ir, ejecting 2 neutrons in the process, which can be denoted as $^{193}$Ir(d,2n)$^{193m}$Pt ($^{193}$Pt is the compound nucleus formation of deuteron on $^{191}$Ir, which has a low production cross section). The other platinum isotopes can be produced as $^{191}$Ir(d,2n)$^{191}$Pt or $^{193}$Ir(d,4n)$^{191}$Pt, $^{191}$Ir(d,4n)$^{189}$Pt or $^{193}$Ir(d,6n)$^{189}$Pt and $^{191}$Ir(d,5n)$^{188}$Pt or $^{193}$Ir(d,7n)$^{188}$Pt. For each reaction route possible, there is a local maximum for the specific route, hence, $^{193m}$Pt has only one maxima, and the other platinum isotopes has two. The desired particle emission is energy dependent, and the higher energy provided to the compound nucleus, the probability that more particles will be emitted is higher (Krane, chapter 11.10, p. 419). When a specific isotope is desired, the excitation function can tell us which energy window that maximizes the production and most importantly minimizes particularly other isotopes of the same element, due to the difficulty of separating same chemical elements. \\
+
+\begin{figure}
+    \centering
+    \includegraphics{Theory/reactionchannels_pt.png}
+    \caption{Reaction cross sections provided by Tendl for the reactions $^\text{nat}$Ir(d,x)$^{188,189,191,193m}$Pt}
+    \label{fig:pt_reactionchannels}
+\end{figure}
+\begin{comment}
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm]{Ir(d)Pt.png}
+    \caption{Nuclear chart for the platinum isotopes which can be produced from natural iridium }
+    \label{fig:chart_irpt}
+\end{figure}
+\end{comment}
+
+
+%\noindent A nuclear reaction
+%The nucleus is built up on protons and neutrons, and these are bound through the strong nuclear force. 
+\subsection{Constraints in nuclear reactions}
+%\subsection{Energetic factors in nuclear reactions}
+
+%\subsection{Dependence of }
+
+%\noindent The binding energy depends on multiple parameters, which are based upon two models, the shell model and the liquid drop model (Krane, chapter 3.3, p. 68). The binding energy thus depends on the volume, which is constant throughout the nucleus, hence a volumeterm $a_V\cdot A$, a the surface of the nucleus which needs to be taken into account, since the nucleons on the surface is less tightly bound, $a_s\cdot A^{2/3}$. 
+The potential energy of a nucleus is the sum of the attractive well from the strong nuclear force and the repulsive Coulomb barrier which acts repulsive between charged particles and the nucleus, acting long range (p. 152, Handbook of nuclear chemistry). The radius of the potential well is up to a few femtometer. For a positively charged particle induced nuclear reaction, the energy of the particle should exceed the barrier, or there will be an elastic scatter. However, there is a chance of tunneling, which drops with a factor 1/r where r is the distance from the center of the nucleus (Handbook of Nuclear Chemistry, chapter 3 - Nuclear Reactions, section, 3.2.3). The barrier also constraints the emission of particles for a decay channel of the compound nucleus, as the energy for an outgoing decay channel of positive particles must exceed the barrier. There is also a centrifugal barrier, which is dependent on the orbital angular momentum of the the nucleus.  However, this barrier is more important in 
+
+The height of the Coulomb barrier is dependent on the radius and charge of the incoming or outgoing particle a and the target nucleus b.
+
+\begin{equation}
+    U_\text{Coulomb} = \frac{1}{4\pi \epsilon_0} \frac{e^2Z_a Z_b}{r_a + r_b}
+\end{equation}
+
+In addition, there is a centrifugal barrier, which can constraint some of the incoming particle energy in rotational energy, \textcolor{red}{which depends on the angular momentum of the incoming particle and and the nucleus???} (handbook of nuclear chemistry p. 155.)
+
+\begin{equation}
+    U_\text{centrifugal} = \frac{\hbar \ell (\ell+1)}{r^2}
+\end{equation}
+
+The sum of the barriers are the total barrier but the Coulomb barrier is the most important. 
+
+%The orbital angular momentum is dependent on the mass and energy of the particle, but also the impact parameter of the reaction, which is the "distance" between the projectile and the nucleus
+
+%\begin{equation}
+%    \ell\hbar = (mv)b, \quad b\leq r_a + r_X
+%\end{equation}
+
+%\noindent where $r_a$ and $r_X$ are the radii of projectile and target nucleus. If $\ell=0$, the impact parameter is zero. If $\ell\neq 0$, then some of the energy of the projectile will go to rotational energy of the nucleus (Handbook of Nuclear Chemistry, chapter 3 - Nuclear Reactions, section, 3.2.4). The probability of this drops with $1/r^2$, and if the impact parameter is large, this will constraint some of the energy that would have gone to the nuclear reaction. Figure \ref{fig:sumOfPotentials} shows an overview of the various potentials; centrifugal barrier, Coulomb barrier and nuclear potential. The figure is for $^{58}$Zn, but the figure is only an example. \textcolor{red}{maybe make figure self?}. 
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=8cm]{Theory/Coulomb_barr.png}
+    \caption{ }
+    \label{fig:Coulomb_barrier}
+\end{figure}
+
+
+
+\begin{comment}
+\noindent The separation energy is the energy required to remove a particle from the nucleus. That is the difference in the binding energy for the two nuclei. The neutron separation energy is 
+\begin{equation}
+    S_n = B(^A_z X_n)-B(^{A-1}_z X_{n-1}) = c^2(m(X^{A-1}_zX_n)-()
+\end{equation}\\ 
+\end{comment}
+
+\noindent In a nuclear reaction, the mass-energy is conserved, which is denoted as the Q-value. The reaction Q-value is the difference is masses between before and after the nuclear reaction occurred (Krane, chapter 11.2). It is defined as 
+
+\begin{equation} \label{eq:Q_value}
+    Q = (m_i - m_f)c^2 = (m_X + m_a - m_Y - m_b)c^2
+\end{equation}
+
+\noindent where $m_i$ is the initial mass, $m_f$ is the final mass and c is the speed of light. If $Q>0$, then the reaction is exoergic, which means that energy is released in the reaction. There is no threshold energy of the projectile required for the reaction to occur, if only the projectile is present the reaction can occur. If $Q<0$, then the reaction is endoergic, which means that the kinetic energy of the incoming projectile is converted into nuclear mass or binding energy. For endoergic reactions to occur, there is a minimum threshold energy of the projectile in order for the reaction to happen, which is defined as (Krane, 11.2, p. 382)
+
+\begin{equation} \label{eq:reaction_threshold}
+    E_\text{threshold} = (-Q) \cdot \frac{m_Y +m_b}{m_Y + m_b -m_a}
+\end{equation}
+
+
+\noindent The energy threshold thus depend on the Q-value, the Coulomb barrier for charged particles, and the centrifugal barrier if angular momentum $\ell\neq 0$. The parity though depend, even numbers of $\ell$ mix with even, and odd with odd (Handbook of Nuclear Chemistry, chapter 3Nuclear Reactions, section, 3.2.3). This gives an indication on when a reaction can energetically occur, but does not tell us how probable the reaction is. %Equation \ref{eq:reaction_threshold} indicates that a higher mass for the particle in the outgoing channel $m_b$, will lower the energy threshold.\\ 
+
+%The nuclear binding energy is a number which tells us how tightly bound the nucleus is, and how much energy is required to separate nucleons from the nucleus. The nuclear binding energy is related to the mass of the nucleus, through the famous equation   E=mc^2
+
+The binding energy is the mass-difference between the nucleus as a whole, and the number of protons and neutrons added
+\begin{equation} \label{eq:Binding_energy1}
+    B = c^2(z\cdot m_p + n \cdot m_n - m_N)
+\end{equation}
+\noindent where z is the number of protons, n is the number of neutrons, $m_p$ is the proton mass, $m_n$ is the neutron mass, $M_N$ is the mass of of the nuclide, which is the number of nucleons A minus the number of electrons, $M_P = m_A - z\cdot m_e$ (the electronic binding energy per electron is excluded). From Krane's derivation of the nuclear binding energy (Krane, chapter 3.3, p. 65). 
+
+From equation \ref{eq:Q_value}, the larger the mass of the outgoing decay channel, the more negative the Q-value will be. Protons (+1 charge) and neutrons (neutral) are the simplest decay channels of the compound nucleus, each carry a spin of $1/2$, with masses $m_p=938.28$ MeV/c$^2$, and $m_n=939.57$ MeV/c$^2$. Combinations like deuterons (d=1p+1n, charge +1) has a mass difference of $\Delta=$2.2 MeV/$c^2$ from realising 1 proton and 1 neutron separately, a triton (t=2n+1p, charge +1) with $\Delta=8.5$ MeV/$c^2$,  3-Helium ($^{3}$He=1n+2p, charge +2) with $\Delta=7.7$ MeV/$c^2$ and alpha-particle ($\alpha$=2n+2p, charge +2) with $\Delta=28.3$ MeV/c$^2$. Thus, Q-values are higher in value, the lighter the particle is. However, in this work, we can clearly see that protons, neutrons and alpha-particles are strongly fed decay channels, while the other don't even appear. The suggested reason for this is that due to \textcolor{red}{blablabla nuclear physics stuff, like shell structure}, protons and neutrons are favoured, but since the alpha-particle has such a large binding energy, this channel is also favoured.  
+
+\subsection{Deuterons and stopping power}
+
+The deuteron consists of a neutron and a proton, and is the simplest bound state of nucleons. Nucleons have an average binding energy per nucleon of 8 MeV. The detuteron with an observed mass value of 2.224 MeV (Krane, p. 81) is a weakly bound. Thus little energy required to break up the deuteron. Something to keep in mind. 
+
+The stopping power of a deuteron beam running through forms the Anderson \& Ziegler: 
+
+
+(Techinque nuclear and particle physics p. 30-31)
+Range: How far will particles penetrate before they lose all there energy. Moreover, if assume that the energy loss is continous, this distance must be a well defined number, the same for alll identical particles with the same initial energy in the same type of material. This quality is called the range of the particle, and depends on the type of material, the particle and its energy. Experimentally the range can be determined by passing a beam of particles at the desired energy through different thicknesses of the material in question and measuring the ratio of transmitted to incident particles. For small thicknesses all the particles manage to pass through. As the range is approached this ratio drops. The surprising thing however is that the ratio does not drop immediately to the background level as expected of a well defined quantity. Instead the curve slopes down over a certain spread of thicknesses. This result is due to the fact that the energy loss is not continous, but statistical in nature. Indeed two identical particles with the same iniitial energy will not in general suffer the same number of collisions and hence the same energy loss. A measurement with an ensemble of identical particles therefor will show a statistical distribution of ranges cented about same mean value. This phenomenon is known as range straggling. In a first approximation this distribution is Gaussian in form. The mean value of the the distribution is known as the mean range and correspond to the midpoint of the corresponding slope. This is the thickness at which roughly half of the particles are absorbed. More commonly however what is desired is the thickness at which all the particles are absorbed, in  which case the in which case the point at which the curve drops to the background level should be taken.  This point is usually the tagent to the curve at the midpoint and extrapolating to the zero level. This value is known as the extrapolated or practical range
+
+
+Energy straggling: the energy loss distribution: (instrumentation p. 49)
+Discussion of energy loss so far has been concerned with mean energy loss suffered by charged particles when passing through a thickness of matter. For any given particle however, the energy lost will not be equal to this mean value because of statistical fluctuations which occur in the number of collisions suffered and in the energy transferred in each collision. An initially monoenergetic beam will therefor show a distribution of energy rather than a delta function peak shifted down by the mean energy loss given by the dE/dx formula after passing through a fixed thickness of material.. see if more necessary?
+
+\section{Nuclear reaction models}
+
+The optical model (proton/neutron, and alpha/deuteron), gamma strength function. 
+
+\subsubsection{EMPIRE 3.2.3}
+\subsubsection{CoH 3.5.3}
+\subsubsection{ALICE 2017}
+\subsubsection{TALYS 1.9}
+\subsubsection{TENDL 2019}
+
+
+
+%, the equal number of protons and neutrons make up $z\cdot^1H$, thus we can rewrite equation \ref{eq:Binding_energy1} to 
+
+%\begin{equation}
+%    B = z\cdot m_{^{1}H} + n\cdot m_n - m_{A}
+%\end{equation}
+
+%\noindent 
+%Separation energy of a particle is the energy required to be removed from the nucleus. This is defined as the difference in binding energy between the nucleus with the particle and the nucleus without the emitted particle. Since heaavier particles such as tritrium has a lower binding energy, more energetically easy to separate. n and p require more. 
+
+
+
+\begin{comment}
+
+\subsection{Nuclear cross sections}
+
+The cross section for a reaction can be divided into the cross section of the formation of the compound nucleus via interaction with the incoming projectile a, and the probability that the compound nucleus decay by decay channel b. The total reaction cross section is thus the sum of all the different reaction channels, 
+\begin{equation}
+    \sigma = \sum_b \sigma(a,b)
+\end{equation}
+where b can be multiple particles. The general equation which is used to calculate cross sections in this experiment is the following equation, which is solved from equation \ref{eq:activity_eob} (referenced to in the later parts of the paper)
+
+\begin{equation} \label{eq:cross_section_equation}
+    \sigma(E)=\frac{A_0}{N_T\Phi(E)(1-e^{-\lambda \Delta t_\text{irr}})}
+\end{equation}
+
+not, need to check if this is the correct one.. 
+\begin{equation}
+    \sigma(E) = \frac{A_0 \cdot t_\text{irr}}{N_T \cdot \Phi(E)(1-e^{-\lambda t_\text{irr}})}
+\end{equation}
+\noindent where $A_0$ is the end of beam activity of the resulting product nucleus (Y), $t_\text{irr}$ is the irradiation time, $N_T$ is the number of target nuclei (X), $\Phi(E)$ is the projectile flux (a), and $\lambda$ is the decay constant of the product nucleus. 
+
+\newpage
+
+Why we are interested, why is there a need for nuclear production cross sections. 
+
+
+
+The Q-value for nuclear reactions 
+
+Compound nucleus, what happens. 
+Q value, binding energy, particle emission, probabilities (why does n, p/alpha emission require higher energy, but is more favoured than T emission if both possible.)
+
+
+\subsection{Expected products from deuterions on iridium, iron, cupper and nc}
+
+Include figure of different nuclear charts, and write about Q values, and reaction channels, which makes it more probable that we observe it (eg. when neutron, proton/alpha channels opens).
+
+
+
+
+
+\section{From book}
+
+In a nuclear reaction, the energy, linear momentum, the total number of protons and neutrons, angular momentum and conservation of parity is conserved. \\
+
+The compound nucleus; the collisions are described by a model called Multistep Compound Model (Feshback, Kerman and Koonin, 1980), which is the model that reaction modeling code EMPIRE and TALYS rely on. \textcolor{red}{find out what ALICE does ???}
+
+Products of a nuclear reaction can be anything than conserve the various variables. Mass energy conservation is the Q-value, which is the mass differene in the reactant nuclei (projectile and target in this case) and product nuclei (decay channel particles and product). Binding energy (nuclear mass energy) often denoted as $\Delta=(M_0 - Au)c^2$, where A is atomic mass number, u is atomic mass unit. Q-value can be rewritten: 
+\begin{equation}
+    Q = \Delta_\text{projectile} + \Delta_\text{target} - \sum \Delta_\text{products}
+\end{equation}
+
+Charged particle reactions with heavy nuclei which is the case here, can have positive or negative Q-value. If the Q-value is negative, energy is required to induce the reaction. The reaction is negative if the sum of products is less than the sum of reactants. The excitation energy of the product nucleus is the extra energy which is deposited in the product nucleus. The decay of this is often times $\gamma$-rays (?). If the excitation energy is lower than the binding energy of the nucleus?  Threshold is the minimum energy required for the incoming projectile to form a product nucleus, which is then in its ground state. 
+
+\begin{equation}
+    \text{mass-energy}: \quad \Delta_t+ \Delta_p + E_p 
+\end{equation}
+
+
+
+
+\section{The decay of the compound nucleus}
+At the energy ranges in which this work is operating in, the nuclear reaction is caused by a fusion between the incoming projectile to create an highly excited compound nucleus. \\ 
+
+\noindent 
+The decay favoured decay channel is dependent on multiple properties such as the charge and angular momentum. The coulomb potential is defined as 
+
+\begin{equation}
+    U_{c} = K\frac{z_1 z_ 2 e^2}{A_1^{1/3} + A_2^{1/3}}
+\end{equation}
+
+where z is the the number of charges, e is the electrical charge and $A^{1/3}$ is the nuclear radius which is equal to $r=r_0 A^{1/3}$. K is a constant value. 
+
+The centrifugal barrier (which is the amount of energy which is conserved in rotational energy) depends on the angular momentum 
+
+\begin{equation}
+    U_{s} = \frac{\hbar \ell(\ell+1)}{2\mu r^2}
+\end{equation}
+
+where $\mu$ is the reduced mass $u\cdot \frac{A_1 A_2}{A_1 + A_2}$. 
+
+
+\textcolor{red}{Table \ref{tab:decaychannel_particles} might be wrong in the sense $J^\pi$. Might just be the total spin which is of interest? But since $J=l+s$, the spin will give a higher intrinsic angular momentum. Since $|I_i - I_f| \leq \ell \neq I_i+I_f$, $\ell$ can be multiple values, and the parity is thus dependent on the value here. (Krane, chapter 8.5, p. 257). The centrifugal potential is thus} 
+
+\begin{equation}
+   U_{0,s} =  \frac{\ell (\ell +1)\hbar}{2mr^2}
+\end{equation}
+
+and the Coulomb potential is
+
+\begin{equation}
+    U_{0,c} = K\frac{z_1 z_2 e^2}{A_1{1/3}+ A_2^{1/3}}
+\end{equation}
+
+The 
+
+\begin{table}[]
+    \centering
+    \caption{The table shows the most common decay channels for the decay routes available in this energy region. $\Delta$ is the binding energy of the alpha particle, which can be calculated using equation \ref{eq:Binding_energy1}, where the mass of the proton is $m_p = 938.28$ MeV/c$^2$ and $m_n=939.57$ MeV/c$^2$. $\Delta$ is thus the difference in in energy-mass between the particle composed of protons and or neutrons, and a equal number of protons and neutrons independent. All parities are positive due to angular momentum $\ell=0$.  }
+    \begin{tabular}{|c|c|c|c|c|}
+         \hline 
+         Particle & \Delta (MeV) &J^\pi & Charge \\
+         \hline
+         p & - & $\frac{1}{2}^+$ & +1 \\
+         n & - & $\frac{1}{2}^+$ & 0 \\
+         d & 2.2 & $1^+$ & +1 \\
+         t & 8.5 & $\frac{1}{2}^+$ & +1 \\
+         ^{3}He & 7.7 & $\frac{1}{2}^+$ & +2 \\
+        \alpha & 28.3 & 0^+ & +2 \\
+        \hline
+    \end{tabular}
+    \label{tab:decaychannel_particles}
+\end{table}
+
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        Target & Proton & neutron & deuterion & triton & ^{3}H & \alpha  \\
+        \hline
+        Fe (Z=26) & & & & & &  \\
+        Ni (Z=28) & & & & & &  \\
+        Cu (Z=29) & & & & & &  \\
+        Ir (Z=30) & & & & & &  \\
+        
+    \end{tabular}
+    \caption{The Coulomb barrier in MeV for each of the targets. Can be used to explain why we see what we see. }
+    \label{tab:my_label}
+\end{table}
+
+The total angular momentum J is the sum of the orbital and intrinsic angular momentum (spin), thus 
+\begin{equation}
+    \mathbf{J} = \mathbf{\ell} + \mathbf{s} 
+\end{equation}
+
+The spin is the sum of unpaired paired protons and neutrons. The total nuclear spin is thus $I = \sum_i J_i$.  The value of the angular momentum is
+\begin{equation}
+    |I_i - I_f| \leq \ell \geq |I_i + I_f|
+\end{equation}
+
+Thus, 
+
+
+
+
+
+\end{comment}
+
+
+%\section{Radioactive decay law and Gamma-ray spectroscopy}
+\section{Detection and identification of radionuclides}
 Gamma-ray spectroscopy is a method to identify and obtain information about radioactive nuclei present in a detector. As beta and alpha decay can result in an excited daughter product, the spectrum in fact shows the de-excitation of the daugher product. Since we know that these gamma-lines are transitions which happens right after a beta or alpha decay (or isomer transition), we identify the parent with gamma-ray spectroscopy. A detector has channels in which counts are regiserted. These channels are ... similar to the gamma-ray energy. Thus a spectrum has channels (which increases in energy) along the x-axis and and counts along the y-axis. If a detector registers many counts, it means that the state is highly populated, and the intensity of the gamma is strong (Krane, p. 351). 
 
 \subsection{Radioactive decay law}
@@ -429,8 +861,6 @@ From here, $A_0$ is the following equation \ref{eq:activity_eob}
 %    \frac{\epsilon I_\gamma}{N_\gamma}=\frac{N_T \Phi \sigma}{\lambda}(1-e^{-\lambda \Delta t_\text{irr}})\cdot e^{-\lambda \Delta t_d}\cdot (1-e^{-\lambda \Delta t_c})
 %\end{equation}
 
-
-
 \subsection{High purity Germanium detector}
 High purity Germanium detector is a type of semiconductor, which is a material where the energy required to remove an electron from the valence band (in the outer atomic shell) to the conduction band is small. The germanium atom has atomic number 32, and 4 valence electrons in the outer p4 shell (need citation?). The atoms in the detector are bound through covalent bonds in a crystal structure. The main mechanism of a semiconductor is creation of electron-hole pairs after energy deposition of an ionizing particle in the crystal. If an electron is excited to the conduction band, a hole is left. This hole can move as a neighboring electron fills this spot, and it can cause a chain reaction, and the hole will move in the crystal. Both the electron in the conduction band and the  and the hole in the valence band contributes to an electric current. Under influence of an electricfield, the electron-hole pairs will be collected and we can measure the incident as a count. The major
 advantage with semiconductor detector is that the average energy to create an electron-hole pair is
@@ -493,279 +923,6 @@ Due to incomplete charge collection (that electron or holes are not collected) n
 
 \textcolor{red}{Include a picture of peak shape and gamma-ray spectrum!! from the same book}
 
-
-\section{General nuclear reaction theory}
-
-\textcolor{red}{paragraph based on special curriculum}
-Medical radionuclides can be produced directly using charge particle (cyclotron) or neutron beams (reactors), or indirectly using radionuclide generators or fission (reactor). Medical radionuclides are typically produced in reactors, cyclotrons or by a longer lived-parent decaying into a short-lived daughter in a radionuclide generator system. In general, the production should be cheap, available. Today many radionuclides are only produced in reactors, which is the main source of neutrons, and with reactors aging (Chai Hong Yeong, Mu hua Cheng, and Kwan Hoong Ng. Therapeutic radionuclides in nuclear medicine: Current and future prospects. Journal of Zhejiang University: Science B,
-15(10):845–863, 2014.), we need alternative routes to produce critical radionuclides. Cyclotrons have many benefits, like size so that it can be produced directly at the site of usage. One of the major disadvantages is that there is a need to enriched targets to get the desired reaction, and those can be very expensive. Along with high beam intensity the melting of the target can give challenges, so target cooling technqueis need to be there.    
-
-In order to create isotopes, nuclear reactions need to occur. There are many different production routes available for a single radionuclide, which is dependent on multiple factors such as choice of target, incident particle-beam and beam energy. To each reaction route, there is an corresponding excitation function which tells us how probable the reaction channel is at various energies. The nuclear reaction data is very important for the optimization of the product, achieving minimal level of isotopic impurities and maximum yield (S M Qaim, R Capote, and F Tarkanyi. Nuclear Data for the Production of Therapeutic Radionuclides.
-Trs 473, (473):395, 2011., p. 3). \\
-
-Isotopic purity is important as it is impossible to separate isotopes of the same element (Syed M. Qaim. Nuclear data for production and medical application of radionuclides:
-Present status and future needs. Nuclear Medicine and Biology, 44:31–49, jan 2017.). An undesired radionuclided can lead to undesired dose to healthy tissue, and a non-radioactive nuclide may lead to  poisoning (if large amounts injected), but it will not have any therapautic effect. This is especially important when working with poisoneos elements such as platinum. The only option to minimize isotopic impurities is to choose an appropritate energy window. 
-
-
-Using charged particles instead of neutrons allows for measurement at multiple energies as the particle energy degrades in the foils. The neutron energy is not degraded in the same way, due to electric neutrality, thus can only give cross section at one single energy. 
-
-
-
-
-
-
-
-\subsection{Nuclear reactions and reaction cross sections}
-
-A nuclear reaction in the energy ranges of isotope production via the Compound nucleus conserves quantities such as mass-energy, linear momentum, the total number of nucleons, angular momentum and parity \textcolor{red}{cite, Krane?}. A nuclear reaction is denoted as
-\begin{equation}
-    X(a,b)Y
-\end{equation}
-
-\noindent where X is the target, a is the incoming projectile, b is the outgoing decay channel and Y is the product of the nuclear reaction (Krane, chapter 11.1). There are multiple processes which can occur, radiative capture is the process where a particle is captured and a $\gamma$-ray is emitted in a (x,$\gamma$) process. If the incoming and outgoing particle is the same, it is a scattering process, where elastic scattering leaves the target nucleus in the energy same state, and inelastic if the target nucleus is in an excited state. In these type of experiments however, we are interested in emission of particles to create products in which we can measure the reaction cross section. \\
-
-\noindent 
-The cross section for a reaction can be divided into the cross section of the formation of the compound nucleus via interaction with the incoming projectile a, and the probability that the compound nucleus decay by decay channel b. The total reaction cross section is thus the sum of all the different reaction channels, 
-\begin{equation}
-    \sigma = \sum_b \sigma(a,b)
-\end{equation}
-where b can be multiple particles. The general equation which is used to calculate cross sections in this experiment is the following equation
-
-\begin{equation}
-    \sigma(E) = \frac{A_0 \cdot t_\text{irr}}{N_T \cdot \Phi(E)(1-e^{-\lambda t_\text{irr}})}
-\end{equation}
-\noindent where $A_0$ is the end of beam activity of the resulting product nucleus (Y), $t_\text{irr}$ is the irradiation time, $N_T$ is the number of target nuclei (X), $\Phi(E)$ is the projectile flux (a), and $\lambda$ is the decay constant of the product nucleus. \\ 
-
-
-\noindent The compound nucleus model (Bohr, 1936) is a model which describes the formation of a compound nucleus by absorption of an incoming projectile by a nucleus close enough to interact with the strong nuclear force, and the decay of the compound nucleus. The kinetic energy shared between the incoming projectile and the nucleon which was struck leads to multiple collisions with other nucleons and rapid exchange of energy. The energy is distributed throughout the nucleus, leaving the original nucleus in an highly excited state. The average energy per nucleon is not sufficient to overcome the binding energy of the nucleus, but due to the statistical distribution in energies there is a probability that one or more nucleons may get sufficient energy to escape the nuclear potential (Krane, chapter 11.10, p. 416). This is decay of the compound nucleus, and this will lower the excitation energy. We can include the formation of the compound nucleus in the nuclear reaction as \begin{equation}
-    X + a \rightarrow C^* \rightarrow Y + b
-\end{equation} where $C^*$ is the excited compound nucleus (Krane, chapter 11.10, p. 416)  \\
-
-\noindent For each possible decay channel of the compound nucleus, there is an associated probability or cross section, which is dependent on the energy of the incoming projectile. A function which evaluates the various cross sections at different energies is called an excitation function. In figure \ref{fig:pt_reactionchannels}, the excitation function of the reactions channels for the platinum isotopes $^{188, 189, 191,193m}$Pt resulting from deutrons on natural iridium is plotted. The nuclear chart for these reaction channels can be seen in figure \ref{fig:chart_irpt}. Natural iridium consists of two stable isotopes, $^{191}$Ir (37.3\% abundance) and $^{193}$Ir (62.7\% abundance). $^{193m}$Pt can only be produced from $^{193}$Ir, ejecting 2 neutrons in the process, which can be denoted as $^{193}$Ir(d,2n)$^{193m}$Pt ($^{193}$Pt is the compound nucleus formation of deutron on $^{191}$Ir, which has a low production cross section). The other platinum isotopes can be produced as $^{191}$Ir(d,2n)$^{191}$Pt or $^{193}$Ir(d,4n)$^{191}$Pt, $^{191}$Ir(d,4n)$^{189}$Pt or $^{193}$Ir(d,6n)$^{189}$Pt and $^{191}$Ir(d,5n)$^{188}$Pt or $^{193}$Ir(d,7n)$^{188}$Pt. For each reaction route possible, there is a local maxima for the specific route \textcolor{red}{what is the edges on 188, 189 and 191Pt?}. Hence, $^{193m}$Pt has only one maxima, and the other platinum isotopes has two. The desired particle emission is energy dependent, and the higher energy given to the compound nucleus, the probability that more particles will be emitted is higher (Krane, chapter 11.10, p. 419). When a specific isotope is desired, the excitation function can tell us which energy window that maximizes the production and most importantly minimizes particularly other isotopes of the same element, due to the difficulty of separating same chemical elements. \\
-
-\begin{figure}
-    \centering
-    \includegraphics{Theory/reactionchannels_pt.png}
-    \caption{Reaction cross sections provided by Tendl for the reactions $^\text{nat}$Ir(d,x)$^{188,189,191,193m}$Pt}
-    \label{fig:pt_reactionchannels}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=12cm]{Ir(d)Pt.png}
-    \caption{Nuclear chart for the platinum isotopes which can be produced from natural iridium }
-    \label{fig:chart_irpt}
-\end{figure}
-
-
-
-%\noindent A nuclear reaction
-%The nucleus is built up on protons and neutrons, and these are bound through the strong nuclear force. 
-\subsection{Energetic factors in nuclear reactions}
-
-
-
-%\noindent The binding energy depends on multiple parameters, which are based upon two models, the shell model and the liquid drop model (Krane, chapter 3.3, p. 68). The binding energy thus depends on the volume, which is constant throughout the nucleus, hence a volumeterm $a_V\cdot A$, a the surface of the nucleus which needs to be taken into account, since the nucleons on the surface is less tightly bound, $a_s\cdot A^{2/3}$. 
-The nucleus is bound together by the strong nuclear force in the nuclear potential well, with a radius up to a few femtometer. The nuclear potential can be illustrated in figure \ref{fig:sumOfPotentials}, denoted as \textit{nuclear potential}. The Coulomb barrier is a repulsive barrier for charged particles. For a charged particle induced nuclear reaction, the energy should exceed to potential, or there will be an elastic scatter. However, there is a chance of tunneling, which drops with a factor 1/r where r is the distance from the center of the nucleus (Handbook of Nuclear Chemistry, chapter 3 - Nuclear Reactions, section, 3.2.3). The barrier also constraints the emission of particles for a decay channel of the compound nucleus, as the energy for an outgoing decay channel of positive particles must exceed the barrier. There is also a centrifugal barrier, which is dependent on the orbital angular momentum of the the nucleus. The orbital angular momentum is dependent on the mass and energy of the particle, but also the impact parameter of the reaction, which is the "distance" between the projectile and the nucleus
-
-\begin{equation}
-    \ell\hbar = (mv)b, \quad b\leq r_a + r_X
-\end{equation}
-
-\noindent where $r_a$ and $r_X$ are the radii of projectile and target nucleus. If $\ell=0$, the impact parameter is zero. If $\ell\neq 0$, then some of the energy of the projectile will go to rotational energy of the nucleus (Handbook of Nuclear Chemistry, chapter 3 - Nuclear Reactions, section, 3.2.4). The probability of this drops with $1/r^2$, and if the impact parameter is large, this will constraint some of the energy that would have gone to the nuclear reaction. Figure \ref{fig:sumOfPotentials} shows an overview of the various potentials; centrifugal barrier, Coulomb barrier and nuclear potential. The figure is for $^{58}$Zn, but the figure is only an example. \textcolor{red}{maybe make figure self?}. 
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=8cm]{sum_of_potentials.png}
-    \caption{The figure shows the nuclear potential well for the strong nuclear force, along with the Coulomb repulsion barrier and the centrifugal barrier for $^{58}$Zn. The figure is only meant as an illustration. \url{https://www.researchgate.net/figure/The-RMF-potential-energy-sum-of-the-scalar-and-vector-potentials-for-the-nucleus-58-30_fig6_257811951} }
-    \label{fig:sumOfPotentials}
-\end{figure}
-
-
-
-\begin{comment}
-\noindent The separation energy is the energy required to remove a particle from the nucleus. That is the difference in the binding energy for the two nuclei. The neutron separation energy is 
-\begin{equation}
-    S_n = B(^A_z X_n)-B(^{A-1}_z X_{n-1}) = c^2(m(X^{A-1}_zX_n)-()
-\end{equation}\\ 
-\end{comment}
-
-\noindent In a nuclear reaction, the mass-energy is conserved, which is denoted as the Q-value. The reaction Q-value is the difference is masses between before and after the nuclear reaction occurred (Krane, chapter 11.2). It is defined as 
-
-\begin{equation}
-    Q = (m_i - m_f)c^2 = (m_X + m_a - m_Y - m_b)c^2
-\end{equation}
-
-\noindent where $m_i$ is the initial mass, $m_f$ is the final mass and c is the speed of light. If $Q>0$, then the reaction is exoergic, which means that energy is released in the reaction. There is no threshold energy of the projectile required for the reaction to occur, if only the projectile is present the reaction can occur. If $Q<0$, then the reaction is endoergic, which means that the kinetic energy of the incoming projectile is converted into nuclear mass or binding energy. For endoergic reactions to occur, there is a minimum threshold energy of the projectile in order for the reaction to happen, which is defined as (Krane, 11.2, p. 382)
-
-\begin{equation} \label{eq:reaction_threshold}
-    E_\text{threshold} = (-Q) \cdot \frac{m_Y +m_b}{m_Y + m_b -m_a}
-\end{equation}
-
-
-\noindent The energy threshold thus depend on the Q-value, the Coulomb barrier for charged particles, and the centrifugal barrier if angular momentum $\ell\neq 0$. The parity though depend, even numbers of $\ell$ mix with even, and odd with odd (Handbook of Nuclear Chemistry, chapter 3Nuclear Reactions, section, 3.2.3). This gives an indication on when a reaction can energetically occur, but does not tell us how probable the reaction is. Equation \ref{eq:reaction_threshold} indicates that a higher mass for the particle in the outgoing channel $m_b$, will lower the energy threshold.\\ 
-
-The nuclear binding energy is a number which tells us how tightly bound the nucleus is, and much energy is required to separate nucleons from the nucleus. The nuclear binding energy is related to the mass of the nucleus, through the famous equation 
-\begin{equation}
-    E = mc^2
-\end{equation}
-
-\noindent 
-The binding energy is the mass-difference between the nucleus as a whole, and the number of protons and neutrons added
-\begin{equation} \label{eq:Binding_energy1}
-    B = c^2(z\cdot m_p + n \cdot m_n - m_N)
-\end{equation}
-\noindent where z is the number of protons, n is the number of neutrons, $m_p$ is the proton mass, $m_n$ is the neutron mass, $M_N$ is the mass of of the nuclide, which is the number of nucleons A minus the number of electrons, $M_P = m_A - z\cdot m_e$ (the electronic binding energy per electron is excluded). From Krane's derivation of the nuclear binding energy (Krane, chapter 3.3, p. 65), the equal number of protons and neutrons make up $z\cdot^1H$, thus we can rewrite equation \ref{eq:Binding_energy1} to 
-
-\begin{equation}
-    B = z\cdot m_{^{1}H} + n\cdot m_n - m_{A}
-\end{equation}
-
-\noindent 
-Separation energy of a particle is the energy required to be removed from the nucleus. This is defined as the difference in binding energy between the nucleus with the particle and the nucleus without the emitted particle. Since heaavier particles such as tritrium has a lower binding energy, more energetically easy to separate. n and p require more. 
-
-\textcolor{red}{Write about the semi-empirical mass formula, and what terms that affects the decay of compound. Especially the parity term? Odd A or even A. If A odd, decay by proton, since then A is even. If A is even, then decay by alpha for A to remain even. But why is n,p favoured over for instance t?? }
-
-\subsection{Nuclear cross sections}
-
-The cross section for a reaction can be divided into the cross section of the formation of the compound nucleus via interaction with the incoming projectile a, and the probability that the compound nucleus decay by decay channel b. The total reaction cross section is thus the sum of all the different reaction channels, 
-\begin{equation}
-    \sigma = \sum_b \sigma(a,b)
-\end{equation}
-where b can be multiple particles. The general equation which is used to calculate cross sections in this experiment is the following equation, which is solved from equation \ref{eq:activity_eob} (referenced to in the later parts of the paper)
-
-\begin{equation} \label{eq:cross_section_equation}
-    \sigma(E)=\frac{A_0}{N_T\Phi(E)(1-e^{-\lambda \Delta t_\text{irr}})}
-\end{equation}
-
-not, need to check if this is the correct one.. 
-\begin{equation}
-    \sigma(E) = \frac{A_0 \cdot t_\text{irr}}{N_T \cdot \Phi(E)(1-e^{-\lambda t_\text{irr}})}
-\end{equation}
-\noindent where $A_0$ is the end of beam activity of the resulting product nucleus (Y), $t_\text{irr}$ is the irradiation time, $N_T$ is the number of target nuclei (X), $\Phi(E)$ is the projectile flux (a), and $\lambda$ is the decay constant of the product nucleus. 
-
-\newpage
-
-Why we are interested, why is there a need for nuclear production cross sections. 
-
-
-
-The Q-value for nuclear reactions 
-
-Compound nucleus, what happens. 
-Q value, binding energy, particle emission, probabilities (why does n, p/alpha emission require higher energy, but is more favoured than T emission if both possible.)
-
-
-\subsection{Expected products from deuterions on iridium, iron, cupper and nc}
-
-Include figure of different nuclear charts, and write about Q values, and reaction channels, which makes it more probable that we observe it (eg. when neutron, proton/alpha channels opens).
-
-
-
-
-
-\section{From book}
-
-In a nuclear reaction, the energy, linear momentum, the total number of protons and neutrons, angular momentum and conservation of parity is conserved. \\
-
-The compound nucleus; the collisions are described by a model called Multistep Compound Model (Feshback, Kerman and Koonin, 1980), which is the model that reaction modeling code EMPIRE and TALYS rely on. \textcolor{red}{find out what ALICE does ???}
-
-Products of a nuclear reaction can be anything than conserve the various variables. Mass energy conservation is the Q-value, which is the mass differene in the reactant nuclei (projectile and target in this case) and product nuclei (decay channel particles and product). Binding energy (nuclear mass energy) often denoted as $\Delta=(M_0 - Au)c^2$, where A is atomic mass number, u is atomic mass unit. Q-value can be rewritten: 
-\begin{equation}
-    Q = \Delta_\text{projectile} + \Delta_\text{target} - \sum \Delta_\text{products}
-\end{equation}
-
-Charged particle reactions with heavy nuclei which is the case here, can have positive or negative Q-value. If the Q-value is negative, energy is required to induce the reaction. The reaction is negative if the sum of products is less than the sum of reactants. The excitation energy of the product nucleus is the extra energy which is deposited in the product nucleus. The decay of this is often times $\gamma$-rays (?). If the excitation energy is lower than the binding energy of the nucleus?  Threshold is the minimum energy required for the incoming projectile to form a product nucleus, which is then in its ground state. 
-
-\begin{equation}
-    \text{mass-energy}: \quad \Delta_t+ \Delta_p + E_p 
-\end{equation}
-
-
-
-
-\section{The decay of the compound nucleus}
-At the energy ranges in which this work is operating in, the nuclear reaction is caused by a fusion between the incoming projectile to create an highly excited compound nucleus. \\ 
-
-\noindent 
-The decay favoured decay channel is dependent on multiple properties such as the charge and angular momentum. The coulomb potential is defined as 
-
-\begin{equation}
-    U_{c} = K\frac{z_1 z_ 2 e^2}{A_1^{1/3} + A_2^{1/3}}
-\end{equation}
-
-where z is the the number of charges, e is the electrical charge and $A^{1/3}$ is the nuclear radius which is equal to $r=r_0 A^{1/3}$. K is a constant value. 
-
-The centrifugal barrier (which is the amount of energy which is conserved in rotational energy) depends on the angular momentum 
-
-\begin{equation}
-    U_{s} = \frac{\hbar \ell(\ell+1)}{2\mu r^2}
-\end{equation}
-
-where $\mu$ is the reduced mass $u\cdot \frac{A_1 A_2}{A_1 + A_2}$. 
-
-
-\textcolor{red}{Table \ref{tab:decaychannel_particles} might be wrong in the sense $J^\pi$. Might just be the total spin which is of interest? But since $J=l+s$, the spin will give a higher intrinsic angular momentum. Since $|I_i - I_f| \leq \ell \neq I_i+I_f$, $\ell$ can be multiple values, and the parity is thus dependent on the value here. (Krane, chapter 8.5, p. 257). The centrifugal potential is thus} 
-
-\begin{equation}
-   U_{0,s} =  \frac{\ell (\ell +1)\hbar}{2mr^2}
-\end{equation}
-
-and the Coulomb potential is
-
-\begin{equation}
-    U_{0,c} = K\frac{z_1 z_2 e^2}{A_1{1/3}+ A_2^{1/3}}
-\end{equation}
-
-The 
-
-\begin{table}[]
-    \centering
-    \caption{The table shows the most common decay channels for the decay routes available in this energy region. $\Delta$ is the binding energy of the alpha particle, which can be calculated using equation \ref{eq:Binding_energy1}, where the mass of the proton is $m_p = 938.28$ MeV/c$^2$ and $m_n=939.57$ MeV/c$^2$. $\Delta$ is thus the difference in in energy-mass between the particle composed of protons and or neutrons, and a equal number of protons and neutrons independent. All parities are positive due to angular momentum $\ell=0$.  }
-    \begin{tabular}{|c|c|c|c|c|}
-         \hline 
-         Particle & \Delta (MeV) &J^\pi & Charge \\
-         \hline
-         p & - & $\frac{1}{2}^+$ & +1 \\
-         n & - & $\frac{1}{2}^+$ & 0 \\
-         d & 2.2 & $1^+$ & +1 \\
-         t & 8.5 & $\frac{1}{2}^+$ & +1 \\
-         ^{3}He & 7.7 & $\frac{1}{2}^+$ & +2 \\
-        \alpha & 28.3 & 0^+ & +2 \\
-        \hline
-    \end{tabular}
-    \label{tab:decaychannel_particles}
-\end{table}
-
-
-\begin{table}[]
-    \centering
-    \begin{tabular}{|c|c|c|c|c|c|c|}
-        \hline
-        Target & Proton & neutron & deuterion & triton & ^{3}H & \alpha  \\
-        \hline
-        Fe (Z=26) & & & & & &  \\
-        Ni (Z=28) & & & & & &  \\
-        Cu (Z=29) & & & & & &  \\
-        Ir (Z=30) & & & & & &  \\
-        
-    \end{tabular}
-    \caption{The Coulomb barrier in MeV for each of the targets. Can be used to explain why we see what we see. }
-    \label{tab:my_label}
-\end{table}
-
-The total angular momentum J is the sum of the orbital and intrinsic angular momentum (spin), thus 
-\begin{equation}
-    \mathbf{J} = \mathbf{\ell} + \mathbf{s} 
-\end{equation}
-
-The spin is the sum of unpaired paired protons and neutrons. The total nuclear spin is thus $I = \sum_i J_i$.  The value of the angular momentum is
-\begin{equation}
-    |I_i - I_f| \leq \ell \geq |I_i + I_f|
-\end{equation}
-
-Thus, 
 
 
 
@@ -1349,7 +1506,8 @@ For a function $f=xy $, the variance can be expressed from equation \ref{eq:vari
 
 
 
-
+\bibliography{Bibliography}
+\bibliographystyle{unsrt}
 
 
 
@@ -1379,3 +1537,5 @@ For a function $f=xy $, the variance can be expressed from equation \ref{eq:vari
 \end{figure}
 
 \end{comment}
+
+
