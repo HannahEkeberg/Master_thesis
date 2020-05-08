@@ -1,0 +1,95 @@
+%\appendix 
+
+\chapter{Statistics} \label{ch_app:statistics}
+
+\noindent \textcolor{red}{Uncertainty in statistics refers to the standard deviation of the data, which gives a number of the spreading of the data from the mean value of the data \textcolor{red}{citation}. The variance is the standard deviation squared, which weights the variables to a higher degree. }
+
+\begin{equation}
+    std = \sqrt{\sigma^2}
+\end{equation}
+
+\begin{equation} \label{eq:standard_dev}
+    \sigma = \sqrt{\frac{1}{N}\sum_{i=1}^N (x_i - \overline{x})^2}
+\end{equation}
+\noindent
+where N is the number of measurements, $x_i$ is a measurement and $\overline{x}$ is the average over all measurements. 
+
+$\chi^2$ is an estimation of the goodness of the fit, which includes the weight of the error
+
+\begin{equation}
+    \chi^2 = \sum_i^n \Big( \frac{y_i - \overline{y}}{\sigma_i} \Big)^2
+\end{equation}
+where $\overline{y}$ is the mean value of y and $\sigma_i$ is the error in $y_i$. The reduced $\Chi^2$ is defined as the $\Chi^2$ per degree of freedom 
+\begin{equation} \label{eq:chisq_DOF}
+    \chi^2_\nu = \frac{\chi^2}{\nu}
+\end{equation}
+where $\nu$ is the degrees of freedom equal to the number of observations minus the number of fitted parameters. A value close to $\chi^2_\nu=1$ indicates that the observations and fit is in well accordance to the error, while $\chi^2_\nu>1$ indicates an underfitting and a $\chi^2_\nu<1$ indicates an overfitting \footnote{https://en.wikipedia.org/wiki/Reduced_chi-squared_statistic}. \\
+
+\noindent 
+A function $f$ with input $x$ and a set of variables $\vec{\beta}= \beta_1, \beta_2, ..., \beta_n$ and output y can be written on the following form
+\begin{equation}
+    y = f(x, \vec{\beta})
+\end{equation}
+
+\noindent The uncertainty in y is dependent on the uncertainty in the different input variables $ \vec{\beta}$. The matrix expression for error propagation is (Tellinghuisen, Joel, Statistical error propagation)\footnote{A full derivation of the expression can be found in Uncertainty Propagation for Measurements with multiple output quantities, Dobbert, Schrijver}
+\begin{equation} \label{eq:variance_full}
+    \sigma^2_y = \mathbf{J}\cdot \mathbf{V}\cdot \mathbf{J}^T 
+\end{equation} 
+
+\noindent where $\sigma^2_y$ is the variance in y, J is the Jacobian matrix
+\begin{equation}
+\mathbf{J} = 
+    \begin{bmatrix}
+       \frac{\partial f}{\partial \beta_1} &  \frac{\partial f}{\partial \beta_2} & \cdots & \frac{ \partial f}{\partial \beta_n}
+    \end{bmatrix}
+\end{equation}
+
+\noindent and V is the variance-covariance matrix 
+
+\begin{equation}
+\mathbf{V} = 
+\begin{bmatrix}
+  \sigma_0^2 & \sigma_{0,1} & \cdots & \sigma_{0,n} \\
+  \sigma_{1,0} & \sigma_{1}^2 & \cdots & \sigma_{1,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  \sigma_{n,0} & \sigma_{n,1} & \cdots & \sigma_{n}^2
+ \end{bmatrix}
+\end{equation}
+
+
+\noindent In the cases where the input parameters are uncorrelated, all non-diagonal elements in the variance-covariance matrix is equal to zero, and the expression for the variance is simplified to 
+
+\begin{equation} \label{eq:variance_simplified}
+    \sigma_y^2 = \sum_{i=1}^n \Big(\frac{\partial f}{\partial \beta_i } \Big)^2 \sigma_{\beta_i}^2
+\end{equation}
+
+\noindent Whenever the input parameters are correlated, which means that $\sigma_{\beta_i, \beta_j}\neq 0$, we have to apply equation \ref{eq:variance_full}, otherwise, the simplification in equation \ref{eq:variance_simplified} will give wrong error propagation. \\
+
+\noindent To evaluate the partial derivatives of f, the computational derivation is applicable
+
+\begin{equation}
+    \frac{\partial f}{\partial \beta_i} \simeq\frac{f(x, \beta_i + \frac{\Delta \beta_i}{2}) - f(x, \beta_i-\frac{\Delta \beta_i}{2})}{\Delta \beta_i}
+\end{equation}
+
+\noindent where $\Delta\beta_i$ is a small number, like $10^{-8}\beta_i$. \\
+
+
+\noindent 
+For a function $f=xy $, the variance can be expressed from equation \ref{eq:variance_full}, where  $$\mathbf{J}=\begin{bmatrix}y & x \end{bmatrix}$$ and $$\mathbf{V}=\begin{bmatrix} \sigma_x^2 & \sigma_{x,y}\\\sigma_{y,x} & \sigma_{y^2} \end{bmatrix}$$ 
+
+\begin{equation}
+    \sigma_f^2 = x^2\sigma_y^2 + y^2\sigma_x^2 + 2 xy \sigma_{x,y}
+\end{equation}
+
+\noindent If we multiply each term so that we can collect $f^2$ in the numerator, the variance in f can be expressed as 
+
+\begin{equation}
+    \sigma_f^2 = f^2 \big( \frac{\sigma_x^2}{x^2} + \frac{\sigma_y^2}{y^2} + \frac{2\sigma_{x,y}}{xy} \Big)
+\end{equation}
+
+\noindent if the variables x and y are uncorrelated, the variance is further simplified, and more terms can be included easily. The simplified standard deviation of a function $f(\vec{\beta})=\beta_1 \cdot \beta_2 \cdots \beta_n $ with uncorrelated variables is thus
+\begin{equation} \label{eq:uncertainty_simplification}
+    \sigma_f = |f|\sqrt{ \Big( \frac{\sigma_{\beta_1}}{\beta_1}\Big)^2 +  \Big( \frac{\sigma_{\beta_2}}{\beta_2}\Big)^2 + \cdots  \Big( \frac{\sigma_{\beta_n}}{\beta_n}\Big)^2    } 
+\end{equation}
+
+

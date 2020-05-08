@@ -1,0 +1,442 @@
+%\appendix 
+
+\chapter{Tables} \label{ch_app:tables}
+
+For all tables, the assumption is that the main particle emission is due to alpha, proton or neutron emission. However, triton, $^3$He and deuterons are still fed when above threshold, but from theory, the feeding is low. For triton, $^{3}$He and deuteron respectively, subtract 8.5, 7.7 or 2.2 respectively from the Q value. Alphaparticles (due to the large binding energy and spin equal to 0) will be more fed. To calculate Q value for alpha emission subtract 28.3 MeV from Q value of 2p2n-reactions. Q values from  \footnote{https://www.nndc.bnl.gov/qcalc/} are used. Q values below 40 MeV are included for comparison to experimental data. 
+%\usepackage{longtable}
+%\usepackage{tabu, booktabs}
+
+\section{Product nuclei, Q-values and gammarays}
+%\begin{table}
+    \centering
+    \begin{longtable}{ccc|cc|cc}
+    \caption{Products observed on Nickel foils. Nickel has five stable isotopes: $^{58}$Ni (68.077\%), $^{60}$Ni (26.223 \%), $^{61}$Ni (1.1399\%), $^{62}$Ni (3.6346\%) and $^{64}$Ni (0.9255\%). If the nucleus has provided energy level, the nucleus is an isomer, if nothing then ground state. \textcolor{red}{The table is inspired by Tarkanyi et al 2019 (ir paper))} } 
+    %\begin{tabular}{|c|c|c|cc|cc|}
+        \hline
+        \thead{\textbf{Nuclide}\\ \textbf{level (keV)}} & \thead{\textbf{Half life}} & \thead{\textbf{Decay mode}} & \thead{\textbf{Reaction route}} & \thead{\textbf{Q value (keV)}} & \thead{$\mathbf{E_\gamma}$ \textbf{(keV)}} & \thead{$\mathbf{I_\gamma}$ \textbf{(\%)}}  \\
+        \hline
+        \makecell[t]{$^{52}$Mn\\ $\quad$(0.0) } &\makecell[t]{5.591 d \\ 21.1 m} & \makecell[t]{$\epsilon: 100\% $} & \makecell[t]{$^{58}$Ni(d,2$\alpha$) \\ $^{60}$Ni(d,2n2$\alpha$ \\ $^{61}$Ni(d,3n2$\alpha$)}   & \makecell[t]{-1235.6 \\ -21622.6 \\ -29442.7} & \makecell[t]{744.233 \\ 935.544 \\ 1246.278 \\ 1434.092} & \makecell[t]{90.0 \\ 94.5\\4.21 \\100.0} \\
+        %\makecell{$^{52m}$Mn \\ $\quad$(377.7495)} & 21.1 m & \makecell{\epsilon: 98.22\% \\ IT: 1.78\% } & & & & \\ 
+        \hline
+
+        \makecell[t]{$^{54}$Mn \\ $\quad$(0.0) } & \makecell[t]{312.20 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{58}$Ni(d,2p$\alpha$) \\ $^{60}$Ni(d,2$\alpha$) \\  $^{61}$Ni(d,n2$\alpha$) \\ $^{62}$Ni(d,2n2$\alpha$)} & \makecell[t]{ -8538.3 \\ -629.6 \\ -8449.7 \\ -19045.4 }& 834.848 & 99.9760 \\
+        \hline 
+        
+        \makecell[t]{$^{59}$Fe\\ $\quad$(0.0)} & \makecell[t]{44.490 d} & \makecell[t]{\beta^-: 100\%} & \makecell[t]{$^{60}$Ni(d,3p) \\ $^{61}$Ni(d,n3p) \\ $^{62}$Ni(d,p$\alpha$) \\ $^{64}$Ni(d,2np$\alpha$) } & \makecell[t]{-12539.5 \\ -20359.6 \\ -2659.7 \\ -19154.9}   & 1291.590 & 43.2 \\
+        \hline
+        
+        \makecell[t]{$^{55}$Co\\ $\quad$(0.0)} & \makecell[t]{17.53 h} & \makecell[t]{\epsilon: 100\% } & \makecell[t]{$^{58}$Ni(d,n$\alpha$) \\ $^{60}$Ni(d,3n$\alpha$) \\ $^{61}$Ni(d,4n$\alpha$) } & \makecell[t]{-3559.4 \\ -23946.4 \\ -31766.5} & \makecell[t]{ 385.4 \\ 520.0 \\ 803.7 \\ 931.1 \\1212.8 \\ 1316.6 \\ 1370.0 \\  2177.6 } & \makecell[t]{0.54 \\  0.83 \\ 1.87 \\ 75 \\ 0.26 \\ 7.1 \\ 2.9 \\ 0.29 } \\
+        \hline
+        
+        \makecell[t]{$^{56}$Co \\ $\quad$(0.0)} & \makecell[t]{77.236 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{58}$Ni(d,$\alpha$) \\ $^{61}$Ni(d,2n$\alpha$) \\ $^{61}$Ni(d,3n$\alpha$) \\$^{62}$Ni(d,4n$\alpha$)} & \makecell[t]{6522.5 \\ -13864.5 \\ -21684.6 \\ -32280.4} & \makecell[t]{787.743 \\846.770\\ 977.372 \\ 1175.101 \\ 1963.741 \\ 2015.215 \\ 2034.791} & \makecell[t]{0.3111 \\ 99.9399 \\ 1.421 \\ 2.252 \\ 0.707 \\ 3.016 \\ 7.77}\\ 
+        \hline
+        
+       \makecell[t]{$^{58}$Co \\ $\quad$(0.0) } & \makecell[t]{70.86 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{58}$Ni(d,2n) \\ $^{60}$Ni(d,$\alpha$) \\ $^{61}$Ni(d,n$\alpha$) \\ $^{62}$Ni(d,2n$\alpha$) \\ $^{64}$Ni(d,4n$\alpha$)}  & \makecell[t]{-1823.8 \\ 6084.9 \\-1735.3 \\-12331.0\\ -28826.2}   & \makecell[t]{810.7593\\ 863.951 \\1674.725 } & \makecell[t]{99.450 \\ 0.686 \\ 0.517}\\
+        %\makecell{$^{58m}$Co \\ $\quad$(24.88921) } & \makecell{70.86 d} & \makecell{IT:100\%} & & & & \\ 
+        \hline
+        
+        \makecell[t]{$^{60}$Co \\ $\quad$(0.0)} & \makecell[t]{1925.28 d} & \makecell[t]{$\beta^-$: 100\%} & \makecell[t]{$^{60}$Ni(d,2p)  \\ $^{61}$Ni(d,n2p) \\ $^{62}$Ni(d,$\alpha$) \\ $^{64}$Ni(d,2n$\alpha$)}  & \makecell[t]{-4265.0 \\ -12085.1 \\ 5614.8 \\ -10880.4 } &\makecell[t]{1173.228 \\ 1332.492} & \makecell[t]{99.85 \\ 99.9826} \\
+        \hline
+        
+        \makecell[t]{$^{56}$Ni\\$\quad$(0.0)} & \makecell[t]{6.075 d} & \makecell[t]{\epsilon: 100\%} & \makecell[t]{$^{58}$Ni(d,3np)} & \makecell[t]{-24688.4} & \makecell[t]{158.38 \\ 480.44 \\ 749.95 \\ 811.85 \\ 1561.80} & \makecell[t]{98.8 \\ 36.5 \\ 49.5 \\ 86.0 \\ 14.0 } \\ 
+        \hline 
+        
+        
+        
+        \makecell[t]{$^{57}$Ni\\ $\quad$(0.0)} & \makecell[t]{35.60 h} & \makecell[t]{\beta^+: 100\%} & \makecell[t]{$^{58}$Ni(d,2np) \\ $^{60}$Ni(d,4np)} & \makecell[t]{-14440.8 \\ -34827.8} & \makecell[t]{ 379.94 \\ 673.44 \\ 906.98 \\ 1046.68 \\ 1224.00 \\ 1377.63 \\ 1730.44 \\ 1757.55 \\ 1897.42 \\ 1919.52 \\ 2133.04 \\ 2804.20 \\ } & \makecell[t]{0.0670 \\ 0.0491 \\ 0.0613 \\ 0.134 \\ 0.063 \\ 81.7 \\ 0.052 \\ 5.75 \\ 0.028 \\ 12.3 \\ 0.0286 \\ 0.098 } \\
+        \hline
+         
+         \makecell[t]{$^{65}$Ni \\ $\quad$(0.0)} & \makecell[t]{2.51719 h} & \makecell[t]{\beta^-: 100\% } & \makecell[t]{$^{64}$Ni(d,p)} & \makecell[t]{3873.51} &  \makecell[t]{366.27 \\ 1481.84 \\ 1623.42 \\ 1724.92} & \makecell[t]{4.81 \\ 23.59 \\ 0.498 \\ 0.399 } \\
+         \hline
+         
+         \makecell[t]{$^{60}$Cu\\ $\quad$(0.0)} & \makecell[t]{23.7 m } & \makecell[t]{\epsilon: 100\%} & \makecell[t]{$^{60}$Ni(d,2n) \\ $^{61}$Ni(2,3n) \\ $^{62}$Ni(d,4n) } & \makecell[t]{-9134.9 \\ -16955.0 \\ -27550.7 } & \makecell[t]{467.3 \\ 497.9 \\ 643.2 \\ 952.4 \\ 1035.2 \\ 1110.5 \\ 1293.7 \\ 1791.6 \\ 1861.6 \\ 1936.9 \\ 2061.0 \\ 2158.9 \\ 2403.3 \\ 2687.9 \\ 2746.1} & \makecell[t]{3.52 \\ 1.67 \\ 0.97 \\ 2.73 \\3.70 \\ 1.06\\ 1.85 \\ 45.4 \\ 4.8 \\ 2.20 \\ 0.79 \\ 3.34 \\ 0.77 \\ 0.44 \\ 1.06}    \\
+         \hline
+         
+         \makecell[t]{$^{61}$Cu} & \makecell[t]{3.339 h} & \makecell{\epsilon:100\%} & \makecell[t]{$^{60}$Ni(d,n) \\ $^{61}$Ni(d,2n) \\ $^{62}$Ni(d,3n) \\ $^{64}$Ni(d,5n)} & \makecell[t]{2575.3 \\ -5244.8 \\ -15840.5 \\ -32335.7 } & \makecell[t]{282.956 \\ 373.050 \\ 529.169\\ 588.605 \\ 625.605 \\ 656.008 \\ 816.692 \\ 841.211 \\ 902.294 \\ 1032.162 \\ 1073.465 \\ 1132.351 \\ 1185.234 \\ 1446.492} & \makecell[t]{12.2 \\ 2.1 \\ 0.38 \\ 1.17 \\ 0.040 \\ 10.8 \\ 0.31 \\ 0.21 \\ 0.083 \\ 0.043 \\ 0.033 \\ 0.090 \\ 3.7 \\ 0.045} \\ 
+         \hline
+        
+        \makecell[t]{$^{64}$Cu} & \makecell[t]{12.701 h} & \makecell[t]{\epsilon:100\% \\ \beta^-:38.5\%} & \makecell[t]{$^{64}$Ni(d,2n)} & \makecell[t]{-4681.3} & \makecell[t]{1345.77} & \makecell[t]{0.475}   \\
+        \hline
+         %\thead{$^{52m}$Mn \\ (377.7495)} &\makecell{5.591 d} & \makecell{$\epsilon: 100\% $} & $^{58}$Ni(d,2$\alpha$)$^{52}$Mn & -1235.6 & 1278.5 &         
+    %\end{tabular}
+    \label{tab:Products_Ni}
+    \end{longtable}
+%\end{table}
+
+\newpage
+
+\centering
+    \begin{longtable}{ccc|cc|cc}
+    \caption{Products observed on Iron foils. Iron has five stable isotopes: $^{54}$Fe (5.845\%), $^{56}$Fe (91.754 \%), $^{57}$Fe (2.119\%) and  $^{58}$Fe (0.282\%). If the nucleus has provided energy level, the nucleus is an isomer, if nothing then ground state. \textcolor{red}{The table is inspired by Tarkanyi et al 2019 (ir paper))} } 
+    %\begin{tabular}{|c|c|c|cc|cc|}
+        \hline
+        \thead{\textbf{Nuclide}\\ \textbf{level (keV)}} & \thead{\textbf{Half life}} & \thead{\textbf{Decay mode}} & \thead{\textbf{Reaction route}} & \thead{\textbf{Q value (keV)}} & \thead{$\mathbf{E_\gamma}$ \textbf{(keV)}} & \thead{$\mathbf{I_\gamma}$ \textbf{(\%)}}  \\
+        \hline
+        \makecell[t]{$^{48}$V \\$\quad$(0.0)} & \makecell[t]{15.9735 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{54}$Fe(d,2$\alpha$) \\ $^{56}$Fe(d,2n2$\alpha$) \\ $^{57}$Fe(d,3n2$\alpha$)} & \makecell[t]{-3490.9 \\ -23986.1} & \makecell[t]{944.130 \\ 983.525 \\ 1312.106} & \makecell[t]{7.870 \\ 99.98\\98.2} \hline
+        
+        \makecell[t]{$^{51}$Cr\\$\quad$(0.0) } & \makecell[t]{27.704 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{54}$Fe(d,p$\alpha$) \\ $^{56}$Fe(d,2np$\alpha$) \\ $^{57}$Fe(d,3np$\alpha$) \\ $^{58}$Fe(d,4np$\alpha$) } & \makecell[t]{-1381.3 \\ -21876.5 \\ -29522.6 \\ -39567.2 } & \makecell[t]{320.0824} & \makecell[t]{9.910} \\ \hline
+        
+        \makecell[t]{$^{52}$Mn\\$\quad$(0.0)} & \makecell[t]{5.591 d d} & \makecell[t]{\epsilon: 100\%} & \makecell[t]{$^{54}$Fe(d,$\alpha$) \\ $^{56}$Fe(d,2n$\alpha$) \\ $^{57}$Fe(d,3n$\alpha$)} & \makecell[t]{5163.6 \\ -15331.6 \\ -22977.7 } & \makecell[t]{346.02 \\ 744.233 \\ 848.18 \\ 935.544 \\ 1246.278 \\ 1333.649 \\ 1434.092} & \makecell[t]{0.980 \\ 90.0 \\ 3.32 \\ 94.5 \\ 4.21 \\ 5.07 \\ 100.0 } \\ \hline        
+        \makecell[t]{$^{54}$Mn\\$\quad$(0.0)} & \makecell[t]{312.20 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{54}$Fe(d,2p) \\ $^{56}$Fe(d,$\alpha$) \\ $^{57}$Fe(d,n$\alpha$) \\ $^{58}$Fe(d,2n$\alpha$)} & \makecell[t]{-2139.1 \\ 5661.4 \\ -1984.7 \\ -12029.3} & \makecell[t]{834.8480} & \makecell[t]{99.9760} \\ \hline
+        
+        \makecell[t]{$^{53}$Fe\\$\quad$(0.0)} & \makecell[t]{8.51 m ????} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{54}$Fe(d,2np) \\$^{56}$Fe(d,4np) } & \makecell[t]{-15602.9 \\ -36098.1} & \makecell[t]{377.9} & \makecell[t]{42\%} \\ \hline
+        
+        \makecell[t]{$^{59}$Fe\\$\quad$(0.0)} & \makecell[t]{44.490 d} & \makecell[t]{\beta^-: 100\%} & \makecell[t]{$^{58}$Fe(d,p)} & \makecell[t]{4356.44} & \makecell[t]{1099.245 \\ 1291.590} & \makecell[t]{56.5\\43.2} \\ \hline
+        
+        \makecell[t]{$^{55}$Co\\$\quad$(0.0)} & \makecell[t]{17.53 h} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{54}$Fe(d,n) \\ $^{56}$Fe(d,3n) \\ $^{57}$Fe(d,4n)} & \makecell[t]{2839.8 \\ -17655.4 \\ -25301.5} & \makecell[t]{91.9 \\ 477.2 \\ 803.7 \\827.0\\ 931.1 \\ 1316.6 \\ 1370.0 \\ 1408.5  \\ 2177.6 \\ 2872.4 \\ 2938.9 } & \makecell[t]{1.16 \\ 20.2 \\ 1.87 \\ 0.21 \\ 75\\ 7.1 \\ 2.9 \\ 16.9 \\ 0.29 \\ 0.118 \\ 0.057 } \\ \hline
+        
+        \makecell[t]{$^{56}$Co\\$\quad$(0.0)} & \makecell[t]{77.236 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{56}$Fe(d,2n)\\$^{57}$Fe(d,3n) \\$^{58}$Fe(d,4n) } & \makecell[t]{-7573 \\ -15219.7 \\ -25264.3 } & \makecell[t]{263.434 \\ 486.55 \\ 733.514 \\ 787.743 \\ 846.770 \\ 852.732 \\ 896.510 \\ 977.372 \\ 996.948 \\ 1037.843 \\ 1140.368 \\ 1159.944 \\ 1175.101 \\ 1198.888 \\ 1238.288 \\ 1335.40 \\ 1360.212 \\ 1771.357 \\ 1963.741 \\ 2015.215 \\ 2034.791 \\ 2212.944 \\ 2276.131 \\ 2598.500} & \makecell[t]{0.0220 \\ 0.0540 \\ 0.191 \\ 0.311 \\ 99.9399 \\ 0.049 \\ 0.073 \\ 1.421 \\ 0.111 \\ 14.05 \\ 0.132 \\ 0.094 \\2.252 \\ 0.049 \\ 66.46 \\ 0.1224 \\ 4.283 \\ 15.41 \\ 0.707 \\ 3.016\\ 7.77 \\ 0.388 \\ 0.118 \\ 16.97 } \\ \hline
+        
+        \makecell[t]{$^{57}$Co\\$\quad$(0.0)} & \makecell[t]{271.74 d} & \makecell[t]{\epsilon: 100\%} & \makecell[t]{$^{56}$Fe(d,n) \\ $^{57}$Fe(d,2n \\ $^{58}$Fe(d,3n)} & \makecell[t]{3802.9 \\ -3843.2 \\ -13887.8 } & \makecell[t]{122.06065 \\ 136.47356} & \makecell[t]{85.60 \\ 10.68 } \\ \hline
+        
+        \makecell[t]{$^{58}$Co\\$\quad$(0.0)} & \makecell[t]{70.86} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{57}$Fe(d,n) \\ $^{58}$Fe(d,2n)} & \makecell[t]{4729.7 \\ -5314.9} & \makecell[t]{810.7593} & \makecell[t]{99.450} \\ \hline 
+        
+        %\makecell[t]{\\$\quad$(0.0)} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} \\ \hline
+        
+        
+        
+    %\end{tabular}
+    \label{tab:Products_Fe}
+    \end{longtable}
+%\end{table}
+
+
+
+\newpage
+\centering
+    \begin{longtable}{ccc|cc|cc}
+    \caption{Products observed on Cupper foils. Cupper has two stable isotopes: $^{63}$Cu (69.15\%) and $^{65}$Cu (30.85 \%).If the nucleus has provided energy level, the nucleus is an isomer, if nothing then ground state. \textcolor{red}{The table is inspired by Tarkanyi et al 2019 (ir paper))} } 
+    %\begin{tabular}{|c|c|c|cc|cc|}
+        \hline
+        \thead{\textbf{Nuclide}\\ \textbf{level (keV)}} & \thead{\textbf{Half life}} & \thead{\textbf{Decay mode}} & \thead{\textbf{Reaction route}} & \thead{\textbf{Q value (keV)}} & \thead{$\mathbf{E_\gamma}$ \textbf{(keV)}} & \thead{$\mathbf{I_\gamma}$ \textbf{(\%)}}  \\
+        \hline
+        
+        \makecell[t]{$^{59}$Fe\\$\quad$(0.0)} & \makecell[t]{44.490 d} & \makecell[t]{\beta^-: 100\%} & \makecell[t]{$^{63}$Cu(d,2p$\alpha$) \\ $^{65}$Cu(d,2$\alpha$)} & \makecell[t]{-8782.1 \\ 1687.0} & \makecell[t]{1099.245 \\ 1291.590} & \makecell[t]{56.5 \\43.2 } \\ \hline
+        
+        \makecell[t]{$^{60}$Co\\$\quad$(0.0)} & \makecell[t]{1925.28 d} & \makecell[t]{\beta^-:100\%} & \makecell[t]{$^{63}$Cu(d,p$\alpha$) \\ $^{65}$Cu(d,t$\alpha$)} & \makecell[t]{-507.6 \\ -9852.4} & \makecell[t]{1173.228 \\ 1332.492} & \makecell[t]{99.85 \\ 99.9826 } \\ \hline
+        
+        \makecell[t]{$^{61}$Co\\$\quad$(0.0)} & \makecell[t]{1.649 h} & \makecell[t]{\beta^-:100\%} & \makecell[t]{$^{63}$Cu(d,n3p) \\ $^{65}$Cu(d,np$\alpha$)} & \makecell[t]{-19484.2 \\ -9015.1 } & \makecell[t]{67.412} & \makecell[t]{84.7} \\ \hline
+        
+        \makecell[t]{$^{65}$Ni\\$\quad$(0.0)} & \makecell[t]{2.51719 h} & \makecell[t]{\beta^-:100\%} & \makecell[t]{$^{65}$Cu(d,2p)} & \makecell[t]{-3580.2} & \makecell[t]{1481.84} & \makecell[t]{23.59} \\ \hline
+        
+        \makecell[t]{$^{61}$Cu\\$\quad$(0.0)} & \makecell[t]{3.339 h} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{63}$Cu(d,3np) \\ $^{65}$Cu(d,5np)} & \makecell[t]{-21962.9 \\-39789.4} & \makecell[t]{282.956 \\ 656.008 \\ 1185.234} & \makecell[t]{12.2\\10.8 \\3.7} \\ \hline
+        
+        \makecell[t]{$^{64}$Cu\\$\quad$(0.0)} & \makecell[t]{12.701 h} & \makecell[t]{\epsilon:61.5\% \\ \beta^-: 38.5} & \makecell[t]{$^{63}$Cu(d,p) \\$^{65}$Cu(d,2np)} & \makecell[t]{5691.54 \\ -12135.0} & \makecell[t]{1345.77} & \makecell[t]{0.475} \\ \hline
+        
+        \makecell[t]{$^{62}$Zn\\$\quad$(0.0)} & \makecell[t]{9.193 h} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{63}$Zn(d,3n) \\ $^{65}$Cu(d,5n)} & \makecell[t]{-15490.0 \\ -33316.6 } & \makecell[t]{40.85 \\ 243.36 \\ 246.95 \\ 260.43 \\ 304.88 \\ 394.03 \\ 548.35 \\ 596.56 \\ 637.41} &  \makecell[t]{25.5 \\ 2.52 \\ 1.90 \\ 1.35 \\ 0.29 \\ 2.24 \\ 15.3 \\ 26.0 \\ 0.25} \\ \hline
+        
+        \makecell[t]{$^{63}$Zn\\$\quad$(0.0)} & \makecell[t]{38.47 m} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{63}$Cu(d,2n) \\ $^{65}$Cu(d,4n)} & \makecell[t]{-6373.3 \\ -24199.8 } & \makecell[t]{449.93 \\ 669.62 \\ 962.06} & \makecell[t]{0.236 \\ 8.2 \\6.5 } \\ \hline
+        
+        \makecell[t]{$^{65}$Zn\\$\quad$(0.0)} & \makecell[t]{243.93 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{65}$Cu(d,2n)} & \makecell[t]{-4358.6} & \makecell[t]{1115.539} & \makecell[t]{50.04} \\ \hline
+        
+        %\makecell[t]{\\$\quad$(0.0)} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} \\ \hline
+        
+        
+        
+    %\end{tabular}
+    \label{tab:Products_Cu}
+    \end{longtable}
+    
+    
+\newpage
+\centering
+    \begin{longtable}{ccc|cc|cc}
+    \caption{Products observed in Iridium foils. Iridium has two stable isotopes: $^{191}$Ir (37.3\%) and $^{93}$Ir (62.7 \%).If the nucleus has provided energy level, the nucleus is an isomer, if nothing then ground state. \textcolor{red}{The table is inspired by Tarkanyi et al 2019 (ir paper))} } 
+    %\begin{tabular}{|c|c|c|cc|cc|}
+        \hline
+        \thead{\textbf{Nuclide}\\ \textbf{level (keV)}} & \thead{\textbf{Half life}} & \thead{\textbf{Decay mode}} & \thead{\textbf{Reaction route}} & \thead{\textbf{Q value (keV)}} & \thead{$\mathbf{E_\gamma}$ \textbf{(keV)}} & \thead{$\mathbf{I_\gamma}$ \textbf{(\%)}}  \\
+        \hline
+        
+        \makecell[t]{$^{188}$Ir\\$\quad$(0.0)} & \makecell[t]{41.5 h} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{191}$Ir(d,4np) } & \makecell[t]{-24802.0} & \makecell[t]{1209.80 \\ 1715.67 \\ 2059.65} & \makecell[t]{6.9 \\6.2 \\ 7.0} \\ \hline
+        
+        \makecell[t]{$^{189}$Ir\\$\quad$(0.0)} & \makecell[t]{13.2 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{191}$Ir(d,4np) \\ $^{193}$Ir(d,5np)} & \makecell[t]{-16626.0 \\ -30596.0} & \makecell[t]{95.23 \\ 216.7 \\ 233.5 \\ 245.1} & \makecell[t]{0.38 \\ 0.52 \\ 0.30\\6.0} \\ \hline
+        
+        \makecell[t]{$^{190}$Ir\\$\quad$(0.0)} & \makecell[t]{11.78 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{191}$Ir(d,2np)\\ $^{193}$Ir(d,4np)} & \makecell[t]{-10251.1\\-24221.2} & \makecell[t]{294.75\\380.03 \\1036.05} & \makecell[t]{6.6\\ 2.03 \\2.42} \\ \hline
+        
+        \makecell[t]{$^{190m2}$Ir\\$\quad$(376.4)} & \makecell[t]{3.087 h} & \makecell[t]{IT:8.6\% \\ \epsilon:91.4\%} & \makecell[t]{..} & \makecell[t]{..} & \makecell[t]{361.2 \\ 502.5 \\ 616.5} & \makecell[t]{86.72\\89.38\\90.14} \\ \hline
+        
+        \makecell[t]{$^{192}$Ir\\$\quad$(0.0)} & \makecell[t]{73.829 d} & \makecell[t]{\epsilon:4.76\% \\ \beta^-:95.24\%} & \makecell[t]{$^{191}$Ir(d,p) \\ $^{193}$Ir(d,2np)} & \makecell[t]{3973.55 \\-9996.6} & \makecell[t]{201.3112 \\ 295.95650 \\ 374.4852 \\ 416.4688 \\ 468.06885 \\ 489.06 \\ 612.46215 \\ 1061.49 } & \makecell[t]{0.471 \\ 28.71 \\ 0.727 \\ 0.670 \\ 47.84\\0.438 \\ 5.34 \\ 0.0531} \\ \hline
+        
+        \makecell[t]{$^{194}$Ir\\$\quad$(0.0)} & \makecell[t]{19.28 h} & \makecell[t]{\beta^-:100\%} & \makecell[t]{$^{194}$Ir(d,p)} & \makecell[t]{3842.22} & \makecell[t]{293.541 \\ 300.741 \\ 589.179 \\ 938.69 \\ 1150.75 \\ 1468.91} & \makecell[t]{2.5\\ 0.35 \\ 0.140 \\ 0.60 \\ 0.60 \\ 0.19} \\ \hline
+        
+        \makecell[t]{$^{194m2}$Ir\\$\quad$(190+X)} & \makecell[t]{171 d} & \makecell[t]{\beta^-:100\%} & \makecell[t]{..} & \makecell[t]{..} & \makecell[t]{338.8 \\482.6 \\ 562.4\\ 687.8} & \makecell[t]{55\\97 \\ 35 \\3.6} \\ \hline
+        
+        \makecell[t]{$^{188}$Pt\\$\quad$(0.0)} & \makecell[t]{10.16 d} & \makecell[t]{\epsilon:99.999974\% \\ \alpha:2.6E-5\%} & \makecell[t]{$^{191}$Pt(d,2n) } & \makecell[t]{-26109.0 } & \makecell[t]{195.05 \\ 381.43} & \makecell[t]{18.4 \\ 7.4 } \\ \hline
+        
+        \makecell[t]{$^{189}$Pt\\$\quad$(0.0)} & \makecell[t]{10.87 h} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{191}$Ir(d,4n) } & \makecell[t]{-19389.0} & \makecell[t]{94.34 \\ 113.82 \\ 243.50 \\ 317.65 \\ 721.38} & \makecell[t]{6.5 \\ 2.5 \\ 5.9 \\ 2.8 \\ 7.9 } \\ \hline
+        
+        \makecell[t]{$^{191}$Pt\\$\quad$(0.0)} & \makecell[t]{2.802 d} & \makecell[t]{\epsilon:100\%} & \makecell[t]{$^{191}$Ir(d,2n) \\ $^{193}$Ir(d,4n) } & \makecell[t]{-4017.0 \\ -17988.0} & \makecell[t]{178.96 \\351.17 \\ 409.44 \\ 456.47 \\ 538.87 \\ 624.06} & \makecell[t]{12.5 \\42.6 \\ 100 \\ 42 \\ 181 \\ 18.5} \\ \hline
+        
+        \makecell[t]{$^{193m}$Pt\\$\quad$(149.783)} & \makecell[t]{4.33 d} & \makecell[t]{IT:100\%} & \makecell[t]{$^{193}$Ir(d,2n)} & \makecell[t]{-3063.5}  & \makecell[t]{66.831 \\ 135.5 } & \makecell[t]{7.21 \\ 0.1145475} \\ \hline
+        
+        %\makecell[t]{\\$\quad$(0.0)} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} & \makecell[t]{} \\ \hline
+        
+        
+        
+    %\end{tabular}
+    \label{tab:Products_Ir}
+    \end{longtable}
+%\end{table}
+
+\newpage
+\section{Production cross sections}
+
+\subsection{$^\text{nat}$Ir(d,x) }
+
+
+
+%\newpage
+\pagestyle{empty}
+\begingroup
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+%\begin{landscape}
+
+\begin{table}[]
+\caption{Iridium production cross sections produced from Iridium}
+%\begin{sidewaystable}
+    \centering
+    %\footnotesize
+    \small
+    \begin{tabular}{c  c c c c c }
+        \hline
+        
+        & \multicolumn{4}{c}{ \underline{Production cross section (mb) for iridium radionuclides}}\\
+        %\hline
+       \makecell{$E_d$ (MeV)}   & \makecell{$^{188m1+g}$Ir$_\text{cum}$} & \makecell{$^{188m1+g}$Ir$_\text{ind}$} & \makecell{$^{189}$Ir$_\text{cum}$} & \makecell{$^{190m1+g}$Ir$_\text{cum}$} & \makecell{$^{190m1+g}$Ir$_\text{ind}$} \\
+       \hline
+       \makecell{30.65_{-0.75}^{+0.76}} & \makecell{1.37 \pm 0.10} & \makecell{0.42 \pm 0.03} & \makecell{332.49 \pm 24.20} & \makecell{86.65 \pm 2.89} & \makecell{85.88 \pm 2.86}  \\
+       \makecell{28.40_{-0.79}^{+0.80}} & \makecell{0.45 \pm 0.07} & \makecell{0.17 \pm 0.02} & \makecell{237.84 \pm 17.44} & \makecell{62.80 \pm 2.14} & \makecell{62.36 \pm 2.13} \\
+       \makecell{26.03_{-0.82}^{+0.82}} & \makecell{0.34 \pm 0.08} & \makecell{0.17 \pm 0.03} & \makecell{91.49 \pm 5.47} & \makecell{44.26 \pm 1.47} & \makecell{44.01 \pm 1.46} \\
+       \makecell{23.54_{-0.87}^{+0.88}} & \makecell{-} & \makecell{-} & \makecell{19.23 \pm 2.65} & \makecell{27.29 \pm 1.02} & \makecell{27.19 \pm 1.02}\\
+       \makecell{21.38_{-0.92}^{+0.94}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{18.73 \pm 0.71} & \makecell{18.69 \pm 0.70} \\
+       \makecell{19.03_{-0.99}^{+1.00}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{14.02 \pm 0.55} & \makecell{14.00 \pm 0.55} \\
+       \makecell{16.43_{-1.08}^{+1.11}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{12.40 \pm 0.51} & \makecell{12.39 \pm 0.51} \\
+       \makecell{13.51_{-1.22}^{+1.28}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{8.26 \pm 0.43} & \makecell{8.25 \pm 0.42} \\
+       \makecell{10.09_{-1.41}^{+1.55}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-}  & \makecell{-}  \\
+       \makecell{5.63_{-1.83}^{+2.21}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-} \\
+       %\makecell{\makecell{28.40_{-0.79}^{+0.80}}} & \makecell{} & \makecell{} & \makecell{} & \makecell{} \\
+       
+       
+       %\makecell{28.40_{-0.79}^{+0.80}} & \makecell{26.03_{-0.82}^{+0.82}} & \makecell{23.54_{-0.87}^{+0.88}} & \makecell{21.38_{-0.92}^{+0.94}} & \makecell{19.03_{-0.99}^{+1.00}} & \makecell{16.43_{-1.08}^{+1.11}} & \makecell{13.51_{-1.22}^{+1.28}} & \makecell{10.09_{-1.41}^{+1.55}} & \makecell{5.63_{-1.83}^{+2.21}}   \\
+       \hline
+       
+       %\makecell{$^{188}$Ir} & \makecell{} & \makecell{} & \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} \\
+       %\makecell{$^{193m}$Pt} & \makecell{48.11 \pm 6.33} & \makecell{} & \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} \\       
+       
+    \end{tabular}
+    \label{tab:crossSections_Ir}
+\end{table}
+%\end{sidewaystable}
+%\end{landscape}
+\endgroup
+\pagestyle{empty}
+
+
+%\newpage
+\pagestyle{empty}
+\begingroup
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+%\begin{landscape}
+\begin{table}[]
+\caption{Iridium production cross sections produced from Iridium}
+%\begin{sidewaystable}
+    \centering
+    %\footnotesize
+    \small
+    \begin{tabular}{c  c c c c c }
+        \hline
+        
+        & \multicolumn{4}{c}{ \underline{Production cross section (mb) for iridium radionuclides}}\\
+        %\hline
+       \makecell{$E_d$ (MeV)}   & \makecell{$^{190m2}$Ir$_\text{ind}$}  & \makecell{$^{192}$Ir$_\text{cum}$} & \makecell{$^{194g}$Ir$_\text{cum}$} & \makecell{$^{194m2}$Ir$_\text{ind}$}  \\
+       \hline
+       \makecell{30.65_{-0.75}^{+0.76}} &  \makecell{8.87 \pm 0.25} & \makecell{188.43 \pm 5.27} & \makecell{50.92 $\pm$ 2.18} & \makecell{-} \\
+       \makecell{28.40_{-0.79}^{+0.80}} & \makecell{5.03 \pm 0.15} & \makecell{152.55 \pm 4.39} & \makecell{51.39$\pm$2.89}& \makecell{-}\\
+       \makecell{26.03_{-0.82}^{+0.82}} & \makecell{2.92 \pm 0.08} & \makecell{124.33 \pm 3.42}& \makecell{61.37$\pm$2.39}& \makecell{0.74 $\pm$ 0.17}\\
+       \makecell{23.54_{-0.87}^{+0.88}} & \makecell{1.16 \pm 0.04} & \makecell{100.03 \pm 3.14}& \makecell{69.68$\pm$2.76}& \makecell{0.68 $\pm$ 0.26}\\
+       \makecell{21.38_{-0.92}^{+0.94}}  & \makecell{0.45 \pm 0.01} & \makecell{90.41 $\pm$2.80}& \makecell{86.38$\pm$3.18}& \makecell{0.65 $\pm$ 0.13}\\
+       \makecell{19.03_{-0.99}^{+1.00}} & \makecell{0.16 \pm 0.01}& \makecell{90.65 $\pm$ 3.01}& \makecell{97.79$\pm$3.99}& \makecell{0.60$\pm$0.14}\\
+       \makecell{16.43_{-1.08}^{+1.11}} & \makecell{0.06 \om 0.00}& \makecell{99.61 $\pm$ 3.14}& \makecell{121.54$\pm$4.54}& \makecell{0.50$\pm$0.09}\\
+       \makecell{13.51_{-1.22}^{+1.28}} & \makecell{0.03 \pm 0.00} & \makecell{107.41 $\pm$ 3.48}& \makecell{143.27$\pm$5.52}& \makecell{-}\\
+       \makecell{10.09_{-1.41}^{+1.55}} & \makecell{0.02 \pm 0.00}& \makecell{64.27 $\pm$ 2.56}& \makecell{92.78$\pm$4.21}& \makecell{-} \\
+       \makecell{5.63_{-1.83}^{+2.21}} & \makecell{0.02 \pm 0.00} & \makecell{6.67 $\pm$ 0.37}& \makecell{6.32$\pm$0.42}& \makecell{-}\\
+       %\makecell{\makecell{28.40_{-0.79}^{+0.80}}} & \makecell{} & \makecell{} & \makecell{} & \makecell{} \\
+       
+       
+       %\makecell{28.40_{-0.79}^{+0.80}} & \makecell{26.03_{-0.82}^{+0.82}} & \makecell{23.54_{-0.87}^{+0.88}} & \makecell{21.38_{-0.92}^{+0.94}} & \makecell{19.03_{-0.99}^{+1.00}} & \makecell{16.43_{-1.08}^{+1.11}} & \makecell{13.51_{-1.22}^{+1.28}} & \makecell{10.09_{-1.41}^{+1.55}} & \makecell{5.63_{-1.83}^{+2.21}}   \\
+       \hline
+       
+       %\makecell{$^{188}$Ir} & \makecell{} & \makecell{} & \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} \\
+       %\makecell{$^{193m}$Pt} & \makecell{48.11 \pm 6.33} & \makecell{} & \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} \\       
+       
+    \end{tabular}
+    \label{tab:crossSections_Ir}
+\end{table}
+%\end{sidewaystable}
+%\end{landscape}
+\endgroup
+\pagestyle{empty}
+
+
+
+\begingroup
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\begin{table}[]
+\caption{Platinum production cross sections produced from Iridium}
+    \centering
+    %\footnotesize
+    \begin{tabular}{c  c c c c}
+        \hline
+        
+        & \multicolumn{4}{c}{ \underline{Production cross section (mb) for platinum radionuclides}}\\
+        %\hline
+       \makecell{$E_d$ (MeV)}   & \makecell{$^{188}$Pt$_\text{ind}$} & \makecell{$^{189}$Pt$_\text{ind}$} & \makecell{$^{191}$Pt$_\text{ind}$} & \makecell{$^{193m}$Pt$_\text{ind}$} \\
+       \hline
+       \makecell{30.65_{-0.75}^{+0.76}} & \makecell{0.94 \pm 0.13} & \makecell{486.47 \pm 21.86} & \makecell{597.10 \pm 16.55} & \makecell{48.11 \pm 6.33} \\
+       \makecell{28.40_{-0.79}^{+0.80}} & \makecell{0.30 \pm 0.09} & \makecell{341.24 \pm 16.64} & \makecell{483.60 \pm 13.79} & \makecell{46.78 \pm 2.19} \\
+       \makecell{26.03_{-0.82}^{+0.82}} & \makecell{0.17 \pm 0.05} & \makecell{172.11 \pm 8.03} & \makecell{353.99 \pm 9.67} & \makecell{55.68 \pm 2.17} \\
+       \makecell{23.54_{-0.87}^{+0.88}} & \makecell{-} & \makecell{30.72 \pm 1.48} & \makecell{165.12 \pm 5.15} & \makecell{51.79 \pm 2.12} \\
+       \makecell{21.38_{-0.92}^{+0.94}} & \makecell{-} & \makecell{1.04 \pm 0.07} & \makecell{71.05 \pm 2.19} & \makecell{58.31 \pm 1.96} \\
+       \makecell{19.03_{-0.99}^{+1.00}} & \makecell{-} & \makecell{0.09 \pm 0.02} & \makecell{77.53 \pm 2.57} & \makecell{77.98 \pm 2.89} \\
+       \makecell{16.43_{-1.08}^{+1.11}} & \makecell{-} & \makecell{-} & \makecell{128.24 \pm 4.03} & \makecell{115.33 \pm 4.09} \\
+       \makecell{13.51_{-1.22}^{+1.28}} & \makecell{-} & \makecell{-} & \makecell{137.37 \pm 4.42} & \makecell{148.98 \pm 5.54} \\
+       \makecell{10.09_{-1.41}^{+1.55}} & \makecell{-} & \makecell{-} & \makecell{53.45 \pm 2.12} & \makecell{56.18 \pm 2.85} \\
+       \makecell{5.63_{-1.83}^{+2.21}} & \makecell{-} & \makecell{-} & \makecell{1.05 \pm 0.06} & \makecell{1.56 \pm 0.12} \\
+       %\makecell{\makecell{28.40_{-0.79}^{+0.80}}} & \makecell{} & \makecell{} & \makecell{} & \makecell{} \\
+       
+       
+       %\makecell{28.40_{-0.79}^{+0.80}} & \makecell{26.03_{-0.82}^{+0.82}} & \makecell{23.54_{-0.87}^{+0.88}} & \makecell{21.38_{-0.92}^{+0.94}} & \makecell{19.03_{-0.99}^{+1.00}} & \makecell{16.43_{-1.08}^{+1.11}} & \makecell{13.51_{-1.22}^{+1.28}} & \makecell{10.09_{-1.41}^{+1.55}} & \makecell{5.63_{-1.83}^{+2.21}}   \\
+       \hline
+       
+       %\makecell{$^{188}$Ir} & \makecell{} & \makecell{} & \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} \\
+       %\makecell{$^{193m}$Pt} & \makecell{48.11 \pm 6.33} & \makecell{} & \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} \\       
+       
+    \end{tabular}
+    \label{tab:crossSections_Pt}
+\end{table}
+\endgroup
+
+
+
+\begingroup
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\begin{table}[]
+\caption{....}
+    \centering
+    %\footnotesize
+    \begin{tabular}{c  c c c c c}
+        \hline
+        
+        & \multicolumn{4}{c}{ \underline{Production cross section (mb) for ... }}\\
+        %\hline
+       \makecell{$E_d$ (MeV)}   & \makecell{$^{48}$V$_\text{cum}$} & \makecell{$^{51}$Cr$_\text{cum}$} & \makecell{$^{52}$Mn$_\text{cum}$} & \makecell{$^{54}$Mn$_\text{ind}$} &\makecell{$^{53}$Fe$_\text{cum}$} \\
+       \hline
+       \makecell{29.57_{-0.68}^{+0.68}} & \makecell{0.12 \pm 0.01} & \makecell{7.54 \pm 0.23} & \makecell{16.00 \pm 0.36} & \makecell{23.85 \pm 0.70}& \makecell{5.12 \pm 0.65} \\
+       \makecell{27.26_{-0.72}^{+0.73}} & \makecell{0.09 \pm 0.01} & \makecell{7.86 \pm 0.25} & \makecell{5.48 \pm 0.16} & \makecell{24.18 \pm 0.72} & \makecell{2.77 \pm 0.44} \\
+       \makecell{24.80_{-0.76}^{+0.77}} & \makecell{0.06 \pm 0.00} & \makecell{8.51 \pm 0.29} & \makecell{0.91 \pm 0.03} & \makecell{26.12 \pm 0.79} & \makecell{1.29 \pm 0.30} \\
+    \end{tabular}
+    \label{tab:crossSections_Pt}
+\end{table}
+\endgroup
+
+
+\begingroup
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\begin{table}[]
+\caption{....}
+    \centering
+    %\footnotesize
+    \begin{tabular}{c  c c c c}
+        \hline
+        & \multicolumn{4}{c}{ \underline{Production cross section (mb) for ... }}\\
+        %\hline
+       \makecell{$E_d$ (MeV)}   & \makecell{$^{59}$Fe$_\text{ind}$} & \makecell{$^{55}$Co$_\text{ind}$} & \makecell{$^{57}$Co$_\text{ind}$} & \makecell{$^{58}$Co$_\text{ind}$} 
+       \makecell{29.57_{-0.68}^{+0.68}} & \makecell{0.16 \pm 0.02} & \makecell{27.15 \pm 0.80} & \makecell{35.91 \pm 1.06} & \makecell{1.50 \pm 0.05} \\
+       \makecell{27.26_{-0.72}^{+0.73}} & \makecell{0.15 \pm 0.02} & \makecell{20.44 \pm 0.60} & \makecell{38.37 \pm 1.13} & \makecell{1.62 \pm 0.05} \\
+       \makecell{24.80_{-0.76}^{+0.77}} & \makecell{0.18 \pm 0.04} & \makecell{13.82 \pm 0.40} & \makecell{42.63 \pm 1.27} & \makecell{2.05 \pm 0.07} \\
+    \end{tabular}
+    \label{tab:crossSections_Pt}
+\end{table}
+\endgroup
+
+
+\begingroup
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\begin{table}[]
+\caption{....}
+    \centering
+    %\footnotesize
+    \begin{tabular}{c  c c c c c c}
+        \hline
+        & \multicolumn{4}{c}{ \underline{Production cross section (mb) for ... }}\\
+        %\hline
+       \makecell{$E_d$ (MeV)}   & \makecell{$^{59}$Fe$_\text{cum}$} & \makecell{$^{60}$Co$_\text{cum}$} & \makecell{$^{61}$Co$_\text{cum}$} & \makecell{$^{65}$Ni$_\text{ind}$}  & \makecell{$^{61}$Cu$_\text{cum}$} & \makecell{$^{64}$Cu$_\text{ind}$} \\ 
+       \makecell{30.03_{-0.67}^{+0.67}} & \makecell{0.21 \pm 0.03} & \makecell{9.49 \pm 0.52} & \makecell{1.62 \pm 0.09} & \makecell{3.42 \pm 1.76} & \makecell{4.54 \pm 0.87} & \makecell{170.76 \pm 7.76} \\
+       \makecell{27.74_{-0.71}^{+0.72}} & \makecell{0.18 \pm 0.02} & \makecell{11.38 \pm 0.51} & \makecell{0.82 \pm 0.07} & \makecell{3.84 \pm 1.94} & \makecell{2.07 \pm 0.95} & \makecell{153.78 \pm 8.20} \\
+       \makecell{25.32_{-0.76}^{+0.77}} & \makecell{0.17 \pm 0.02} & \makecell{12.02 \pm 0.51} & \makecell{0.29 \pm 0.05} & \makecell{2.89 \pm 1.48} & \makecell{1.18 \ pm 0.72} & \makecell{132.56 \pm 6.93} \\
+       \makecell{22.77_{-0.81}^{+0.83}} & \makecell{0.12 \pm 0.01} & \makecell{11.36 \pm 0.43} & \makecell{-} & \makecell{1.92 \pm 1.14} & \makecell{-} & \makecell{121.54 \pm 7.12} \\
+       \makecell{20.57_{-0.87}^{+0.89}} & \makecell{0.07 \pm 0.01} & \makecell{9.27 \pm 0.41} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{106.07 \pm 5.81} \\
+       \makecell{18.14_{-0.94}^{+0.97}} & \makecell{0.03 \pm 0.01} & \makecell{5.65 \pm 0.26} & \makecell{-} & \makecell{1.46 \pm 0.95} & \makecell{-} & \makecell{95.92 \pm 7.14} \\
+       \makecell{15.43_{-1.04}^{+1.08}} & \makecell{-} & \makecell{1.53 \pm 0.12} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{123.79 \pm 6.62} \\
+       \makecell{12.34_{-1.20}^{+1.27}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{156.65 \pm 8.20} \\
+       \makecell{8.68_{-1.43}^{+1.62}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{209.38 \pm 11.27} \\
+       \makecell{3.94_{-2.22}^{+2.25}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{73.54 \pm 5.70} \\
+    \end{tabular}
+    \label{tab:crossSections_Pt}
+\end{table}
+\endgroup
+
+
+\begin{comment}
+%\newpage
+\pagestyle{empty}
+\begingroup
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+%\begin{landscape}
+%\begin{table}[]
+\begin{sidewaystable}
+    \centering
+    %\footnotesize
+    \small
+    \begin{tabular}{c  c c c c c c c c c}
+        \hline
+        
+        & \multicolumn{4}{c}{ \underline{Production cross section (mb) for iridium radionuclides}}\\
+        %\hline
+       \makecell{$E_d$ (MeV)}   & \makecell{$^{188m1+g}$Ir$_\text{cum}$} & \makecell{$^{188m1+g}$Ir$_\text{ind}$} & \makecell{$^{189}$Ir$_\text{cum}$} & \makecell{$^{190m1+g}$Ir$_\text{cum}$} & \makecell{$^{190m1+g}$Ir$_\text{ind}$} & \makecell{$^{190m2}$Ir$_\text{ind}$}  & \makecell{$^{192}$Ir$_\text{cum}$} & \makecell{$^{194g}$Ir$_\text{cum}$} & \makecell{$^{194m2}$Ir$_\text{ind}$}  \\
+       \hline
+       \makecell{30.65_{-0.75}^{+0.76}} & \makecell{1.37 \pm 0.10} & \makecell{0.42 \pm 0.03} & \makecell{332.49 \pm 24.20} & \makecell{86.65 \pm 2.89} & \makecell{85.88 \pm 2.86} & \makecell{8.87 \pm 0.25} & \makecell{188.43 \pm 5.27} & \makecell{50.92 $\pm$ 2.18} & \makecell{-} \\
+       \makecell{28.40_{-0.79}^{+0.80}} & \makecell{0.45 \pm 0.07} & \makecell{0.17 \pm 0.02} & \makecell{237.84 \pm 17.44} & \makecell{62.80 \pm 2.14} & \makecell{62.36 \pm 2.13} & \makecell{5.03 \pm 0.15} & \makecell{152.55 \pm 4.39} & \makecell{51.39$\pm$2.89}& \makecell{-}\\
+       \makecell{26.03_{-0.82}^{+0.82}} & \makecell{0.34 \pm 0.08} & \makecell{0.17 \pm 0.03} & \makecell{91.49 \pm 5.47} & \makecell{44.26 \pm 1.47} & \makecell{44.01 \pm 1.46} & \makecell{2.92 \pm 0.08} & \makecell{124.33 \pm 3.42}& \makecell{61.37$\pm$2.39}& \makecell{0.74 $\pm$ 0.17}\\
+       \makecell{23.54_{-0.87}^{+0.88}} & \makecell{-} & \makecell{-} & \makecell{19.23 \pm 2.65} & \makecell{27.29 \pm 1.02} & \makecell{27.19 \pm 1.02} & \makecell{1.16 \pm 0.04} & \makecell{100.03 \pm 3.14}& \makecell{69.68$\pm$2.76}& \makecell{0.68 $\pm$ 0.26}\\
+       \makecell{21.38_{-0.92}^{+0.94}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{18.73 \pm 0.71} & \makecell{18.69 \pm 0.70} & \makecell{0.45 \pm 0.01} & \makecell{90.41 $\pm$2.80}& \makecell{86.38$\pm$3.18}& \makecell{0.65 $\pm$ 0.13}\\
+       \makecell{19.03_{-0.99}^{+1.00}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{14.02 \pm 0.55} & \makecell{14.00 \pm 0.55} & \makecell{0.16 \pm 0.01}& \makecell{90.65 $\pm$ 3.01}& \makecell{97.79$\pm$3.99}& \makecell{0.60$\pm$0.14}\\
+       \makecell{16.43_{-1.08}^{+1.11}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{12.40 \pm 0.51} & \makecell{12.39 \pm 0.51} & \makecell{0.06 \om 0.00}& \makecell{99.61 $\pm$ 3.14}& \makecell{121.54$\pm$4.54}& \makecell{0.50$\pm$0.09}\\
+       \makecell{13.51_{-1.22}^{+1.28}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{8.26 \pm 0.43} & \makecell{8.25 \pm 0.42}& \makecell{0.03 \pm 0.00} & \makecell{107.41 $\pm$ 3.48}& \makecell{143.27$\pm$5.52}& \makecell{-}\\
+       \makecell{10.09_{-1.41}^{+1.55}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-}  & \makecell{-}& \makecell{0.02 \pm 0.00}& \makecell{64.27 $\pm$ 2.56}& \makecell{92.78$\pm$4.21}& \makecell{-} \\
+       \makecell{5.63_{-1.83}^{+2.21}} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{-} & \makecell{0.02 \pm 0.00} & \makecell{6.67 $\pm$ 0.37}& \makecell{6.32$\pm$0.42}& \makecell{-}\\
+       %\makecell{\makecell{28.40_{-0.79}^{+0.80}}} & \makecell{} & \makecell{} & \makecell{} & \makecell{} \\
+       
+       
+       %\makecell{28.40_{-0.79}^{+0.80}} & \makecell{26.03_{-0.82}^{+0.82}} & \makecell{23.54_{-0.87}^{+0.88}} & \makecell{21.38_{-0.92}^{+0.94}} & \makecell{19.03_{-0.99}^{+1.00}} & \makecell{16.43_{-1.08}^{+1.11}} & \makecell{13.51_{-1.22}^{+1.28}} & \makecell{10.09_{-1.41}^{+1.55}} & \makecell{5.63_{-1.83}^{+2.21}}   \\
+       \hline
+       
+       %\makecell{$^{188}$Ir} & \makecell{} & \makecell{} & \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} \\
+       %\makecell{$^{193m}$Pt} & \makecell{48.11 \pm 6.33} & \makecell{} & \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} &  \makecell{} \\       
+       
+    \end{tabular}
+    \caption{Iridium production cross sections produced from Iridium}
+    \label{tab:crossSections_Ir}
+%\end{table}
+\end{sidewaystable}
+%\end{landscape}
+\endgroup
+\pagestyle{empty}
+\end{comment}
