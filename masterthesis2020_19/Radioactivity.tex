@@ -1,0 +1,108 @@
+\subsection{Radioactive decay law}
+
+From here based on Krane chapter 6 \footnote{https://faculty.kfupm.edu.sa/phys/aanaqvi/Krane-Ch-6.pdf}
+
+The activity of a nucleus is defined as the number of decayed nuclei per unit time of a radioactive product, which is equal to the radioactive decay rate 
+
+\begin{equation} \label{eq:activity_decayrate}
+   A =  \frac{dN}{dt}=-\lambda N
+\end{equation}
+
+where N is the number of nuclei, t is the time and $\lambda$ is the decay constant. Solving equation \ref{eq:activity_decayrate} gives number of decayed products at time t
+\begin{equation} \label{eq:N(t)}
+    N(t) = N_0 e^{-\lambda t}
+\end{equation}
+
+\noindent 
+Since $N\propto$A, the relations $\frac{N_0}{A_0}=\frac{N(t)}{A(t)}$ are valid, and we can rewrite the equation \ref{eq:N(t)} to
+
+\begin{equation} \label{eq:activity_decaylaw}
+    A(t) = A_0 e^{-\lambda t}
+\end{equation}
+
+
+This accounts for single nucleus decaying into a daughter product, without anything first decaying into the parent nucleus. However it is common that a radioactive nucleus decays into another radioactive nucleus. Hence the daughter activity will increase due to feeding from the parent.
+%The number of decayed nuclei N of nucleus i with a n-decay chain is then
+%\begin{equation}
+%    dN_i = \lambda_{i-n}N_{i-n}dt - ... -\lambda_{i-1}N_{i-1}dt - \lambda_iN_idt
+%\end{equation}
+For multiple decay, Bateman equation is used describing the activity in nucleus n of the decay chain \textcolor{red}{(Voyles2018, which article??)}
+
+\begin{equation} \label{eq:ndecay_chains}
+    A_n = \lambda_n \sum_{i=1}^n \Big[ \Big( A_{i,0}\prod^{n-1}_{j=i}\lambda_j \Big)\cdot \Big( \sum_{j=i}^n \frac{e^{-\lambda_j t}}{\prod_{i\neq j}^n (\lambda_i - \lambda_j)} \Big) \Big]
+\end{equation}
+
+where $A_n$ is the activity of nuclei n in the decay chain, with the corresponding decay constant $\lambda_n$. The equation sums over all nuclei in the decay chain. $A_{i,0}$ is the initial activity of nucleus i, and j is the nucleus which is feeding into nucleus i. 
+
+\noindent 
+If a target of stable nuclei is assumed, which is exposed to a particle beam which induces various nuclear reactions, the constant rate of production of a specific reaction is dependent on the number of target nuclei, the current of flux of the particle beam and the reaction cross section
+
+\begin{equation}
+    R = N_T \Phi \sigma
+\end{equation}
+
+\noindent 
+where R is the production rate, $N_T$ is the number of target nuclei, $\Phi$ is the beam current or flux and $\sigma$ is the reaction cross section. In the assumption of the production rate being a constant value, the number of transformed target nuclei is small in comparison to the total number during the irradiation time. The number of produced nuclei from a specific reaction per unit time is thus thus the produced nuclei minus the decayed nuclei (activity)
+\begin{equation}
+    dN = Rdt - \lambda N dt
+\end{equation}
+
+which has the solution
+
+\begin{equation}
+    N(t) = \frac{R}{\lambda}(1-e^{-\lambda t})
+\end{equation}
+
+From equation \ref{eq:activity_decayrate}, the total activity produced during irradiation time t is thus 
+
+\begin{equation} 
+    A(t) = R(1-e^{-\lambda t}) = N_T \Phi \sigma (1-e^{-\lambda t})
+\end{equation}
+
+At the end of beam, the activity is denoted as $A_0$, and t is the irradiation time:
+\begin{equation} \label{eq:activity_eob}
+    A_0 = N_T \Phi \sigma (1-e^{-\lambda \Delta t_\text{irr}})
+\end{equation}
+
+\noindent 
+When a target is irradiated, the activity of the product nucleus will increase until secular equilibrium is achieved, which is when the product rate and decay rate are constant. Hence it is not necessary to irradiate a target for more than 2-3 half lives.\\
+
+\noindent 
+If a spectrum is counted at a delay time $\Delta t_d$ after end of beam with a counting time $\Delta t_c$  the total number of decayed products are 
+
+\begin{equation}
+    N_D = \int_{\Delta t_d}^{\Delta t_d + \Delta t_c} A(t) dt
+\end{equation}
+
+Using equation \ref{eq:activity_decaylaw} for A(t), the solution to the above equation is 
+\begin{equation} \label{eq:numb_of_decayed}
+    N_D= \frac{A_0}{\lambda}e^{-\lambda \Delta t_d}(1-e^{-\lambda \Delta t_c})
+\end{equation}
+
+which again is equal to
+\begin{equation}
+    N_D = \frac{A(t)}{\lambda} (1-e^{-\lambda \Delta t_c})
+\end{equation}
+
+We can only know the number of decayed products which are detected. This is dependent on the efficiency of the detector, the intensity of the gamma-rays and the true number of decayed products
+
+\begin{equation}\label{eq:Ngamma}
+    N_C  = N_D \epsilon I_\gamma
+\end{equation}
+
+where $N_C$ is the number of observed/counted gamma-rays, $\epsilon$ is the efficiency of the detector and $I_\gamma$ is the gamma-ray intensity.\\ 
+
+\noindent
+Thus, we can obtain an expression for $A(t)$ after a delay time: 
+
+\begin{equation} \label{eq:Final_Expression_A}
+    A(t) = \frac{N_C \lambda}{\epsilon I_\gamma (1-e^{-\lambda \Delta t_c})}
+\end{equation}
+
+\noindent 
+Again using \ref{eq:activity_decaylaw} for A(t), the above expression can be rewritten using $A_0$ and the delay time $\Delta t_d$
+
+\begin{equation} \label{eq:Final_Expression_A0}
+    A_0 = \frac{N_C \lambda }{\epsilon I_\gamma (1-e^{-\lambda \Delta t_c})e^{-\lambda \Delta t_d}}
+\end{equation}
+
